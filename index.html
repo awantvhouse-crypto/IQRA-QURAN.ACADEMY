@@ -1820,6 +1820,33 @@ function(event){
       .getElementById("studentAddress")
       .value
       .trim(),
+    <label>
+
+Country
+
+<select
+  id="studentCountry"
+  required
+>
+
+<option value="">
+Select Country
+</option>
+
+<option>Pakistan</option>
+<option>India</option>
+<option>Bangladesh</option>
+<option>United Arab Emirates</option>
+<option>Saudi Arabia</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Canada</option>
+<option>Australia</option>
+<option>Other</option>
+
+</select>
+
+</label>
 
     phone:
       document
@@ -2059,6 +2086,12 @@ function updateDashboard(
 
   myStudents.forEach(
     student => {
+      country:
+  document
+  .getElementById(
+    "studentCountry"
+  )
+  .value,
 
       const card =
         document.createElement(
