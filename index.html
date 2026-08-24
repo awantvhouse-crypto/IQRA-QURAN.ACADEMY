@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iqra Quran Academy | Online Quran Learning</title>
+
+<meta
+  name="description"
+  content="Iqra Quran Academy - Online Quran learning, Hifz, Nazra and Tajweed classes."
+>
+
+<link
+  rel="icon"
+  type="image/png"
+  href="g.png"
+>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  color:#173d2b;
+  background:#edf7f0;
+  line-height:1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  min-height:700px;
+
+  background:
+    linear-gradient(
+      rgba(3,58,39,.78),
+      rgba(3,88,57,.82)
+    ),
+    url("g.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+}
+
+.navbar{
+  max-width:1150px;
+  margin:auto;
+
+  padding:18px 20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:68px;
+  height:68px;
+
+  border-radius:50%;
+  overflow:hidden;
+
+  border:3px solid #f5dc79;
+
+  background:#07583c;
+
+  flex-shrink:0;
+}
+
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.brand h1{
+  font-size:23px;
+}
+
+.brand small{
+  color:#e9f5ed;
+}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#f5dc79;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  max-width:1150px;
+  margin:90px auto 0;
+
+  padding:20px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:45px;
+
+  align-items:center;
+}
+
+.hero-text h2{
+  font-size:52px;
+  line-height:1.15;
+
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:18px;
+  max-width:570px;
+
+  margin-bottom:28px;
+}
+
+.button{
+  display:inline-block;
+
+  background:#f4d66f;
+  color:#173d2b;
+
+  border:none;
+  border-radius:10px;
+
+  padding:12px 20px;
+
+  font-weight:bold;
+  text-decoration:none;
+
+  cursor:pointer;
+}
+
+.button:hover{
+  opacity:.9;
+}
+
+
+/* =========================
+   QURAN SCENE
+========================= */
+
+.quran-scene{
+  min-height:360px;
+
+  border-radius:30px;
+
+  position:relative;
+  overflow:hidden;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      rgba(80,170,196,.55),
+      rgba(225,241,221,.65)
+    ),
+    url("g.png");
+
+  background-size:cover;
+  background-position:center;
+
+  border:2px solid rgba(255,255,255,.5);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+}
+
+.moon{
+  font-size:125px;
+
+  color:#fff0a4;
+
+  line-height:1;
+
+  text-shadow:
+    0 5px 15px rgba(0,0,0,.25);
+}
+
+.quran-icon{
+  font-size:80px;
+
+  margin-top:-15px;
+
+  filter:
+    drop-shadow(
+      0 8px 5px rgba(0,0,0,.25)
+    );
+}
+
+.quran-scene h3{
+  margin-top:10px;
+
+  font-size:20px;
+
+  color:#fff;
+}
+
+.quran-scene p{
+  color:white;
+
+  font-weight:bold;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:70px 20px 10px;
+}
+
+section h2{
+  font-size:34px;
+
+  color:#075b3d;
+
+  margin-bottom:8px;
+}
+
+.subtitle{
+  color:#688174;
+
+  margin-bottom:25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+  background:white;
+
+  border:1px solid #d7e8dc;
+
+  border-radius:20px;
+
+  padding:25px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:18px;
+}
+
+label{
+  font-weight:bold;
+
+  color:#214936;
+
+  font-size:14px;
+}
+
+input,
+select{
+  width:100%;
+
+  margin-top:7px;
+
+  padding:13px;
+
+  border:1px solid #cbded2;
+
+  border-radius:9px;
+
+  background:white;
+
+  font-size:15px;
+}
+
+input:focus,
+select:focus{
+  outline:none;
+
+  border-color:#087b51;
+
+  box-shadow:
+    0 0 0 3px rgba(8,123,81,.1);
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice{
+  display:none;
+
+  margin-top:18px;
+
+  padding:14px;
+
+  background:#def4e6;
+
+  color:#145536;
+
+  border-radius:10px;
+
+  font-weight:bold;
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+.courses{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:20px;
+}
+
+.course{
+  background:white;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  text-align:center;
+
+  border:1px solid #d7e8dc;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+}
+
+.course-icon{
+  font-size:45px;
+
+  margin-bottom:10px;
+}
+
+.course h3{
+  font-size:22px;
+
+  margin-bottom:8px;
+}
+
+.price{
+  display:block;
+
+  color:#087b51;
+
+  font-size:28px;
+
+  font-weight:bold;
+
+  margin-top:12px;
+}
+
+
+/* =========================
+   TEACHERS
+========================= */
+
+.teachers{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:20px;
+}
+
+.teacher{
+  background:white;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  border:1px solid #d7e8dc;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+}
+
+.teacher h3{
+  color:#075b3d;
+
+  font-size:23px;
+
+  margin-bottom:8px;
+}
+
+.info{
+  background:#eff8f2;
+
+  padding:11px 13px;
+
+  border-radius:9px;
+
+  margin-top:9px;
+}
+
+.teacher-buttons{
+  margin-top:17px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+}
+
+.green-button{
+  display:inline-block;
+
+  background:#087b51;
+
+  color:white;
+
+  padding:10px 14px;
+
+  border-radius:9px;
+
+  text-decoration:none;
+
+  border:none;
+
+  cursor:pointer;
+
+  font-weight:bold;
+}
+
+.green-button:hover{
+  opacity:.9;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.students{
+  margin-top:20px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:15px;
+}
+
+.student-card{
+  background:#f5faf6;
+
+  border:1px solid #d9e9de;
+
+  border-radius:14px;
+
+  padding:18px;
+}
+
+.student-card h3{
+  color:#075b3d;
+
+  margin-bottom:8px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:12px;
+
+  margin-top:18px;
+}
+
+.profile-item{
+  background:#eff8f2;
+
+  padding:13px;
+
+  border-radius:9px;
+}
+
+.profile-item strong{
+  display:block;
+
+  color:#075b3d;
+
+  margin-bottom:3px;
+}
+
+
+/* =========================
+   CHAT
+========================= */
+
+.chat-box{
+  background:white;
+
+  border:1px solid #d7e8dc;
+
+  border-radius:18px;
+
+  overflow:hidden;
+}
+
+.chat-header{
+  background:#087b51;
+
+  color:white;
+
+  padding:16px;
+
+  font-weight:bold;
+}
+
+.chat-messages{
+  min-height:280px;
+
+  padding:18px;
+
+  background:#edf7f0;
+}
+
+.message{
+  background:white;
+
+  padding:11px 14px;
+
+  border-radius:12px;
+
+  margin-bottom:10px;
+
+  max-width:75%;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.04);
+}
+
+.my-message{
+  background:#087b51;
+
+  color:white;
+
+  margin-left:auto;
+}
+
+.chat-form{
+  display:flex;
+
+  gap:10px;
+
+  padding:12px;
+
+  background:white;
+}
+
+.chat-form input{
+  margin:0;
+}
+
+.chat-form button{
+  border:none;
+
+  background:#087b51;
+
+  color:white;
+
+  padding:0 18px;
+
+  border-radius:9px;
+
+  cursor:pointer;
+}
+
+
+/* =========================
+   FEES
+========================= */
+
+.payments{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:20px;
+}
+
+.payment{
+  background:white;
+
+  padding:25px;
+
+  text-align:center;
+
+  border-radius:18px;
+
+  border:1px solid #d7e8dc;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  margin-top:70px;
+
+  padding:35px 20px;
+
+  text-align:center;
+
+  color:white;
+
+  background:#063d2b;
+}
+
+footer h3{
+  margin-bottom:7px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
+
+  header{
+    min-height:auto;
+
+    padding-bottom:50px;
+  }
+
+  .navbar{
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  nav{
+    justify-content:center;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+
+    margin-top:50px;
+  }
+
+  .hero-text h2{
+    font-size:40px;
+  }
+
+  form{
+    grid-template-columns:1fr;
+  }
+
+  .full{
+    grid-column:auto;
+  }
+
+  .courses,
+  .teachers,
+  .payments,
+  .students{
+    grid-template-columns:1fr;
+  }
+
+  .profile-grid{
+    grid-template-columns:1fr;
+  }
+
+  .chat-form{
+    flex-direction:column;
+  }
+
+  .chat-form button{
+    padding:12px;
+  }
+
+}
+
+
+/* =========================
+   FOOTER SOCIAL
+========================= */
+
+.academy-footer{
+  margin-top:50px;
+
+  padding:30px 20px;
+
+  text-align:center;
+
+  background:#075b3a;
+
+  color:white;
+
+  border-radius:20px 20px 0 0;
+}
+
+.social-item{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:12px;
+
+  margin:14px 0;
+
+  font-size:16px;
+
+  font-weight:600;
+}
+
+.social-icon{
+  font-size:25px;
+}
+
+.footer-title{
+  margin-top:25px;
+
+  font-size:14px;
+
+  opacity:.9;
+}
+
+@media(max-width:600px){
+
+  .academy-footer{
+    padding:25px 10px;
+  }
+
+  .social-item{
+    font-size:14px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="brand">
+
+<div class="logo">
+
+<img
+src="g.png"
+alt="Iqra Quran Academy Logo"
+>
+
+</div>
+
+<div>
+
+<h1>
+Iqra Quran Academy
+</h1>
+
+<small>
+Online Quran Learning
+</small>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#start">Start</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#teachers">Teachers</a>
+
+<a href="#login">Login</a>
+
+<a href="#chat">Chat</a>
+
+</nav>
+
+</div>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h2>
+Learn Quran
+<br>
+Online With Us
+</h2>
+
+<p>
+Welcome to Iqra Quran Academy.
+Start your Quran learning journey
+with qualified teachers from home.
+</p>
+
+<a
+class="button"
+href="#start"
+>
+Start Registration
+</a>
+
+</div>
+
+
+<div class="quran-scene">
+
+<div class="moon">
+☾
+</div>
+
+<div class="quran-icon">
+📖
+</div>
+
+<h3>
+Quran • Knowledge • Guidance
+</h3>
+
+<p>
+Iqra Quran Academy
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+     REGISTRATION
+========================= -->
+
+<section id="start">
+
+<h2>
+Student Registration
+</h2>
+
+<p class="subtitle">
+Create your student profile.
+</p>
+
+
+<div class="card">
+
+<form id="studentForm">
+
+
+<label>
+
+Student Name
+
+<input
+id="studentName"
+type="text"
+placeholder="Student name"
+required
+>
+
+</label>
+
+
+<label>
+
+Father Name
+
+<input
+id="fatherName"
+type="text"
+placeholder="Father name"
+required
+>
+
+</label>
+
+
+<label>
+
+Years Old
+
+<input
+id="studentAge"
+type="number"
+placeholder="Age"
+required
+>
+
+</label>
+
+
+<label>
+
+School Name
+
+<input
+id="schoolName"
+type="text"
+placeholder="School name"
+>
+
+</label>
+
+
+<label>
+
+Address
+
+<input
+id="studentAddress"
+type="text"
+placeholder="Address"
+>
+
+</label>
+
+
+<label>
+
+Phone Number
+
+<input
+id="studentPhone"
+type="tel"
+placeholder="+92..."
+required
+>
+
+</label>
+
+
+<label>
+
+Course
+
+<select
+id="studentCourse"
+required
+>
+
+<option value="">
+Select Course
+</option>
+
+<option>
+Hifz - $100 per month
+</option>
+
+<option>
+Tajweed - $50 per month
+</option>
+
+<option>
+Nazra - $80 per month
+</option>
+
+</select>
+
+</label>
+
+
+<label>
+
+Teacher
+
+<select
+id="studentTeacher"
+required
+>
+
+<option value="">
+Select Teacher
+</option>
+
+<option>
+Abdullah Shahzad
+</option>
+
+<option>
+Zain Ilyas
+</option>
+
+<option>
+Hafiz Mus
+</option>
+
+</select>
+
+</label>
+
+
+<button
+class="button full"
+type="submit"
+>
+Create Student Profile
+</button>
+
+
+<button
+type="button"
+class="green-button full"
+onclick="sendStudentToTeacher()"
+>
+📱 Send Profile to Teacher
+</button>
+
+
+</form>
+
+
+<div
+id="studentCreated"
+class="notice"
+></div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     COURSES
+========================= -->
+
+<section id="courses">
+
+<h2>
+Courses & Fees
+</h2>
+
+<p class="subtitle">
+Choose your Quran learning program.
+</p>
+
+
+<div class="courses">
+
+
+<div class="course">
+
+<div class="course-icon">
+📗
+</div>
+
+<h3>
+Hifz
+</h3>
+
+<p>
+Quran memorisation program.
+</p>
+
+<span class="price">
+$100 per month
+</span>
+
+</div>
+
+
+<div class="course">
+
+<div class="course-icon">
+📖
+</div>
+
+<h3>
+Nazra
+</h3>
+
+<p>
+Quran reading program.
+</p>
+
+<span class="price">
+$50 per month
+</span>
+
+</div>
+
+
+<div class="course">
+
+<div class="course-icon">
+✨
+</div>
+
+<h3>
+Tajweed
+</h3>
+
+<p>
+Additional Tajweed option.
+</p>
+
+<span class="price">
+$80 per month
+</span>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     TEACHERS
+========================= -->
+
+<section id="teachers">
+
+<h2>
+Our Teachers
+</h2>
+
+<p class="subtitle">
+Choose your Quran teacher.
+</p>
+
+
+<div class="teachers">
+
+
+<!-- ABDULLAH -->
+
+<div class="teacher">
+
+<h3>
+Hafiz Abdullah Shahzad
+</h3>
+
+<div class="info">
+Father: Shahzad Ahmad
+</div>
+
+<div class="info">
+Age: 13
+</div>
+
+<div class="info">
+School: Iqra Huffaz
+</div>
+
+<div class="info">
+Address: H Block, Multan Road
+</div>
+
+
+<div class="teacher-buttons">
+
+<a
+class="green-button"
+href="tel:03054330064"
+>
+Contact Abdullah
+</a>
+
+
+<button
+class="green-button"
+onclick="openTeacherChat('Abdullah Shahzad')"
+>
+Chat
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- ZAIN -->
+
+<div class="teacher">
+
+<h3>
+Hafiz Zain Ilyas
+</h3>
+
+<div class="info">
+Father: Ilyass
+</div>
+
+<div class="info">
+Age: 13
+</div>
+
+<div class="info">
+School: Iqra Huffaz
+</div>
+
+<div class="info">
+Address: Mansura Bazaar, Lahore
+</div>
+
+
+<div class="teacher-buttons">
+
+<a
+class="green-button"
+href="tel:+923440950974"
+>
+Contact Zain
+</a>
+
+
+<button
+class="green-button"
+onclick="openTeacherChat('Zain Ilyas')"
+>
+Chat
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- HAFIZ MUS -->
+
+<div class="teacher">
+
+<h3>
+Hafiz Mus
+</h3>
+
+<div class="info">
+Contact: 03224624042
+</div>
+
+<div class="info">
+Online Quran Teacher
+</div>
+
+<div class="info">
+Iqra Quran Academy
+</div>
+
+
+<div class="teacher-buttons">
+
+<a
+class="green-button"
+href="tel:03224624042"
+>
+Contact Mus
+</a>
+
+
+<button
+class="green-button"
+onclick="openTeacherChat('Hafiz Mus')"
+>
+Chat
+</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     LOGIN
+========================= -->
+
+<section id="login">
+
+<h2>
+Teacher Login
+</h2>
+
+<p class="subtitle">
+Enter your teacher name and password.
+</p>
+
+
+<div class="card">
+
+<form id="loginForm">
+
+
+<label>
+
+Teacher
+
+<select
+id="loginTeacher"
+required
+>
+
+<option value="">
+Select Teacher
+</option>
+
+<option value="Abdullah Shahzad">
+Abdullah Shahzad
+</option>
+
+<option value="Zain Ilyas">
+Zain Ilyas
+</option>
+
+<option value="Hafiz Mus">
+Hafiz Mus
+</option>
+
+</select>
+
+</label>
+
+
+<label>
+
+Password
+
+<input
+id="loginPassword"
+type="password"
+placeholder="Enter password"
+required
+>
+
+</label>
+
+
+<button
+class="button full"
+type="submit"
+>
+Login
+</button>
+
+
+</form>
+
+
+<div
+id="loginMessage"
+class="notice"
+></div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     TEACHER DASHBOARD
+========================= -->
+
+<section
+id="dashboard"
+style="display:none;"
+>
+
+<h2>
+Teacher Dashboard
+</h2>
+
+<p class="subtitle">
+Your students.
+</p>
+
+
+<div class="card">
+
+<h3 id="dashboardTeacherName">
+Teacher
+</h3>
+
+
+<div
+id="dashboardTeacherInfo"
+class="info"
+>
+</div>
+
+
+<h3 style="margin-top:25px;">
+My Students
+</h3>
+
+
+<div
+id="teacherStudents"
+class="students"
+>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     STUDENT PROFILE
+========================= -->
+
+<section
+id="studentProfile"
+style="display:none;"
+>
+
+<h2>
+Student Profile
+</h2>
+
+
+<div class="card">
+
+
+<h3 id="profileName">
+</h3>
+
+
+<div class="profile-grid">
+
+
+<div class="profile-item">
+
+<strong>
+Father Name
+</strong>
+
+<span id="profileFather">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+Age
+</strong>
+
+<span id="profileAge">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+School
+</strong>
+
+<span id="profileSchool">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+Address
+</strong>
+
+<span id="profileAddress">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+Phone
+</strong>
+
+<span id="profilePhone">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+Course
+</strong>
+
+<span id="profileCourse">
+</span>
+
+</div>
+
+
+<div class="profile-item">
+
+<strong>
+Teacher
+</strong>
+
+<span id="profileTeacher">
+</span>
+
+</div>
+
+
+</div>
+
+
+<div class="teacher-buttons">
+
+
+<button
+class="green-button"
+onclick="openStudentChat()"
+>
+💬 Open Chat
+</button>
+
+
+<a
+id="studentCall"
+class="green-button"
+href="#"
+>
+📞 Call
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CHAT
+========================= -->
+
+<section id="chat">
+
+<h2>
+Chat
+</h2>
+
+<p class="subtitle">
+Teacher and student chat interface.
+</p>
+
+
+<div class="chat-box">
+
+
+<div
+id="chatheader"
+class="chat-header"
+>
+Select a teacher or student
+</div>
+
+
+<div
+id="chatMessages"
+class="chat-messages"
+>
+
+<div class="message">
+Assalam-o-Alaikum! Please select a teacher or student.
+</div>
+
+</div>
+
+
+<form
+id="chatForm"
+class="chat-form"
+>
+
+<input
+id="chatInput"
+type="text"
+placeholder="Write your message..."
+required
+>
+
+
+<button type="submit">
+Send
+</button>
+
+</form>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FEES
+========================= -->
+
+<section id="fees">
+
+<h2>
+Payment Methods
+</h2>
+
+<p class="subtitle">
+Academy fee payment options.
+</p>
+
+
+<div class="payments">
+
+
+<div class="payment">
+
+<h3>
+EasyPaisa
+</h3>
+
+<p>
+Send your academy fee through EasyPaisa.
+</p>
+
+<br>
+
+<button
+class="green-button"
+onclick="showPaymentMessage()"
+>
+Payment Details
+</button>
+
+</div>
+
+
+<div class="payment">
+
+<h3>
+UBL
+</h3>
+
+<p>
+Bank transfer payment option.
+</p>
+
+<br>
+
+<button
+class="green-button"
+onclick="showPaymentMessage()"
+>
+Payment Details
+</button>
+
+</div>
+
+
+<div class="payment">
+
+<h3>
+Bank Transfer
+</h3>
+
+<p>
+Contact academy for payment details.
+</p>
+
+<br>
+
+<button
+class="green-button"
+onclick="showPaymentMessage()"
+>
+Payment Details
+</button>
+
+</div>
+
+
+</div>
+
+
+<div
+id="paymentNotice"
+class="notice"
+></div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="academy-footer">
+
+<div class="social-item">
+<span class="social-icon">▶️</span>
+<span>www.iqraquranacademy.com</span>
+</div>
+
+<div class="social-item">
+<span class="social-icon">📷</span>
+<span>www.iqraquranacademy.com</span>
+</div>
+
+<div class="social-item">
+<span class="social-icon">🎵</span>
+<span>www.iqraquranacademy.com</span>
+</div>
+
+<p class="footer-title">
+© 2026 Iqra Quran Academy
+</p>
+
+</footer>
+
+
+
+<script>
+
+/* =================================
+   STUDENT STORAGE
+================================= */
+
+let students =
+JSON.parse(
+  localStorage.getItem(
+    "iqraStudents"
+  )
+) || [];
+
+
+let currentStudent = null;
+
+let currentChatPerson = null;
+
+
+/* =================================
+   TEACHERS
+================================= */
+
+const teachers = {
+
+  "Abdullah Shahzad": {
+
+    displayName:
+      "Hafiz Abdullah Shahzad",
+
+    information:
+      "Father: Shahzad Ahmad | Age: 13 | School: Iqra Huffaz | Address: H Block, Multan Road",
+
+    phone:
+      "03054330064"
+
+  },
+
+
+  "Zain Ilyas": {
+
+    displayName:
+      "Hafiz Zain Ilyas",
+
+    information:
+      "Father: Ilyass | Age: 13 | School: Iqra Huffaz | Address: Mansura Bazaar, Lahore",
+
+    phone:
+      "+923440950974"
+
+  },
+
+
+  "Hafiz Mus": {
+
+    displayName:
+      "Hafiz Mus",
+
+    information:
+      "Contact: 03224624042 | Online Quran Teacher | Iqra Quran Academy",
+
+    phone:
+      "03224624042"
+
+  }
+
+};
+
+
+/* =================================
+   REGISTER STUDENT
+================================= */
+
+document
+.getElementById("studentForm")
+.addEventListener(
+"submit",
+function(event){
+
+  event.preventDefault();
+
+
+  const student = {
+
+    id:
+      Date.now(),
+
+    name:
+      document
+      .getElementById("studentName")
+      .value
+      .trim(),
+
+    father:
+      document
+      .getElementById("fatherName")
+      .value
+      .trim(),
+
+    age:
+      document
+      .getElementById("studentAge")
+      .value,
+
+    school:
+      document
+      .getElementById("schoolName")
+      .value
+      .trim(),
+
+    address:
+      document
+      .getElementById("studentAddress")
+      .value
+      .trim(),
+
+    phone:
+      document
+      .getElementById("studentPhone")
+      .value
+      .trim(),
+
+    course:
+      document
+      .getElementById("studentCourse")
+      .value,
+
+    teacher:
+      document
+      .getElementById("studentTeacher")
+      .value
+
+  };
+
+
+  students.push(student);
+
+
+  localStorage.setItem(
+    "iqraStudents",
+    JSON.stringify(students)
+  );
+
+
+  const notice =
+    document.getElementById(
+      "studentCreated"
+    );
+
+
+  notice.style.display =
+    "block";
+
+
+  notice.innerText =
+    "Profile created successfully! Teacher: "
+    +
+    student.teacher;
+
+
+  this.reset();
+
+
+  updateDashboard(
+    student.teacher
+  );
+
+});
+
+
+/* =================================
+   TEACHER PASSWORDS
+================================= */
+
+const teacherPasswords = {
+
+  "Abdullah Shahzad":
+    "qwerty12345",
+
+  "Zain Ilyas":
+    "ssd42",
+
+  "Hafiz Mus":
+    "mus123"
+
+};
+
+
+/* =================================
+   LOGIN
+================================= */
+
+document
+.getElementById("loginForm")
+.addEventListener(
+"submit",
+function(event){
+
+  event.preventDefault();
+
+
+  const teacher =
+    document.getElementById(
+      "loginTeacher"
+    ).value;
+
+
+  const password =
+    document.getElementById(
+      "loginPassword"
+    ).value;
+
+
+  const message =
+    document.getElementById(
+      "loginMessage"
+    );
+
+
+  if(
+    teacherPasswords[teacher] &&
+    teacherPasswords[teacher] === password
+  ){
+
+    message.style.display =
+      "block";
+
+    message.innerText =
+      "Login successful.";
+
+    showTeacherDashboard(
+      teacher
+    );
+
+    document
+      .getElementById("dashboard")
+      .scrollIntoView({
+        behavior:"smooth"
+      });
+
+  }
+
+  else{
+
+    message.style.display =
+      "block";
+
+    message.innerText =
+      "Incorrect password. Profile cannot be opened.";
+
+    document
+      .getElementById("dashboard")
+      .style.display =
+      "none";
+
+  }
+
+});
+
+
+/* =================================
+   TEACHER DASHBOARD
+================================= */
+
+function showTeacherDashboard(
+  teacherName
+){
+
+  document
+  .getElementById("dashboard")
+  .style.display =
+    "block";
+
+
+  document
+  .getElementById(
+    "dashboardTeacherName"
+  )
+  .innerText =
+    teachers[
+      teacherName
+    ].displayName;
+
+
+  document
+  .getElementById(
+    "dashboardTeacherInfo"
+  )
+  .innerText =
+    teachers[
+      teacherName
+    ].information;
+
+
+  updateDashboard(
+    teacherName
+  );
+
+
+  document
+  .getElementById("dashboard")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* =================================
+   UPDATE STUDENT LIST
+================================= */
+
+function updateDashboard(
+  teacherName
+){
+
+  const list =
+    document
+    .getElementById(
+      "teacherStudents"
+    );
+
+
+  list.innerHTML =
+    "";
+
+
+  const myStudents =
+    students.filter(
+      student =>
+        student.teacher ===
+        teacherName
+    );
+
+
+  if(
+    myStudents.length === 0
+  ){
+
+    list.innerHTML =
+
+      '<div class="student-card">' +
+
+      '<h3>No students yet</h3>' +
+
+      '<p>Students who select this teacher will appear here.</p>' +
+
+      '</div>';
+
+    return;
+
+  }
+
+
+  myStudents.forEach(
+    student => {
+
+      const card =
+        document.createElement(
+          "div"
+        );
+
+
+      card.className =
+        "student-card";
+
+
+      card.innerHTML =
+
+        "<h3>" +
+        student.name +
+        "</h3>" +
+
+        "<p><b>Course:</b> " +
+        student.course +
+        "</p>" +
+
+        "<p><b>Age:</b> " +
+        student.age +
+        "</p>" +
+
+        "<br>" +
+
+        '<button class="green-button" onclick="viewStudent(' +
+        student.id +
+        ')">' +
+
+        "View Profile" +
+
+        "</button>";
+
+
+      list.appendChild(
+        card
+      );
+
+    }
+  );
+
+}
+
+
+/* =================================
+   VIEW STUDENT
+================================= */
+
+function viewStudent(
+  id
+){
+
+  currentStudent =
+    students.find(
+      student =>
+        student.id === id
+    );
+
+
+  if(
+    !currentStudent
+  )
+    return;
+
+
+  document
+  .getElementById(
+    "studentProfile"
+  )
+  .style.display =
+    "block";
+
+
+  document
+  .getElementById(
+    "profileName"
+  )
+  .innerText =
+    currentStudent.name;
+
+
+  document
+  .getElementById(
+    "profileFather"
+  )
+  .innerText =
+    currentStudent.father;
+
+
+  document
+  .getElementById(
+    "profileAge"
+  )
+  .innerText =
+    currentStudent.age;
+
+
+  document
+  .getElementById(
+    "profileSchool"
+  )
+  .innerText =
+    currentStudent.school;
+
+
+  document
+  .getElementById(
+    "profileAddress"
+  )
+  .innerText =
+    currentStudent.address;
+
+
+  document
+  .getElementById(
+    "profilePhone"
+  )
+  .innerText =
+    currentStudent.phone;
+
+
+  document
+  .getElementById(
+    "profileCourse"
+  )
+  .innerText =
+    currentStudent.course;
+
+
+  document
+  .getElementById(
+    "profileTeacher"
+  )
+  .innerText =
+    currentStudent.teacher;
+
+
+  document
+  .getElementById(
+    "studentCall"
+  )
+  .href =
+    "tel:" +
+    currentStudent.phone;
+
+
+  document
+  .getElementById(
+    "studentProfile"
+  )
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* =================================
+   STUDENT CHAT
+================================= */
+
+function openStudentChat(){
+
+  if(
+    !currentStudent
+  )
+    return;
+
+
+  currentChatPerson =
+    currentStudent.name;
+
+
+  document
+  .getElementById(
+    "chatheader"
+  )
+  .innerText =
+    "Chat with " +
+    currentStudent.name;
+
+
+  document
+  .getElementById(
+    "chat"
+  )
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* =================================
+   TEACHER CHAT
+================================= */
+
+function openTeacherChat(
+  teacher
+){
+
+  currentChatPerson =
+    teacher;
+
+
+  document
+  .getElementById(
+    "chatheader"
+  )
+  .innerText =
+    "Chat with " +
+    teacher;
+
+
+  document
+  .getElementById(
+    "chat"
+  )
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* =================================
+   SEND MESSAGE
+================================= */
+
+document
+.getElementById(
+  "chatForm"
+)
+.addEventListener(
+"submit",
+function(event){
+
+  event.preventDefault();
+
+
+  if(
+    !currentChatPerson
+  ){
+
+    alert(
+      "Please select a teacher or student first."
+    );
+
+    return;
+
+  }
+
+
+  const input =
+    document.getElementById(
+      "chatInput"
+    );
+
+
+  const text =
+    input.value.trim();
+
+
+  if(
+    !text
+  )
+    return;
+
+
+  const message =
+    document.createElement(
+      "div"
+    );
+
+
+  message.className =
+    "message my-message";
+
+
+  message.innerText =
+    text;
+
+
+  document
+  .getElementById(
+    "chatMessages"
+  )
+  .appendChild(
+    message
+  );
+
+
+  input.value =
+    "";
+
+});
+
+
+/* =================================
+   PAYMENT NOTICE
+================================= */
+
+function showPaymentMessage(){
+
+  const notice =
+    document.getElementById(
+      "paymentNotice"
+    );
+
+
+  notice.style.display =
+    "block";
+
+
+  notice.innerText =
+    "Please contact the academy for current payment details.";
+
+}
+
+
+/* =================================
+   SEND STUDENT TO TEACHER
+================================= */
+
+function sendStudentToTeacher(){
+
+  const name =
+    document
+    .getElementById(
+      "studentName"
+    )
+    .value
+    .trim();
+
+
+  const father =
+    document
+    .getElementById(
+      "fatherName"
+    )
+    .value
+    .trim();
+
+
+  const age =
+    document
+    .getElementById(
+      "studentAge"
+    )
+    .value;
+
+
+  const school =
+    document
+    .getElementById(
+      "schoolName"
+    )
+    .value
+    .trim();
+
+
+  const address =
+    document
+    .getElementById(
+      "studentAddress"
+    )
+    .value
+    .trim();
+
+
+  const phone =
+    document
+    .getElementById(
+      "studentPhone"
+    )
+    .value
+    .trim();
+
+
+  const course =
+    document
+    .getElementById(
+      "studentCourse"
+    )
+    .value;
+
+
+  const teacher =
+    document
+    .getElementById(
+      "studentTeacher"
+    )
+    .value;
+
+
+  if(
+    !name ||
+    !father ||
+    !age ||
+    !phone ||
+    !course ||
+    !teacher
+  ){
+
+    alert(
+      "Please complete the required student information first."
+    );
+
+    return;
+
+  }
+
+
+  /* =========================
+     TEACHER WHATSAPP NUMBERS
+  ========================= */
+
+  const teacherNumbers = {
+
+    "Abdullah Shahzad":
+      "923054330064",
+
+    "Zain Ilyas":
+      "923440950974",
+
+    "Hafiz Mus":
+      "923224624042"
+
+  };
+
+
+  const teacherNumber =
+    teacherNumbers[
+      teacher
+    ];
+
+
+  const message =
+`Assalam-o-Alaikum,
+
+New Student Registration
+
+Student Name: ${name}
+Father Name: ${father}
+Age: ${age}
+School: ${school}
+Address: ${address}
+Phone: ${phone}
+Course: ${course}
+Teacher: ${teacher}
+
+Iqra Quran Academy`;
+
+
+  const whatsappURL =
+    "https://wa.me/" +
+    teacherNumber +
+    "?text=" +
+    encodeURIComponent(
+      message
+    );
+
+
+  window.open(
+    whatsappURL,
+    "_blank"
+  );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
