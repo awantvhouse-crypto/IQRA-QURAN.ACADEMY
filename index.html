@@ -2423,53 +2423,32 @@ function showPaymentMessage(){
 ================================= */
 
 function sendStudentToTeacher(){
-
   const name =
-    document.getElementById(
-      "studentName"
-    ).value.trim();
-
+    document.getElementById("studentName").value.trim();
 
   const father =
-    document.getElementById(
-      "fatherName"
-    ).value.trim();
-
+    document.getElementById("fatherName").value.trim();
 
   const age =
-    document.getElementById(
-      "studentAge"
-    ).value;
-
+    document.getElementById("studentAge").value;
 
   const school =
-    document.getElementById(
-      "schoolName"
-    ).value.trim();
+    document.getElementById("schoolName").value.trim();
 
+  const country =
+    document.getElementById("studentCountry").value.trim();
 
   const address =
-    document.getElementById(
-      "studentAddress"
-    ).value.trim();
-
+    document.getElementById("studentAddress").value.trim();
 
   const phone =
-    document.getElementById(
-      "studentPhone"
-    ).value.trim();
-
+    document.getElementById("studentPhone").value.trim();
 
   const course =
-    document.getElementById(
-      "studentCourse"
-    ).value;
-
+    document.getElementById("studentCourse").value;
 
   const teacher =
-    document.getElementById(
-      "studentTeacher"
-    ).value;
+    document.getElementById("studentTeacher").value;
 
 
   if(
@@ -2486,7 +2465,6 @@ function sendStudentToTeacher(){
     );
 
     return;
-
   }
 
 
@@ -2499,13 +2477,21 @@ function sendStudentToTeacher(){
       "923440950974",
 
     "Hafiz Musa":
-      "03219423013"
+      "923219423013"
 
   };
 
 
   const teacherNumber =
     teacherNumbers[teacher];
+
+
+  if(!teacherNumber){
+
+    alert("Teacher WhatsApp number not found.");
+
+    return;
+  }
 
 
   const message =
@@ -2517,6 +2503,7 @@ Student Name: ${name}
 Father Name: ${father}
 Age: ${age}
 School: ${school}
+Country: ${country}
 Address: ${address}
 Phone: ${phone}
 Course: ${course}
