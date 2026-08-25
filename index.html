@@ -896,6 +896,53 @@ footer h3{
   color:white;
   font-size:14px;
 }
+  /* WHAT OUR LEARNERS SAY */
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.testimonial{
+  background:white;
+  border:1px solid #d7e8dc;
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.testimonial-icon{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.testimonial p{
+  color:#688174;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+.testimonial h3{
+  color:#075b3d;
+  font-size:18px;
+}
+
+.testimonial-dots{
+  text-align:center;
+  margin-top:25px;
+  font-size:18px;
+  letter-spacing:7px;
+  color:#087b51;
+}
+
+@media(max-width:800px){
+
+  .testimonials{
+    grid-template-columns:1fr;
+  }
+
+}
 </style>
 
 </head>
@@ -1924,6 +1971,66 @@ class="notice"
 
   </div>
 
+</section>
+  <!-- WHAT OUR LEARNERS SAY -->
+
+<section id="learners">
+
+  <h2>What Our Learners Say</h2>
+
+  <p class="subtitle">
+    Hear from our students about their learning experience.
+  </p>
+
+  <div class="testimonials">
+
+    <div class="testimonial">
+
+      <div class="testimonial-icon">📖</div>
+
+      <p>
+        The lessons have helped me improve my Quran reading
+        and Tajweed. The learning experience is simple and
+        easy to understand.
+      </p>
+
+      <h3>— Quran Student</h3>
+
+    </div>
+
+
+    <div class="testimonial">
+
+      <div class="testimonial-icon">🌟</div>
+
+      <p>
+        I enjoy learning with my teacher. The classes are
+        friendly and help me learn step by step.
+      </p>
+
+      <h3>— Academy Learner</h3>
+
+    </div>
+
+
+    <div class="testimonial">
+
+      <div class="testimonial-icon">💚</div>
+
+      <p>
+        Iqra Quran Academy provides a comfortable environment
+        to learn the Quran from home.
+      </p>
+
+      <h3>— Student</h3>
+
+    </div>
+
+  </div>
+
+  <div class="testimonial-dots">
+    ● ○ ○
+  </div>
 </section>
 <!-- FOOTER -->
 
