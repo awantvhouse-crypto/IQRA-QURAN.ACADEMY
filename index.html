@@ -20,6 +20,89 @@
 >
 
 <style>
+  .how-to-use{
+  background:white;
+  border:1px solid #d7e8dc;
+  border-radius:20px;
+  padding:25px;
+  margin-bottom:30px;
+
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.how-icon{
+  width:75px;
+  height:75px;
+  flex-shrink:0;
+
+  border-radius:18px;
+  background:#eff8f2;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:42px;
+}
+
+.how-content{
+  flex:1;
+}
+
+.how-content h2{
+  margin:0 0 10px;
+  font-size:30px;
+  color:#075b3d;
+}
+
+.short-info{
+  color:#688174;
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.learn-more{
+  border:none;
+  background:none;
+  padding:0;
+
+  color:#087b51;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.learn-more:hover{
+  text-decoration:underline;
+}
+
+.full-info{
+  display:none;
+
+  margin-top:18px;
+  padding-top:15px;
+
+  border-top:1px solid #d7e8dc;
+
+  color:#214936;
+  font-size:16px;
+}
+
+.full-info p{
+  margin-bottom:14px;
+}
+
+@media(max-width:800px){
+
+  .how-to-use{
+    flex-direction:column;
+  }
+
+}
 
 *{
   box-sizing:border-box;
@@ -760,7 +843,25 @@ Iqra Quran Academy
 <!-- REGISTRATION -->
 
 <section id="start">
+<p>
+        After sending your profile, you can contact your teacher
+        through WhatsApp, phone calls or video calls.
+      </p>
 
+      <p>
+        If you need more information, you can call any teacher
+        using the phone number shown on the website.
+      </p>
+
+      <p><b>Thank you for using Iqra Quran Academy.</b></p>
+
+      <p><b>Allah Hafiz!</b></p>
+
+    </div>
+
+  </div>
+
+</div>
 <h2>Student Registration</h2>
 
 <p class="subtitle">
@@ -2359,8 +2460,33 @@ function escapeHTML(value){
     .replace(/'/g,"&#039;");
 
 }
+function toggleHowToUse(){
 
+  const info =
+    document.getElementById("fullHowToUse");
+
+  const button =
+    document.querySelector(".learn-more");
+
+  if(info.style.display === "block"){
+
+    info.style.display = "none";
+
+    button.innerText =
+      "Learn More ...";
+
+  }else{
+
+    info.style.display = "block";
+
+    button.innerText =
+      "Show Less ...";
+
+  }
+
+}
 </script>
+  
 
 </body>
 </html>
