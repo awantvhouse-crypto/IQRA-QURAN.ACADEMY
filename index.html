@@ -20,6 +20,90 @@
 >
 
 <style>
+  /* WHAT YOU GET */
+
+.what-you-get{
+  max-width:1100px;
+  margin:0 auto;
+  padding:70px 20px 20px;
+}
+
+.what-you-get h2{
+  font-size:34px;
+  color:#075b3d;
+  margin-bottom:25px;
+}
+
+.get-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.get-card{
+  background:white;
+  border:1px solid #d7e8dc;
+  border-radius:18px;
+  padding:25px 20px;
+  text-align:center;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+  transition:transform .2s ease,
+             box-shadow .2s ease;
+}
+
+.get-card:hover{
+  transform:translateY(-5px);
+
+  box-shadow:
+    0 15px 30px rgba(0,0,0,.08);
+}
+
+.get-icon{
+  width:65px;
+  height:65px;
+  margin:0 auto 15px;
+
+  border-radius:50%;
+
+  background:#eff8f2;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:32px;
+}
+
+.get-card h3{
+  color:#075b3d;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.get-card p{
+  color:#688174;
+  font-size:15px;
+  line-height:1.6;
+}
+
+@media(max-width:800px){
+
+  .get-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .get-grid{
+    grid-template-columns:1fr;
+  }
+
+}
   .how-to-use{
   background:white;
   border:1px solid #d7e8dc;
@@ -845,6 +929,80 @@ Iqra Quran Academy
 </div>
 
 </header>
+  <!-- WHAT YOU GET -->
+
+<section class="what-you-get">
+
+  <h2>What You’ll Get</h2>
+
+  <div class="get-grid">
+
+    <div class="get-card">
+
+      <div class="get-icon">
+        🎓
+      </div>
+
+      <h3>Live Classes</h3>
+
+      <p>
+        Real-time learning experiences
+        with qualified teachers.
+      </p>
+
+    </div>
+
+
+    <div class="get-card">
+
+      <div class="get-icon">
+        🕐
+      </div>
+
+      <h3>Flexible Scheduling</h3>
+
+      <p>
+        Learn with classes that fit
+        your available time.
+      </p>
+
+    </div>
+
+
+    <div class="get-card">
+
+      <div class="get-icon">
+        👤
+      </div>
+
+      <h3>1-on-1 or Group Sessions</h3>
+
+      <p>
+        Choose personalized or group
+        learning sessions.
+      </p>
+
+    </div>
+
+
+    <div class="get-card">
+
+      <div class="get-icon">
+        💻
+      </div>
+
+      <h3>100% Online Access</h3>
+
+      <p>
+        Join your classes from anywhere
+        on any device.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- REGISTRATION -->
 
