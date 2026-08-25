@@ -1,1 +1,1 @@
-# IQRA-QURAN.ACADEMY
+# Iqra quran academy
