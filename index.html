@@ -1833,41 +1833,23 @@ function(event){
       .value
       .trim(),
 
-    address:
-      document
-      .getElementById("studentAddress")
-      .value
-      .trim(),
-    <label>
+   address:
+  document
+  .getElementById("studentAddress")
+  .value
+  .trim(),
 
-Country
+country:
+  document
+  .getElementById("studentCountry")
+  .value
+  .trim(),
 
-<select
-  id="studentCountry"
-  required
->
-
-<option value="">
-Select Country
-</option>
-
-<option>Pakistan</option>
-<option>India</option>
-<option>Bangladesh</option>
-<option>United Arab Emirates</option>
-<option>Saudi Arabia</option>
-<option>United Kingdom</option>
-<option>United States</option>
-<option>Canada</option>
-<option>Australia</option>
-<option>Other</option>
-
-</select>
-
-</label>
-
-    phone:
-      document
+phone:
+  document
+  .getElementById("studentPhone")
+  .value
+  .trim(),      document
       .getElementById("studentPhone")
       .value
       .trim(),
@@ -2102,19 +2084,13 @@ function updateDashboard(
   }
 
 
-  myStudents.forEach(
-    student => {
-      country:
-  document
-  .getElementById(
-    "studentCountry"
-  )
-  .value,
+myStudents.forEach(
+  student => {
 
-      const card =
-        document.createElement(
-          "div"
-        );
+    const card =
+      document.createElement(
+        "div"
+      );
 
 
       card.className =
