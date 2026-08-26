@@ -20,6 +20,361 @@
 >
 
 <style>
+  /* =========================================
+   WHY CHOOSE IQRA QURAN ACADEMY
+========================================= */
+
+#why-choose {
+  padding: 90px 6%;
+  background: #f8faf9;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 65px;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.why-content {
+  width: 100%;
+}
+
+.why-tag {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #198754;
+}
+
+.why-content h2 {
+  margin: 0 0 15px;
+
+  font-size: 42px;
+  line-height: 1.2;
+
+  color: #17352c;
+}
+
+#why-choose .subtitle {
+  max-width: 620px;
+
+  margin: 0 0 32px;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #68756f;
+}
+
+
+/* =========================================
+   WHY POINTS
+========================================= */
+
+.why-points {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  margin-bottom: 35px;
+}
+
+.why-point {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+.why-point .why-icon {
+  min-width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #198754;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.why-point h3 {
+  margin: 0 0 6px;
+
+  font-size: 18px;
+
+  color: #17352c;
+}
+
+.why-point p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: #6c7772;
+}
+
+
+/* =========================================
+   ORIGINAL WHY CARD
+========================================= */
+
+.why-choose-card {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #e4ebe7;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.why-choose-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  border-radius: 12px;
+
+  background: #eaf6ef;
+
+  font-size: 23px;
+}
+
+.why-choose-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+
+  color: #17352c;
+}
+
+.why-short {
+  margin: 0 0 15px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #68756f;
+}
+
+.why-learn {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #198754;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.why-learn:hover {
+  transform: translateY(-2px);
+
+  background: #146c43;
+}
+
+.why-full {
+  display: none;
+
+  margin-top: 20px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5ebe8;
+}
+
+.why-full p {
+  margin: 0 0 15px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #68756f;
+}
+
+.why-full p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.why-image {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.why-image-frame {
+  width: 100%;
+
+  max-width: 500px;
+
+  position: relative;
+}
+
+.why-image-frame img {
+  width: 100%;
+
+  height: 540px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Decorative border behind image */
+
+.why-image-frame::after {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 15px;
+  left: 15px;
+
+  border: 2px solid #198754;
+
+  border-radius: 25px;
+
+  z-index: -1;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .why-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .why-content h2 {
+    font-size: 36px;
+  }
+
+  .why-image {
+    order: 2;
+  }
+
+  .why-image-frame {
+    max-width: 650px;
+  }
+
+  .why-image-frame img {
+    height: 450px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  #why-choose {
+    padding: 65px 5%;
+  }
+
+  .why-content h2 {
+    font-size: 30px;
+  }
+
+  #why-choose .subtitle {
+    font-size: 15px;
+  }
+
+  .why-points {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .why-choose-card {
+    padding: 20px;
+  }
+
+  .why-image-frame img {
+    height: 350px;
+
+    border-radius: 20px;
+  }
+
+  .why-image-frame::after {
+    top: 10px;
+    left: 10px;
+
+    border-radius: 20px;
+  }
+
+}
   .info-card{
   background:white;
   border:1px solid #d7e8dc;
@@ -1580,68 +1935,145 @@ Additional Tajweed option.
 
 <section id="why-choose">
 
-  <h2>Why Choose Iqra Quran Academy?</h2>
+  <div class="why-container">
 
-  <p class="subtitle">
-    Learn Quran with a comfortable, supportive and structured online learning experience.
-  </p>
+    <!-- LEFT SIDE: YOUR CONTENT -->
+    <div class="why-content">
 
-  <div class="why-choose-card">
+      <span class="why-tag">WHY CHOOSE US</span>
 
-    <div class="why-choose-icon">
-      📖
+      <h2>Why Choose Iqra Quran Academy?</h2>
+
+      <p class="subtitle">
+        Learn Quran with a comfortable, supportive and structured
+        online learning experience.
+      </p>
+
+      <div class="why-points">
+
+        <div class="why-point">
+          <div class="why-icon">✓</div>
+          <div>
+            <h3>Expert Quran Tutors</h3>
+            <p>
+              Learn from experienced teachers who focus on
+              correct Quran reading and Tajweed.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point">
+          <div class="why-icon">✓</div>
+          <div>
+            <h3>One-on-One Learning</h3>
+            <p>
+              Personalized online classes where every student
+              receives individual attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point">
+          <div class="why-icon">✓</div>
+          <div>
+            <h3>Flexible Timings</h3>
+            <p>
+              Choose class timings that fit your daily routine
+              and make Quran learning convenient.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point">
+          <div class="why-icon">✓</div>
+          <div>
+            <h3>Learn From Home</h3>
+            <p>
+              Connect with the Quran from the comfort of your
+              home through our online classes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- YOUR ORIGINAL LEARN MORE CONTENT -->
+      <div class="why-choose-card">
+
+        <div class="why-choose-icon">
+          📖
+        </div>
+
+        <h3>About Our Quran Learning</h3>
+
+        <p class="why-short">
+          We are dedicated to providing accessible and meaningful
+          Quranic education for students of different ages and
+          learning levels.
+        </p>
+
+        <button
+          class="why-learn"
+          onclick="toggleWhyChoose()"
+        >
+          Learn More ...
+        </button>
+
+        <div
+          id="whyChooseFull"
+          class="why-full"
+        >
+
+          <p>
+            At Iqra Quran Academy, we are dedicated to enlightening
+            Muslims with the authentic teachings of the Holy Quran.
+            Our Online Quran Academy focuses on delivering Quranic
+            education and Islamic principles in a structured,
+            systematic, and easy-to-understand manner.
+          </p>
+
+          <p>
+            Our mission is to help students learn the Quran with
+            proper Tajweed, ensuring clarity, correctness, and
+            spiritual growth in a comfortable online learning
+            environment.
+          </p>
+
+          <p>
+            We strongly believe in making Quranic education
+            accessible and affordable for everyone. Our classes
+            are designed to support beginners, children, adults,
+            and learners who want to improve their Quran reading,
+            memorisation, and Tajweed skills.
+          </p>
+
+          <p>
+            At Iqra Quran Academy, we strive to create a welcoming
+            and supportive atmosphere where students of all ages
+            can connect with the Quran, strengthen their faith,
+            and grow spiritually — right from the comfort of their
+            homes.
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <h3>Why Choose Iqra Quran Academy?</h3>
 
-    <p class="why-short">
-      We are dedicated to providing accessible and meaningful
-      Quranic education for students of different ages and
-      learning levels.
-    </p>
+    <!-- RIGHT SIDE: YOUR IMAGE -->
+    <div class="why-image">
 
-    <button
-      class="why-learn"
-      onclick="toggleWhyChoose()"
-    >
-      Learn More ...
-    </button>
+      <div class="why-image-frame">
 
-    <div
-      id="whyChooseFull"
-      class="why-full"
-    >
+        <img
+          src="imagesquran-learning.jpg"
+          alt="Student learning Quran online"
+        >
 
-      <p>
-        At Iqra Quran Academy, we are dedicated to enlightening
-        Muslims with the authentic teachings of the Holy Quran.
-        Our Online Quran Academy focuses on delivering Quranic
-        education and Islamic principles in a structured,
-        systematic, and easy-to-understand manner.
-      </p>
-
-      <p>
-        Our mission is to help students learn the Quran with
-        proper Tajweed, ensuring clarity, correctness, and
-        spiritual growth in a comfortable online learning
-        environment.
-      </p>
-
-      <p>
-        We strongly believe in making Quranic education
-        accessible and affordable for everyone. Our classes
-        are designed to support beginners, children, adults,
-        and learners who want to improve their Quran reading,
-        memorisation, and Tajweed skills.
-      </p>
-
-      <p>
-        At Iqra Quran Academy, we strive to create a welcoming
-        and supportive atmosphere where students of all ages
-        can connect with the Quran, strengthen their faith,
-        and grow spiritually — right from the comfort of their
-        homes.
-      </p>
+      </div>
 
     </div>
 
