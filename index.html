@@ -1459,6 +1459,135 @@ footer h3{
   }
 
 }
+  /* =========================================
+   EXPLORE WIDE RANGE OF QURAN COURSES
+========================================= */
+
+#wide-courses{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px 20px;
+}
+
+.wide-courses-title{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 35px;
+}
+
+.wide-courses-title span{
+  display:inline-block;
+  color:#087b51;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+.wide-courses-title h2{
+  color:#075b3d;
+  font-size:34px;
+  line-height:1.3;
+  margin-bottom:12px;
+}
+
+.wide-courses-title p{
+  color:#688174;
+  font-size:16px;
+  line-height:1.7;
+}
+
+.wide-course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.wide-course-card{
+  background:white;
+  border:1px solid #d7e8dc;
+  border-radius:20px;
+  padding:30px 25px;
+  text-align:center;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.wide-course-card:hover{
+  transform:translateY(-7px);
+
+  box-shadow:
+    0 18px 35px rgba(0,0,0,.10);
+}
+
+.wide-course-icon{
+  width:75px;
+  height:75px;
+
+  margin:0 auto 18px;
+
+  border-radius:20px;
+
+  background:#eff8f2;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:40px;
+}
+
+.wide-course-card h3{
+  color:#075b3d;
+  font-size:23px;
+  margin-bottom:10px;
+}
+
+.wide-course-card p{
+  color:#688174;
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.wide-course-button{
+  display:inline-block;
+
+  background:#087b51;
+  color:white;
+
+  padding:10px 18px;
+
+  border-radius:9px;
+
+  text-decoration:none;
+  font-weight:bold;
+
+  transition:.2s;
+}
+
+.wide-course-button:hover{
+  background:#075b3d;
+  transform:translateY(-2px);
+}
+
+
+@media(max-width:800px){
+
+  .wide-course-grid{
+    grid-template-columns:1fr;
+  }
+
+  .wide-courses-title h2{
+    font-size:30px;
+  }
+
+
 </style>
   
 
@@ -1619,6 +1748,94 @@ Iqra Quran Academy
         Join your classes from anywhere
         on any device.
       </p>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- EXPLORE OUR WIDE RANGE OF QURAN AND ISLAMIC COURSES -->
+
+<section id="wide-courses">
+
+  <div class="wide-courses-title">
+    <span>OUR COURSES</span>
+
+    <h2>
+      Explore Our Wide Range of Quran and Islamic Courses
+    </h2>
+
+    <p>
+      Learn the Quran and Islamic knowledge with structured
+      courses designed for students of different ages and levels.
+    </p>
+  </div>
+
+
+  <div class="wide-course-grid">
+
+    <!-- BASIC QAIDA -->
+
+    <div class="wide-course-card">
+
+      <div class="wide-course-icon">
+        📖
+      </div>
+
+      <h3>Basic Qaida</h3>
+
+      <p>
+        Learn the basics of Quran reading from the beginning
+        with proper pronunciation and guidance.
+      </p>
+
+      <a href="#start" class="wide-course-button">
+        Learn More
+      </a>
+
+    </div>
+
+
+    <!-- QURAN READING -->
+
+    <div class="wide-course-card">
+
+      <div class="wide-course-icon">
+        📗
+      </div>
+
+      <h3>Quran Reading</h3>
+
+      <p>
+        Improve your Quran reading skills with proper
+        pronunciation, fluency and regular practice.
+      </p>
+
+      <a href="#start" class="wide-course-button">
+        Learn More
+      </a>
+
+    </div>
+
+
+    <!-- QURAN MEMORIZATION -->
+
+    <div class="wide-course-card">
+
+      <div class="wide-course-icon">
+        🕌
+      </div>
+
+      <h3>Quran Memorization</h3>
+
+      <p>
+        Memorize the Holy Quran step by step with a
+        structured and supportive learning program.
+      </p>
+
+      <a href="#start" class="wide-course-button">
+        Learn More
+      </a>
 
     </div>
 
