@@ -20,6 +20,61 @@
 >
 
 <style>
+  .info-card{
+  background:white;
+  border:1px solid #d7e8dc;
+  border-radius:20px;
+  padding:25px;
+  margin-top:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.info-icon{
+  width:65px;
+  height:65px;
+  border-radius:18px;
+  background:#eff8f2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:35px;
+  margin-bottom:15px;
+}
+
+.info-card h3{
+  color:#075b3d;
+  font-size:25px;
+  margin-bottom:8px;
+}
+
+.info-short{
+  color:#688174;
+  font-size:16px;
+  line-height:1.7;
+}
+
+.info-full{
+  display:none;
+  margin-top:15px;
+  color:#214936;
+  font-size:16px;
+  line-height:1.8;
+}
+
+.info-learn{
+  border:none;
+  background:none;
+  color:#087b51;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  padding:0;
+  margin-top:12px;
+}
+
+.info-learn:hover{
+  text-decoration:underline;
+}
   .package-icon{
   font-size:45px;
   margin-bottom:10px;
@@ -1535,6 +1590,78 @@ Additional Tajweed option.
 </div>
 
 </div>
+
+</section>
+  <!-- WHY CHOOSE IQRA QURAN ACADEMY -->
+
+<section id="why-choose">
+
+  <h2>Why Choose Iqra Quran Academy?</h2>
+
+  <p class="subtitle">
+    Learn Quran with a comfortable, supportive and structured online learning experience.
+  </p>
+
+  <div class="why-choose-card">
+
+    <div class="why-choose-icon">
+      📖
+    </div>
+
+    <h3>Why Choose Iqra Quran Academy?</h3>
+
+    <p class="why-short">
+      We are dedicated to providing accessible and meaningful
+      Quranic education for students of different ages and
+      learning levels.
+    </p>
+
+    <button
+      class="why-learn"
+      onclick="toggleWhyChoose()"
+    >
+      Learn More ...
+    </button>
+
+    <div
+      id="whyChooseFull"
+      class="why-full"
+    >
+
+      <p>
+        At Iqra Quran Academy, we are dedicated to enlightening
+        Muslims with the authentic teachings of the Holy Quran.
+        Our Online Quran Academy focuses on delivering Quranic
+        education and Islamic principles in a structured,
+        systematic, and easy-to-understand manner.
+      </p>
+
+      <p>
+        Our mission is to help students learn the Quran with
+        proper Tajweed, ensuring clarity, correctness, and
+        spiritual growth in a comfortable online learning
+        environment.
+      </p>
+
+      <p>
+        We strongly believe in making Quranic education
+        accessible and affordable for everyone. Our classes
+        are designed to support beginners, children, adults,
+        and learners who want to improve their Quran reading,
+        memorisation, and Tajweed skills.
+      </p>
+
+      <p>
+        At Iqra Quran Academy, we strive to create a welcoming
+        and supportive atmosphere where students of all ages
+        can connect with the Quran, strengthen their faith,
+        and grow spiritually — right from the comfort of their
+        homes.
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
   <!-- ONLINE QURAN PACKAGES -->
@@ -3225,6 +3352,31 @@ function toggleHowToUse(){
 
   const button =
     document.querySelector(".learn-more");
+
+  if(info.style.display === "block"){
+
+    info.style.display = "none";
+
+    button.innerText =
+      "Learn More ...";
+
+  }else{
+
+    info.style.display = "block";
+
+    button.innerText =
+      "Show Less ...";
+
+  }
+
+}
+  function toggleAcademyInfo(){
+
+  const info =
+    document.getElementById("academyInfo");
+
+  const button =
+    document.querySelector(".info-learn");
 
   if(info.style.display === "block"){
 
