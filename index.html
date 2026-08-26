@@ -2542,6 +2542,29 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
 </footer>
 
 <script>
+  function toggleWhyChoose(){
+
+  const info =
+    document.getElementById("whyChooseFull");
+
+  const button =
+    document.querySelector(".why-learn");
+
+  if(info.style.display === "block"){
+
+    info.style.display = "none";
+
+    button.innerText = "Learn More ...";
+
+  }else{
+
+    info.style.display = "block";
+
+    button.innerText = "Show Less ...";
+
+  }
+
+}
 
 /* ================================
    STUDENT STORAGE
