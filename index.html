@@ -1942,25 +1942,7 @@ placeholder="School name"
 
 </label>
 
-<label>
-Country
 
-<select id="studentCountry" required onchange="updateCourses()">
-
-<option value="">Select Country</option>
-
-<option value="PK">🇵🇰 Pakistan (PK)</option>
-<option value="AE">🇦🇪 UAE (AE)</option>
-<option value="SA">🇸🇦 Saudi Arabia (SA)</option>
-<option value="US">🇺🇸 USA (US)</option>
-<option value="GB">🇬🇧 United Kingdom (GB)</option>
-<option value="CA">🇨🇦 Canada (CA)</option>
-
-</select>
-
-</label>
-
-<label>
 Address
 
 <input
@@ -1983,50 +1965,93 @@ required
 
 </label>
 
-<label>
-Select Country / Package
 
-<select id="studentPackage" required onchange="updateCourses()">
-
-<option value="">Select Country</option>
-
-<option value="PK">🇵🇰 PK — Pakistan — Rs. 10,000 / month</option>
-<option value="SA">🇸🇦 SA — Saudi Arabia — SAR 338.20 / month</option>
-<option value="CA">🇨🇦 CA — Canada — $90 / month</option>
-<option value="AE">🇦🇪 AE — UAE — AED 330.75 / month</option>
-<option value="GB">🇬🇧 GB — United Kingdom — £70 / month</option>
-<option value="US">🇺🇸 US — United States — $90 / month</option>
-
-</select>
-
-</label>
 
 
 <label>
 Select Course
 
-<select id="studentCourse" required>
+<select id="studentCourse" required onchange="updateCourseSelection()">
 
-<option value="">First Select Country</option>
+  <option value="">Select Course</option>
+
+  <optgroup label="🇵🇰 PK — Pakistan — Rs. 10,000 / month">
+    <option value="PK|Hifz|Rs. 10,000 / month">
+      Hifz
+    </option>
+    <option value="PK|Nazra|Rs. 10,000 / month">
+      Nazra
+    </option>
+    <option value="PK|Tajweed|Rs. 10,000 / month">
+      Tajweed
+    </option>
+  </optgroup>
+
+  <optgroup label="🇦🇪 AE — UAE — AED 330.75 / month">
+    <option value="AE|Hifz|AED 330.75 / month">
+      Hifz
+    </option>
+    <option value="AE|Nazra|AED 330.75 / month">
+      Nazra
+    </option>
+    <option value="AE|Tajweed|AED 330.75 / month">
+      Tajweed
+    </option>
+  </optgroup>
+
+  <optgroup label="🇸🇦 SA — Saudi Arabia — SAR 338.20 / month">
+    <option value="SA|Hifz|SAR 338.20 / month">
+      Hifz
+    </option>
+    <option value="SA|Nazra|SAR 338.20 / month">
+      Nazra
+    </option>
+    <option value="SA|Tajweed|SAR 338.20 / month">
+      Tajweed
+    </option>
+  </optgroup>
+
+  <optgroup label="🇺🇸 US — United States — $90 / month">
+    <option value="US|Hifz|$90 / month">
+      Hifz
+    </option>
+    <option value="US|Nazra|$90 / month">
+      Nazra
+    </option>
+    <option value="US|Tajweed|$90 / month">
+      Tajweed
+    </option>
+  </optgroup>
+
+  <optgroup label="🇬🇧 GB — United Kingdom — £70 / month">
+    <option value="GB|Hifz|£70 / month">
+      Hifz
+    </option>
+    <option value="GB|Nazra|£70 / month">
+      Nazra
+    </option>
+    <option value="GB|Tajweed|£70 / month">
+      Tajweed
+    </option>
+  </optgroup>
+
+  <optgroup label="🇨🇦 CA — Canada — $90 / month">
+    <option value="CA|Hifz|$90 / month">
+      Hifz
+    </option>
+    <option value="CA|Nazra|$90 / month">
+      Nazra
+    </option>
+    <option value="CA|Tajweed|$90 / month">
+      Tajweed
+    </option>
+  </optgroup>
 
 </select>
 
 </label>
 
 
-<div id="selectedPrice" class="notice"></div>
-
-
-<label>
-Select Subject
-
-<select id="studentCourse" required>
-
-<option value="">First Select Country</option>
-
-</select>
-
-</label>
 
 <label>
 Teacher
