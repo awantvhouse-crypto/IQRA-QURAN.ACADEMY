@@ -1945,25 +1945,16 @@ placeholder="School name"
 <label>
 Country
 
-<select
-id="studentCountry"
-required
->
+<select id="studentCountry" required onchange="updateCourses()">
 
-<option value="">
-Select Country
-</option>
+<option value="">Select Country</option>
 
-<option>Pakistan</option>
-<option>India</option>
-<option>Bangladesh</option>
-<option>United Arab Emirates</option>
-<option>Saudi Arabia</option>
-<option>United Kingdom</option>
-<option>United States</option>
-<option>Canada</option>
-<option>Australia</option>
-<option>Other</option>
+<option value="PK">🇵🇰 Pakistan (PK)</option>
+<option value="AE">🇦🇪 UAE (AE)</option>
+<option value="SA">🇸🇦 Saudi Arabia (SA)</option>
+<option value="US">🇺🇸 USA (US)</option>
+<option value="GB">🇬🇧 United Kingdom (GB)</option>
+<option value="CA">🇨🇦 Canada (CA)</option>
 
 </select>
 
@@ -1993,18 +1984,30 @@ required
 </label>
 
 <label>
-Select Country
+Select Country / Package
 
 <select id="studentPackage" required onchange="showSubjects()">
 
-<option value="">Select Course</option>
+<option value="">Select Country</option>
 
 <option value="PK">🇵🇰 PK - Pakistan</option>
-<option value="AE">🇦🇪 AE - Dubai / UAE</option>
+<option value="AE">🇦🇪 AE - UAE</option>
 <option value="SA">🇸🇦 SA - Saudi Arabia</option>
 <option value="US">🇺🇸 US - United States</option>
 <option value="GB">🇬🇧 GB - United Kingdom</option>
 <option value="CA">🇨🇦 CA - Canada</option>
+
+</select>
+
+</label>
+
+
+<label>
+Select Course
+
+<select id="studentCourse" required>
+
+<option value="">First Select Country</option>
 
 </select>
 
