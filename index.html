@@ -1986,16 +1986,16 @@ required
 <label>
 Select Country / Package
 
-<select id="studentPackage" required onchange="showSubjects()">
+<select id="studentPackage" required onchange="updateCourses()">
 
 <option value="">Select Country</option>
 
-<option value="PK">🇵🇰 PK - Pakistan</option>
-<option value="AE">🇦🇪 AE - UAE</option>
-<option value="SA">🇸🇦 SA - Saudi Arabia</option>
-<option value="US">🇺🇸 US - United States</option>
-<option value="GB">🇬🇧 GB - United Kingdom</option>
-<option value="CA">🇨🇦 CA - Canada</option>
+<option value="PK">🇵🇰 PK — Pakistan — Rs. 10,000 / month</option>
+<option value="SA">🇸🇦 SA — Saudi Arabia — SAR 338.20 / month</option>
+<option value="CA">🇨🇦 CA — Canada — $90 / month</option>
+<option value="AE">🇦🇪 AE — UAE — AED 330.75 / month</option>
+<option value="GB">🇬🇧 GB — United Kingdom — £70 / month</option>
+<option value="US">🇺🇸 US — United States — $90 / month</option>
 
 </select>
 
@@ -2012,6 +2012,9 @@ Select Course
 </select>
 
 </label>
+
+
+<div id="selectedPrice" class="notice"></div>
 
 
 <label>
@@ -4120,62 +4123,76 @@ function toggleHowToUse(){
   }
 
 }
-  function showSubjects(){
+  function updateCourses(){
 
-  const selected =
+  const country =
     document.getElementById("studentPackage").value;
 
-  const subjectSelect =
+  const courseSelect =
     document.getElementById("studentCourse");
+
+  const priceBox =
+    document.getElementById("selectedPrice");
 
 
   const prices = {
 
     PK: "Rs. 10,000 / month",
 
-    AE: "AED 330.75 / month",
-
     SA: "SAR 338.20 / month",
 
-    US: "$90 / month",
+    CA: "$90 / month",
+
+    AE: "AED 330.75 / month",
 
     GB: "£70 / month",
 
-    CA: "$90 / month"
+    US: "$90 / month"
 
   };
 
 
-  subjectSelect.innerHTML =
-    '<option value="">Select Subject</option>';
+  courseSelect.innerHTML =
+    '<option value="">Select Course</option>';
+
+  priceBox.style.display = "none";
 
 
-  if(!selected){
+  if(!country){
+
+    courseSelect.innerHTML =
+      '<option value="">First Select Country</option>';
+
     return;
+
   }
 
 
-  const subjects = [
+  const courses = [
     "Hifz",
     "Nazra",
     "Tajweed"
   ];
 
 
-  subjects.forEach(function(subject){
+  courses.forEach(function(course){
 
     const option =
       document.createElement("option");
 
-    option.value =
-      subject;
+    option.value = course;
 
-    option.textContent =
-      subject + " — " + prices[selected];
+    option.textContent = course;
 
-    subjectSelect.appendChild(option);
+    courseSelect.appendChild(option);
 
   });
+
+
+  priceBox.style.display = "block";
+
+  priceBox.innerText =
+    "Monthly Fee: " + prices[country];
 
 }
 </script>
