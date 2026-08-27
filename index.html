@@ -3931,67 +3931,57 @@ function showPaymentMessage(){
 function sendStudentToTeacher(){
 
   const name =
-    document
-    .getElementById("studentName")
-    .value
-    .trim();
-
+    document.getElementById("studentName").value.trim();
 
   const father =
-    document
-    .getElementById("fatherName")
-    .value
-    .trim();
-
+    document.getElementById("fatherName").value.trim();
 
   const age =
-    document
-    .getElementById("studentAge")
-    .value
-    .trim();
-
+    document.getElementById("studentAge").value.trim();
 
   const school =
-    document
-    .getElementById("schoolName")
-    .value
-    .trim();
+    document.getElementById("schoolName").value.trim();
 
-
-  const country =
-    document
-    .getElementById("studentCountry")
-    .value
-    .trim();
-
+  const courseValue =
+    document.getElementById("studentCourse").value;
 
   const address =
-    document
-    .getElementById("studentAddress")
-    .value
-    .trim();
-
+    document.getElementById("studentAddress").value.trim();
 
   const phone =
-    document
-    .getElementById("studentPhone")
-    .value
-    .trim();
-
-
-  const course =
-    document
-    .getElementById("studentCourse")
-    .value;
-
+    document.getElementById("studentPhone").value.trim();
 
   const teacher =
-    document
-    .getElementById("studentTeacher")
-    .value;
+    document.getElementById("studentTeacher").value;
 
 
-  /* CHECK REQUIRED FIELDS */
+  /* COURSE DATA */
+
+  if(!courseValue){
+
+    alert(
+      "Please select a country and course first."
+    );
+
+    return;
+
+  }
+
+
+  const courseData =
+    courseValue.split("|");
+
+  const country =
+    courseData[0];
+
+  const course =
+    courseData[1];
+
+  const price =
+    courseData[2];
+
+
+  /* REQUIRED FIELDS */
 
   if(
     !name ||
@@ -4043,7 +4033,7 @@ function sendStudentToTeacher(){
   }
 
 
-  /* MESSAGE */
+  /* WHATSAPP MESSAGE */
 
   const message =
 `Assalam-o-Alaikum,
@@ -4055,26 +4045,23 @@ Father Name: ${father}
 Age: ${age}
 School: ${school}
 Country: ${country}
+Course: ${course}
+Price: ${price}
 Address: ${address}
 Phone: ${phone}
-Course: ${course}
 Teacher: ${teacher}
 
 Iqra Quran Academy`;
 
 
-  /* WHATSAPP URL */
+  /* WHATSAPP */
 
   const whatsappURL =
     "https://wa.me/" +
     teacherNumber +
     "?text=" +
-    encodeURIComponent(
-      message
-    );
+    encodeURIComponent(message);
 
-
-  /* OPEN WHATSAPP */
 
   window.open(
     whatsappURL,
