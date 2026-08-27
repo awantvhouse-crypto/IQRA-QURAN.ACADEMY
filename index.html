@@ -2116,9 +2116,9 @@ type="submit"
 <button
 type="button"
 class="green-button full"
-onclick="sendStudentToTeacher()"
+onclick="registerAndSendStudent()"
 >
-📱 Send 
+📱 Send Registration
 </button>
 
 </form>
@@ -3297,6 +3297,84 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
 </footer>
 
 <script>
+  function registerAndSendStudent(){
+
+  const form = document.getElementById("studentForm");
+
+  if(!form.checkValidity()){
+    form.reportValidity();
+    return;
+  }
+
+  const name =
+    document.getElementById("studentName").value.trim();
+
+  const father =
+    document.getElementById("fatherName").value.trim();
+
+  const age =
+    document.getElementById("studentAge").value.trim();
+
+  const school =
+    document.getElementById("schoolName").value.trim();
+
+  const address =
+    document.getElementById("studentAddress").value.trim();
+
+  const phone =
+    document.getElementById("studentPhone").value.trim();
+
+  const courseValue =
+    document.getElementById("studentCourse").value;
+
+  const teacher =
+    document.getElementById("studentTeacher").value;
+
+  if(!courseValue || !teacher){
+    alert("Please select course and teacher first.");
+    return;
+  }
+
+  const courseData = courseValue.split("|");
+
+  const country = courseData[0];
+  const course = courseData[1];
+  const price = courseData[2];
+
+  const student = {
+
+    id: Date.now(),
+
+    name:name,
+    father:father,
+    age:age,
+    school:school,
+    country:country,
+    address:address,
+    phone:phone,
+    course:courseValue,
+    teacher:teacher
+
+  };
+
+  students.push(student);
+
+  localStorage.setItem(
+    "iqraStudents",
+    JSON.stringify(students)
+  );
+
+  document.getElementById("studentCreated").style.display = "block";
+
+  document.getElementById("studentCreated").innerText =
+    "Registration successful! Sending your profile to " +
+    teacher + "...";
+
+  updateDashboard(teacher);
+
+  sendStudentToTeacher();
+
+}
   function toggleWhyChoose(){
 
   const info =
@@ -3422,11 +3500,11 @@ function(event){
       .value
       .trim(),
 
-    country:
-      document
-      .getElementById("studentCountry")
-      .value
-      .trim(),
+   country:
+  document
+  .getElementById("studentCourse")
+  .value
+  .split("|")[0],
 
     address:
       document
