@@ -1,499 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Iqra Quran Academy | Online Quran Learning</title>
 
-<meta
-  name="description"
-  content="Iqra Quran Academy - Online Quran learning, Hifz, Nazra and Tajweed classes."
->
+<meta name="description"
+content="Iqra Quran Academy - Online Quran learning, Hifz, Nazra and Tajweed classes.">
 
-<link
-  rel="icon"
-  type="image/png"
-  href="g.png"
->
+<link rel="icon" type="image/png" href="g.png">
 
 <style>
 
-/* =========================================
-   HERO GREEN BUTTON
-========================================= */
+/* =====================================================
+   IQRA QURAN ACADEMY — MODERN ISLAMIC DESIGN
+===================================================== */
 
-.hero-green-button{
-  display:inline-block;
-  background:#087b51;
-  color:white;
-  padding:13px 22px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-  border:2px solid rgba(255,255,255,.3);
-  transition:.2s;
+:root{
+  --green:#087b51;
+  --green-dark:#075b3d;
+  --green-deep:#043d2c;
+  --green-light:#edf8f2;
+  --gold:#f4d66f;
+  --gold-dark:#d4ae3f;
+  --white:#fff;
+  --cream:#f8fbf9;
+  --text:#173d2b;
+  --muted:#687970;
+  --border:#dceae2;
+  --shadow:0 12px 35px rgba(4,61,44,.08);
+  --shadow-hover:0 20px 45px rgba(4,61,44,.14);
+  --radius:20px;
 }
-
-.hero-green-button:hover{
-  background:#075b3d;
-  transform:translateY(-2px);
-}
-
-
-/* =========================================
-   WHY CHOOSE IQRA QURAN ACADEMY
-========================================= */
-
-#why-choose {
-  padding: 90px 6%;
-  background: #f8faf9;
-}
-
-.why-container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 65px;
-
-  align-items: center;
-}
-
-.why-content {
-  width: 100%;
-}
-
-.why-tag {
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #198754;
-}
-
-.why-content h2 {
-  margin: 0 0 15px;
-  font-size: 42px;
-  line-height: 1.2;
-  color: #17352c;
-}
-
-#why-choose .subtitle {
-  max-width: 620px;
-  margin: 0 0 32px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #68756f;
-}
-
-.why-points {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-bottom: 35px;
-}
-
-.why-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 13px;
-}
-
-.why-point .why-icon {
-  min-width: 34px;
-  height: 34px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: #198754;
-  color: #ffffff;
-
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.why-point h3 {
-  margin: 0 0 6px;
-  font-size: 18px;
-  color: #17352c;
-}
-
-.why-point p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #6c7772;
-}
-
-.why-choose-card {
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #e4ebe7;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
-
-.why-choose-icon {
-  width: 45px;
-  height: 45px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 12px;
-
-  border-radius: 12px;
-  background: #eaf6ef;
-
-  font-size: 23px;
-}
-
-.why-choose-card h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-  color: #17352c;
-}
-
-.why-short {
-  margin: 0 0 15px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #68756f;
-}
-
-.why-learn {
-  padding: 10px 18px;
-
-  border: none;
-  border-radius: 8px;
-
-  background: #198754;
-  color: white;
-
-  font-size: 14px;
-  font-weight: 600;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.why-learn:hover {
-  transform: translateY(-2px);
-  background: #146c43;
-}
-
-.why-full {
-  display: none;
-
-  margin-top: 20px;
-  padding-top: 18px;
-
-  border-top: 1px solid #e5ebe8;
-}
-
-.why-full p {
-  margin: 0 0 15px;
-
-  font-size: 14px;
-  line-height: 1.8;
-  color: #68756f;
-}
-
-.why-full p:last-child {
-  margin-bottom: 0;
-}
-
-.why-image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.why-image-frame {
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-}
-
-.why-image-frame img {
-  width: 100%;
-  height: 540px;
-
-  object-fit: cover;
-  display: block;
-
-  border-radius: 25px;
-
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-.why-image-frame::after {
-  content: "";
-
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-
-  top: 15px;
-  left: 15px;
-
-  border: 2px solid #198754;
-  border-radius: 25px;
-
-  z-index: -1;
-}
-
-
-/* =========================================
-   ACADEMY INFO
-========================================= */
-
-.info-card{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:20px;
-  padding:25px;
-  margin-top:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.info-icon{
-  width:65px;
-  height:65px;
-  border-radius:18px;
-  background:#eff8f2;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:35px;
-  margin-bottom:15px;
-}
-
-.info-card h3{
-  color:#075b3d;
-  font-size:25px;
-  margin-bottom:8px;
-}
-
-.info-short{
-  color:#688174;
-  font-size:16px;
-  line-height:1.7;
-}
-
-.info-full{
-  display:none;
-  margin-top:15px;
-  color:#214936;
-  font-size:16px;
-  line-height:1.8;
-}
-
-.info-learn{
-  border:none;
-  background:none;
-  color:#087b51;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
-  padding:0;
-  margin-top:12px;
-}
-
-.info-learn:hover{
-  text-decoration:underline;
-}
-
-
-/* =========================================
-   PACKAGE SUBJECTS
-========================================= */
-
-.package-icon{
-  font-size:45px;
-  margin-bottom:10px;
-}
-
-.package-subjects{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin:20px 0;
-}
-
-.package-subjects div{
-  background:#eff8f2;
-  border:1px solid #d7e8dc;
-  border-radius:12px;
-  padding:13px 8px;
-  color:#075b3d;
-  font-size:17px;
-  font-weight:bold;
-  line-height:1.4;
-}
-
-
-/* =========================================
-   FOLLOW US
-========================================= */
-
-.follow-us{
-  max-width:1100px;
-  margin:0 auto;
-  padding:60px 20px 20px;
-  text-align:center;
-}
-
-.follow-us h2{
-  font-size:34px;
-  color:#075b3d;
-  margin-bottom:10px;
-}
-
-.follow-us p{
-  color:#688174;
-  margin-bottom:25px;
-}
-
-.social-links{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.social-link{
-  width:55px;
-  height:55px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:50%;
-
-  text-decoration:none;
-  font-size:25px;
-
-  box-shadow:0 8px 20px rgba(0,0,0,.06);
-
-  transition:.2s;
-}
-
-.social-link:hover{
-  transform:translateY(-4px);
-}
-
-
-/* =========================================
-   WHAT YOU GET
-========================================= */
-
-.what-you-get{
-  max-width:1100px;
-  margin:0 auto;
-  padding:70px 20px 20px;
-}
-
-.what-you-get h2{
-  font-size:34px;
-  color:#075b3d;
-  margin-bottom:25px;
-}
-
-.get-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.get-card{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:18px;
-  padding:25px 20px;
-  text-align:center;
-
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.05);
-
-  transition:transform .2s ease,
-             box-shadow .2s ease;
-}
-
-.get-card:hover{
-  transform:translateY(-5px);
-
-  box-shadow:
-    0 15px 30px rgba(0,0,0,.08);
-}
-
-.get-icon{
-  width:65px;
-  height:65px;
-  margin:0 auto 15px;
-
-  border-radius:50%;
-  background:#eff8f2;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:32px;
-}
-
-.get-card h3{
-  color:#075b3d;
-  font-size:20px;
-  margin-bottom:8px;
-}
-
-.get-card p{
-  color:#688174;
-  font-size:15px;
-  line-height:1.6;
-}
-
-
-/* =========================================
-   HOW TO USE
-========================================= */
-
-.how-to-use{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:20px;
-  padding:25px;
-  margin-bottom:30px;
-
-  display:flex;
-  align-items:flex-start;
-  gap:20px;
-
-  box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-
-/* =========================================
-   GLOBAL
-========================================= */
 
 *{
   box-sizing:border-box;
@@ -506,42 +45,85 @@ html{
 }
 
 body{
-  font-family:Arial,sans-serif;
-  color:#173d2b;
-  background:#edf7f0;
-  line-height:1.6;
+  font-family:Inter,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 90% 5%,rgba(244,214,111,.10),transparent 25%),
+    var(--cream);
+  line-height:1.65;
 }
 
+a{
+  color:inherit;
+}
 
-/* =========================================
+button,
+input,
+select{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+/* =====================================================
    HEADER
-========================================= */
+===================================================== */
 
 header{
   min-height:700px;
+  color:white;
+  position:relative;
+  overflow:hidden;
 
   background:
-    linear-gradient(
-      rgba(3,58,39,.78),
-      rgba(3,88,57,.82)
-    ),
+    linear-gradient(135deg,rgba(3,61,44,.94),rgba(8,123,81,.86)),
     url("g.png");
 
   background-size:cover;
   background-position:center;
+}
 
-  color:white;
+header:before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  border:1px solid rgba(244,214,111,.14);
+  border-radius:50%;
+  right:-230px;
+  top:-230px;
+  box-shadow:
+    0 0 0 50px rgba(244,214,111,.025),
+    0 0 0 100px rgba(244,214,111,.018);
+}
+
+header:after{
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:50%;
+  left:-170px;
+  bottom:-180px;
 }
 
 .navbar{
-  max-width:1150px;
+  max-width:1180px;
   margin:auto;
-  padding:18px 20px;
+  padding:16px 20px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:20px;
+  gap:25px;
+
+  position:relative;
+  z-index:5;
+
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .brand{
@@ -551,13 +133,14 @@ header{
 }
 
 .logo{
-  width:68px;
-  height:68px;
+  width:62px;
+  height:62px;
   border-radius:50%;
   overflow:hidden;
-  border:3px solid #f5dc79;
-  background:#07583c;
+  border:3px solid var(--gold);
+  background:var(--green-dark);
   flex-shrink:0;
+  box-shadow:0 5px 20px rgba(0,0,0,.18);
 }
 
 .logo img{
@@ -567,83 +150,104 @@ header{
 }
 
 .brand h1{
-  font-size:23px;
+  color:white;
+  font-size:21px;
+  line-height:1.2;
 }
 
 .brand small{
-  color:#e9f5ed;
+  color:#d9eee3;
+  font-size:12px;
 }
 
 nav{
   display:flex;
   flex-wrap:wrap;
-  gap:16px;
+  gap:5px;
 }
 
 nav a{
-  color:white;
+  color:rgba(255,255,255,.9);
   text-decoration:none;
-  font-weight:bold;
+  font-size:14px;
+  font-weight:700;
+  padding:9px 13px;
+  border-radius:11px;
+  transition:.25s;
 }
 
 nav a:hover{
-  color:#f5dc79;
+  color:white;
+  background:rgba(255,255,255,.11);
 }
 
-
-/* =========================================
+/* =====================================================
    HERO
-========================================= */
+===================================================== */
 
 .hero{
-  max-width:1150px;
-  margin:90px auto 0;
-  padding:20px;
+  max-width:1180px;
+  margin:65px auto 0;
+  padding:30px 20px;
 
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:45px;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
   align-items:center;
+
+  position:relative;
+  z-index:2;
 }
 
 .hero-text h2{
-  font-size:52px;
-  line-height:1.15;
+  color:white;
+  font-size:clamp(42px,5vw,62px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
   margin-bottom:20px;
 }
 
 .hero-text p{
-  font-size:18px;
-  max-width:570px;
-  margin-bottom:28px;
+  color:rgba(255,255,255,.84);
+  font-size:17px;
+  max-width:580px;
+  margin-bottom:27px;
 }
 
-.button{
-  display:inline-block;
+.hero-green-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
 
-  background:#f4d66f;
+  background:linear-gradient(135deg,var(--gold),#d9b94d);
   color:#173d2b;
 
-  border:none;
-  border-radius:10px;
-
-  padding:12px 20px;
-
-  font-weight:bold;
+  padding:13px 22px;
+  border-radius:12px;
   text-decoration:none;
+  font-weight:800;
 
-  cursor:pointer;
+  border:1px solid rgba(255,255,255,.3);
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+  transition:.25s;
 }
 
-.button:hover{
-  opacity:.9;
+.hero-green-button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.hero-students{
+  margin-top:15px!important;
+  font-size:13px!important;
+  color:rgba(255,255,255,.68)!important;
 }
 
 .quran-scene{
-  min-height:360px;
+  min-height:390px;
 
-  border-radius:30px;
-
+  border-radius:28px;
   position:relative;
   overflow:hidden;
 
@@ -651,99 +255,246 @@ nav a:hover{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-
   text-align:center;
 
   background:
-    linear-gradient(
-      rgba(80,170,196,.55),
-      rgba(225,241,221,.65)
-    ),
+    linear-gradient(rgba(8,123,81,.30),rgba(3,61,44,.42)),
     url("g.png");
 
   background-size:cover;
   background-position:center;
 
-  border:2px solid rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.35);
 
-  box-shadow:
-    0 20px 50px rgba(0,0,0,.25);
+  box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+  animation:floatScene 5s ease-in-out infinite;
+}
+
+.quran-scene:before{
+  content:"";
+  position:absolute;
+  inset:15px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:22px;
 }
 
 .moon{
-  font-size:125px;
-  color:#fff0a4;
+  font-size:120px;
   line-height:1;
-
-  text-shadow:
-    0 5px 15px rgba(0,0,0,.25);
+  color:#fff0a4;
+  text-shadow:0 7px 20px rgba(0,0,0,.25);
 }
 
 .quran-icon{
-  font-size:80px;
-  margin-top:-15px;
-
-  filter:
-    drop-shadow(
-      0 8px 5px rgba(0,0,0,.25)
-    );
+  font-size:75px;
+  margin-top:-12px;
+  filter:drop-shadow(0 8px 6px rgba(0,0,0,.25));
 }
 
 .quran-scene h3{
+  color:white;
   margin-top:10px;
   font-size:20px;
-  color:#fff;
 }
 
 .quran-scene p{
   color:white;
   font-weight:bold;
+  font-size:14px;
+  margin:0;
 }
 
+@keyframes floatScene{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
 
-/* =========================================
+/* =====================================================
    SECTIONS
-========================================= */
+===================================================== */
 
 section{
   max-width:1100px;
   margin:auto;
-  padding:70px 20px 10px;
+  padding:75px 20px 10px;
 }
 
 section h2{
+  color:var(--green-dark);
   font-size:34px;
-  color:#075b3d;
+  line-height:1.25;
   margin-bottom:8px;
 }
 
+section h2:after{
+  content:"";
+  display:block;
+  width:48px;
+  height:4px;
+  margin-top:12px;
+  border-radius:20px;
+  background:linear-gradient(90deg,var(--green),var(--gold));
+}
+
 .subtitle{
-  color:#688174;
+  color:var(--muted);
   margin-bottom:25px;
 }
 
+/* =====================================================
+   GENERAL CARDS
+===================================================== */
 
-/* =========================================
-   CARD
-========================================= */
+.card,
+.course,
+.teacher,
+.payment,
+.testimonial,
+.package,
+.wide-course-card,
+.get-card,
+.info-card,
+.why-choose-card{
+  background:rgba(255,255,255,.97);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 
-.card{
-  background:white;
-
-  border:1px solid #d7e8dc;
-
-  border-radius:20px;
-
-  padding:25px;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.06);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
 }
 
+.card:hover,
+.course:hover,
+.teacher:hover,
+.payment:hover,
+.testimonial:hover,
+.package:hover,
+.wide-course-card:hover,
+.get-card:hover,
+.info-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-hover);
+  border-color:#bcd9ca;
+}
 
-/* =========================================
-   FORM
-========================================= */
+/* =====================================================
+   WHAT YOU GET
+===================================================== */
+
+.what-you-get{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 20px 20px;
+}
+
+.what-you-get h2{
+  font-size:34px;
+  color:var(--green-dark);
+  margin-bottom:28px;
+}
+
+.get-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.get-card{
+  padding:28px 20px;
+  text-align:center;
+}
+
+.get-icon{
+  width:68px;
+  height:68px;
+  margin:0 auto 16px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:20px;
+  background:var(--green-light);
+  font-size:31px;
+
+  border:1px solid #d5eade;
+}
+
+.get-card h3{
+  color:var(--green-dark);
+  font-size:19px;
+  margin-bottom:8px;
+}
+
+.get-card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =====================================================
+   ACADEMY INFO
+===================================================== */
+
+.info-card{
+  padding:30px;
+  margin-top:20px;
+}
+
+.info-icon{
+  width:65px;
+  height:65px;
+
+  border-radius:18px;
+  background:var(--green-light);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:34px;
+  margin-bottom:16px;
+}
+
+.info-card h3{
+  color:var(--green-dark);
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+.info-short{
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.8;
+  margin-bottom:12px;
+}
+
+.info-full{
+  display:none;
+  margin-top:15px;
+  color:#214936;
+  font-size:15px;
+  line-height:1.8;
+}
+
+.info-learn{
+  border:none;
+  background:none;
+  color:var(--green);
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+.card{
+  padding:30px;
+}
 
 form{
   display:grid;
@@ -752,7 +503,7 @@ form{
 }
 
 label{
-  font-weight:bold;
+  font-weight:700;
   color:#214936;
   font-size:14px;
 }
@@ -760,59 +511,96 @@ label{
 input,
 select{
   width:100%;
-
   margin-top:7px;
+  padding:13px 14px;
 
-  padding:13px;
+  border:1px solid #cfe0d6;
+  border-radius:11px;
 
-  border:1px solid #cbded2;
+  background:#fcfefd;
+  color:var(--text);
 
-  border-radius:9px;
-
-  background:white;
-
-  font-size:15px;
+  transition:.2s;
 }
 
 input:focus,
 select:focus{
   outline:none;
-
-  border-color:#087b51;
-
-  box-shadow:
-    0 0 0 3px rgba(8,123,81,.1);
+  border-color:var(--green);
+  box-shadow:0 0 0 4px rgba(8,123,81,.09);
+  background:white;
 }
 
 .full{
   grid-column:1/-1;
 }
 
+/* =====================================================
+   BUTTONS
+===================================================== */
 
-/* =========================================
+.button,
+.green-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  background:linear-gradient(135deg,var(--green),#096443);
+  color:white;
+
+  border:none;
+  border-radius:11px;
+
+  padding:11px 17px;
+
+  font-weight:800;
+  text-decoration:none;
+
+  box-shadow:0 7px 18px rgba(8,123,81,.15);
+
+  transition:.25s;
+}
+
+.button:hover,
+.green-button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 11px 24px rgba(8,123,81,.22);
+}
+
+/* =====================================================
    NOTICE
-========================================= */
+===================================================== */
 
 .notice{
   display:none;
-
   margin-top:18px;
+  padding:15px 17px;
 
-  padding:14px;
-
-  background:#def4e6;
-
+  background:#e5f6eb;
   color:#145536;
 
-  border-radius:10px;
+  border:1px solid #c8e8d2;
+  border-left:4px solid var(--green);
 
-  font-weight:bold;
+  border-radius:11px;
+  font-weight:700;
 }
 
+.security-notice{
+  margin-top:17px;
+  padding:13px 15px;
 
-/* =========================================
+  border-radius:11px;
+  background:#fff9e7;
+  border:1px solid #ead58b;
+  color:#705c12;
+
+  font-size:13px;
+}
+
+/* =====================================================
    COURSES
-========================================= */
+===================================================== */
 
 .courses{
   display:grid;
@@ -821,357 +609,292 @@ select:focus{
 }
 
 .course{
-  background:white;
-
-  border-radius:18px;
-
-  padding:25px;
-
+  padding:28px 23px;
   text-align:center;
-
-  border:1px solid #d7e8dc;
-
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.05);
 }
 
 .course-icon{
-  font-size:45px;
-  margin-bottom:10px;
+  width:68px;
+  height:68px;
+  margin:0 auto 14px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:var(--green-light);
+  border-radius:18px;
+  font-size:38px;
 }
 
 .course h3{
-  font-size:22px;
-  margin-bottom:8px;
+  color:var(--green-dark);
+  font-size:21px;
+}
+
+.course p{
+  color:var(--muted);
+  font-size:14px;
 }
 
 .price{
   display:block;
-
-  color:#087b51;
-
-  font-size:28px;
-
-  font-weight:bold;
-
+  color:var(--green);
+  font-size:25px;
+  font-weight:900;
   margin-top:12px;
 }
 
+/* =====================================================
+   WIDE COURSES
+===================================================== */
 
-/* =========================================
-   TEACHERS
-========================================= */
-
-.teachers{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+#wide-courses{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 20px 20px;
 }
 
-.teacher{
-  background:white;
-
-  border-radius:18px;
-
-  padding:25px;
-
-  border:1px solid #d7e8dc;
-
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.05);
-}
-
-.teacher h3{
-  color:#075b3d;
-
-  font-size:23px;
-
-  margin-bottom:8px;
-}
-
-.info{
-  background:#eff8f2;
-
-  padding:11px 13px;
-
-  border-radius:9px;
-
-  margin-top:9px;
-}
-
-.teacher-buttons{
-  margin-top:17px;
-
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.green-button{
-  display:inline-block;
-
-  background:#087b51;
-
-  color:white;
-
-  padding:10px 14px;
-
-  border-radius:9px;
-
-  text-decoration:none;
-
-  border:none;
-
-  cursor:pointer;
-
-  font-weight:bold;
-}
-
-.green-button:hover{
-  opacity:.9;
-}
-
-
-/* =========================================
-   DASHBOARD
-========================================= */
-
-.students{
-  margin-top:20px;
-
-  display:grid;
-
-  grid-template-columns:repeat(2,1fr);
-
-  gap:15px;
-}
-
-.student-card{
-  background:#f5faf6;
-
-  border:1px solid #d9e9de;
-
-  border-radius:14px;
-
-  padding:18px;
-}
-
-.student-card h3{
-  color:#075b3d;
-  margin-bottom:8px;
-}
-
-
-/* =========================================
-   PROFILE
-========================================= */
-
-.profile-grid{
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  gap:12px;
-
-  margin-top:18px;
-}
-
-.profile-item{
-  background:#eff8f2;
-
-  padding:13px;
-
-  border-radius:9px;
-}
-
-.profile-item strong{
-  display:block;
-
-  color:#075b3d;
-
-  margin-bottom:3px;
-}
-
-
-/* =========================================
-   CHAT
-========================================= */
-
-.chat-box{
-  background:white;
-
-  border:1px solid #d7e8dc;
-
-  border-radius:18px;
-
-  overflow:hidden;
-}
-
-.chat-header{
-  background:#087b51;
-
-  color:white;
-
-  padding:16px;
-
-  font-weight:bold;
-}
-
-.chat-messages{
-  min-height:280px;
-
-  padding:18px;
-
-  background:#edf7f0;
-}
-
-.message{
-  background:white;
-
-  padding:11px 14px;
-
-  border-radius:12px;
-
-  margin-bottom:10px;
-
-  max-width:75%;
-
-  box-shadow:
-    0 2px 8px rgba(0,0,0,.04);
-}
-
-.my-message{
-  background:#087b51;
-
-  color:white;
-
-  margin-left:auto;
-}
-
-.chat-form{
-  display:flex;
-
-  gap:10px;
-
-  padding:12px;
-
-  background:white;
-}
-
-.chat-form input{
-  margin:0;
-}
-
-.chat-form button{
-  border:none;
-
-  background:#087b51;
-
-  color:white;
-
-  padding:0 18px;
-
-  border-radius:9px;
-
-  cursor:pointer;
-}
-
-
-/* =========================================
-   FEES
-========================================= */
-
-.payments{
-  display:grid;
-
-  grid-template-columns:repeat(3,1fr);
-
-  gap:20px;
-}
-
-.payment{
-  background:white;
-
-  padding:25px;
-
+.wide-courses-title{
   text-align:center;
-
-  border-radius:18px;
-
-  border:1px solid #d7e8dc;
+  max-width:800px;
+  margin:0 auto 35px;
 }
 
+.wide-courses-title span{
+  display:inline-block;
+  color:var(--green);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
 
-/* =========================================
-   ABOUT
-========================================= */
+.wide-courses-title h2{
+  color:var(--green-dark);
+  font-size:34px;
+}
 
-.about-text{
-  color:#688174;
+.wide-courses-title p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+.wide-course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.wide-course-card{
+  padding:30px 25px;
+  text-align:center;
+}
+
+.wide-course-icon{
+  width:75px;
+  height:75px;
+  margin:0 auto 18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:21px;
+  background:var(--green-light);
+  font-size:39px;
+}
+
+.wide-course-card h3{
+  color:var(--green-dark);
+  font-size:22px;
+  margin-bottom:9px;
+}
+
+.wide-course-card p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.wide-course-button{
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:10px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* =====================================================
+   WHY CHOOSE
+===================================================== */
+
+#why-choose{
+  max-width:none;
+  padding:90px 6%;
+  background:#f4f9f6;
+}
+
+.why-container{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr .9fr;
+  gap:65px;
+  align-items:center;
+}
+
+.why-tag{
+  display:inline-block;
+  margin-bottom:12px;
+
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:2px;
+
+  color:var(--green);
+}
+
+.why-content h2{
+  margin:0 0 15px;
+  font-size:42px;
+  color:#17352c;
+}
+
+#why-choose .subtitle{
+  max-width:620px;
+  margin-bottom:32px;
+  color:var(--muted);
+}
+
+.why-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.why-point{
+  display:flex;
+  align-items:flex-start;
+  gap:13px;
+}
+
+.why-point .why-icon{
+  min-width:35px;
+  height:35px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+  background:var(--green);
+  color:white;
+  font-weight:bold;
+}
+
+.why-point h3{
+  color:#17352c;
   font-size:17px;
-  max-width:900px;
-  margin-bottom:18px;
+  margin-bottom:5px;
+}
+
+.why-point p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+.why-choose-card{
+  padding:25px;
+}
+
+.why-choose-icon{
+  width:47px;
+  height:47px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:13px;
+  background:var(--green-light);
+  font-size:23px;
+  margin-bottom:12px;
+}
+
+.why-choose-card h3{
+  color:#17352c;
+  margin-bottom:9px;
+}
+
+.why-short,
+.why-full p{
+  color:var(--muted);
+  font-size:14px;
   line-height:1.8;
 }
 
-
-/* =========================================
-   HERO STUDENTS
-========================================= */
-
-.hero-students{
-  margin-top:12px;
+.why-learn{
+  padding:10px 18px;
+  border:none;
+  border-radius:9px;
+  background:var(--green);
   color:white;
-  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-
-/* =========================================
-   TESTIMONIALS
-========================================= */
-
-.testimonials{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.why-full{
+  display:none;
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid #e3ebe7;
 }
 
-.testimonial{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:20px;
-  padding:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.testimonial-icon{
-  font-size:38px;
-  margin-bottom:10px;
-}
-
-.testimonial p{
-  color:#688174;
-  line-height:1.7;
+.why-full p{
   margin-bottom:15px;
 }
 
-.testimonial h3{
-  color:#075b3d;
-  font-size:18px;
+.why-image{
+  display:flex;
+  justify-content:center;
 }
 
-.testimonial-dots{
-  text-align:center;
-  margin-top:25px;
-  font-size:18px;
-  letter-spacing:7px;
-  color:#087b51;
+.why-image-frame{
+  width:100%;
+  max-width:500px;
+  position:relative;
 }
 
+.why-image-frame img{
+  width:100%;
+  height:540px;
+  object-fit:cover;
+  display:block;
+  border-radius:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
 
-/* =========================================
-   ONLINE QURAN PACKAGES
-========================================= */
+.why-image-frame:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:15px;
+  left:15px;
+  border:2px solid var(--green);
+  border-radius:25px;
+  z-index:-1;
+}
+
+/* =====================================================
+   PACKAGES
+===================================================== */
 
 .package-section{
   margin-top:30px;
@@ -1183,13 +906,12 @@ select:focus{
 }
 
 .package-title h2{
-  color:#075b3d;
+  color:var(--green-dark);
   font-size:30px;
-  margin-bottom:8px;
 }
 
 .package-title p{
-  color:#688174;
+  color:var(--muted);
 }
 
 .packages{
@@ -1199,260 +921,503 @@ select:focus{
 }
 
 .package{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:20px;
-  padding:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  padding:28px 23px;
   text-align:center;
 }
 
+.package-icon{
+  font-size:42px;
+  margin-bottom:8px;
+}
+
 .package h3{
-  color:#075b3d;
-  font-size:22px;
-  margin-bottom:10px;
+  color:var(--green-dark);
+  font-size:21px;
+  margin-bottom:8px;
 }
 
 .package-price{
-  color:#087b51;
-  font-size:28px;
-  font-weight:bold;
-  margin-bottom:18px;
+  color:var(--green);
+  font-size:26px;
+  font-weight:900;
+  margin-bottom:17px;
 }
 
 .package ul{
   list-style:none;
-  padding:0;
-  margin:0 0 20px;
+  margin-bottom:18px;
 }
 
 .package li{
-  color:#688174;
+  color:var(--muted);
   padding:6px 0;
+  border-bottom:1px solid #edf2ef;
+  font-size:14px;
+}
+
+.package li:before{
+  content:"✓";
+  color:var(--green);
+  font-weight:bold;
+  margin-right:7px;
+}
+
+.package-subjects{
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  margin:19px 0;
+}
+
+.package-subjects div{
+  background:var(--green-light);
+  border:1px solid #d7e8dc;
+  border-radius:11px;
+  padding:11px 7px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:bold;
 }
 
 .package-button{
   display:inline-block;
-  background:#087b51;
+  background:var(--green);
   color:white;
   padding:10px 18px;
-  border-radius:9px;
+  border-radius:10px;
   text-decoration:none;
   font-weight:bold;
 }
 
-.package-button:hover{
-  opacity:.9;
-}
+/* =====================================================
+   TEACHERS
+===================================================== */
 
-
-/* =========================================
-   WIDE RANGE OF QURAN COURSES
-========================================= */
-
-#wide-courses{
-  max-width:1100px;
-  margin:auto;
-  padding:70px 20px 20px;
-}
-
-.wide-courses-title{
-  text-align:center;
-  max-width:800px;
-  margin:0 auto 35px;
-}
-
-.wide-courses-title span{
-  display:inline-block;
-  color:#087b51;
-  font-size:14px;
-  font-weight:bold;
-  letter-spacing:2px;
-  margin-bottom:8px;
-}
-
-.wide-courses-title h2{
-  color:#075b3d;
-  font-size:34px;
-  line-height:1.3;
-  margin-bottom:12px;
-}
-
-.wide-courses-title p{
-  color:#688174;
-  font-size:16px;
-  line-height:1.7;
-}
-
-.wide-course-grid{
+.teachers{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 
-.wide-course-card{
-  background:white;
-  border:1px solid #d7e8dc;
-  border-radius:20px;
-  padding:30px 25px;
-  text-align:center;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.06);
-
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease;
+.teacher{
+  padding:28px 22px;
 }
 
-.wide-course-card:hover{
-  transform:translateY(-7px);
-
-  box-shadow:
-    0 18px 35px rgba(0,0,0,.10);
+.teacher h3{
+  color:var(--green-dark);
+  font-size:22px;
+  margin-bottom:12px;
 }
 
-.wide-course-icon{
-  width:75px;
-  height:75px;
-
-  margin:0 auto 18px;
-
-  border-radius:20px;
-
-  background:#eff8f2;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:40px;
-}
-
-.wide-course-card h3{
-  color:#075b3d;
-  font-size:23px;
-  margin-bottom:10px;
-}
-
-.wide-course-card p{
-  color:#688174;
-  font-size:15px;
-  line-height:1.7;
-  margin-bottom:20px;
-}
-
-.wide-course-button{
-  display:inline-block;
-
-  background:#087b51;
-  color:white;
-
-  padding:10px 18px;
-
-  border-radius:9px;
-
-  text-decoration:none;
-  font-weight:bold;
-
-  transition:.2s;
-}
-
-.wide-course-button:hover{
-  background:#075b3d;
-  transform:translateY(-2px);
-}
-
-
-/* =========================================
-   SECURITY
-========================================= */
-
-.security-notice{
-  margin-top:15px;
-  padding:12px 14px;
+.info{
+  background:var(--green-light);
+  border:1px solid #dbece2;
+  padding:10px 12px;
   border-radius:10px;
-  background:#fff8df;
-  border:1px solid #ead58b;
-  color:#705c12;
-  font-size:13px;
-  line-height:1.6;
+  margin-top:9px;
+  color:#315c49;
+  font-size:14px;
+}
+
+.teacher-buttons{
+  margin-top:17px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.students{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.student-card{
+  background:#f6fbf8;
+  border:1px solid #d9e9de;
+  border-radius:15px;
+  padding:18px;
+}
+
+.student-card h3{
+  color:var(--green-dark);
+  margin-bottom:8px;
 }
 
 .logout-button{
   margin-top:20px;
 }
 
+/* =====================================================
+   PROFILE
+===================================================== */
 
-/* =========================================
+.profile-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+
+.profile-item{
+  background:var(--green-light);
+  border:1px solid #d9e9de;
+  padding:13px;
+  border-radius:10px;
+}
+
+.profile-item strong{
+  display:block;
+  color:var(--green-dark);
+  margin-bottom:3px;
+}
+
+/* =====================================================
+   CHAT
+===================================================== */
+
+.chat-box{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.chat-header{
+  background:linear-gradient(135deg,var(--green-dark),var(--green));
+  color:white;
+  padding:17px;
+  font-weight:bold;
+}
+
+.chat-messages{
+  min-height:280px;
+  padding:20px;
+  background:#f3f9f6;
+}
+
+.message{
+  background:white;
+  padding:11px 14px;
+  border-radius:14px;
+  margin-bottom:10px;
+  max-width:75%;
+  border:1px solid #e0ebe5;
+  box-shadow:0 3px 9px rgba(0,0,0,.04);
+}
+
+.my-message{
+  background:var(--green);
+  color:white;
+  border-color:var(--green);
+  margin-left:auto;
+}
+
+.chat-form{
+  display:flex;
+  gap:10px;
+  padding:13px;
+  background:white;
+  border-top:1px solid var(--border);
+}
+
+.chat-form input{
+  margin:0;
+}
+
+.chat-form button{
+  border:none;
+  background:var(--green);
+  color:white;
+  padding:0 20px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+/* =====================================================
+   PAYMENTS
+===================================================== */
+
+.payments{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.payment{
+  padding:28px 22px;
+  text-align:center;
+}
+
+.payment h3{
+  color:var(--green-dark);
+  margin-bottom:8px;
+}
+
+.payment p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-text{
+  color:var(--muted);
+  font-size:16px;
+  max-width:900px;
+  margin-bottom:18px;
+  line-height:1.85;
+}
+
+/* =====================================================
+   FOLLOW US
+===================================================== */
+
+.follow-us{
+  max-width:1100px;
+  margin:auto;
+  padding:65px 20px 20px;
+  text-align:center;
+}
+
+.follow-us h2{
+  font-size:34px;
+  color:var(--green-dark);
+}
+
+.follow-us p{
+  color:var(--muted);
+  margin-bottom:25px;
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+.social-link{
+  width:56px;
+  height:56px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:white;
+  border:1px solid var(--border);
+  border-radius:50%;
+
+  text-decoration:none;
+  font-size:24px;
+
+  box-shadow:var(--shadow);
+  transition:.25s;
+}
+
+.social-link:hover{
+  transform:translateY(-5px);
+  background:var(--green-light);
+}
+
+/* =====================================================
+   TESTIMONIALS
+===================================================== */
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.testimonial{
+  padding:27px;
+}
+
+.testimonial-icon{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.testimonial p{
+  color:var(--muted);
+  line-height:1.75;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+.testimonial h3{
+  color:var(--green-dark);
+  font-size:17px;
+}
+
+.testimonial-dots{
+  text-align:center;
+  margin-top:25px;
+  color:var(--green);
+  letter-spacing:7px;
+}
+
+/* =====================================================
    FOOTER
-========================================= */
+===================================================== */
 
 footer{
   text-align:center;
-  background:#075b3d;
+  background:
+    radial-gradient(circle at 80% 0%,rgba(244,214,111,.12),transparent 25%),
+    var(--green-deep);
+
   color:white;
-  padding:40px 20px;
-  margin-top:50px;
+  padding:55px 20px 30px;
+  margin-top:70px;
+  border-top:3px solid var(--gold);
+}
+
+footer h3{
+  color:white;
+  font-size:22px;
+  margin-bottom:8px;
 }
 
 footer p{
-  color:#d9eee2;
+  color:#cfe6da;
+  font-size:14px;
 }
 
-
-/* =========================================
+/* =====================================================
    MOBILE
-========================================= */
+===================================================== */
 
 @media(max-width:900px){
+
+  .navbar{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  nav{
+    width:100%;
+    justify-content:flex-start;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scrollbar-width:none;
+  }
+
+  nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  nav a{
+    white-space:nowrap;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    margin-top:40px;
+  }
+
+  .hero-text{
+    text-align:center;
+  }
+
+  .hero-text p{
+    margin-left:auto;
+    margin-right:auto;
+  }
 
   .why-container{
     grid-template-columns:1fr;
     gap:50px;
   }
 
-  .why-content h2{
-    font-size:36px;
-  }
-
   .why-image{
     order:2;
   }
 
-  .why-image-frame{
-    max-width:650px;
-  }
-
-  .why-image-frame img{
-    height:450px;
+  .get-grid,
+  .courses,
+  .teachers,
+  .payments,
+  .testimonials,
+  .packages,
+  .wide-course-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
 
-@media(max-width:800px){
+@media(max-width:700px){
 
   header{
     min-height:auto;
-    padding-bottom:50px;
+    padding-bottom:45px;
   }
 
   .navbar{
-    flex-direction:column;
-    text-align:center;
+    padding:14px;
   }
 
-  nav{
-    justify-content:center;
+  .brand h1{
+    font-size:19px;
+  }
+
+  .logo{
+    width:55px;
+    height:55px;
   }
 
   .hero{
-    grid-template-columns:1fr;
-    margin-top:50px;
+    padding:25px 15px;
+    margin-top:30px;
   }
 
   .hero-text h2{
-    font-size:40px;
+    font-size:42px;
+  }
+
+  .hero-text p{
+    font-size:15px;
+  }
+
+  .quran-scene{
+    min-height:320px;
+  }
+
+  section{
+    padding:60px 15px 10px;
+  }
+
+  section h2,
+  .what-you-get h2,
+  .follow-us h2{
+    font-size:29px;
+  }
+
+  .why-content h2{
+    font-size:31px;
+  }
+
+  #why-choose{
+    padding:65px 5%;
+  }
+
+  .why-points{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .why-image-frame img{
+    height:370px;
   }
 
   form{
@@ -1463,14 +1428,11 @@ footer p{
     grid-column:auto;
   }
 
-  .courses,
-  .teachers,
-  .payments,
-  .students{
+  .profile-grid{
     grid-template-columns:1fr;
   }
 
-  .profile-grid{
+  .students{
     grid-template-columns:1fr;
   }
 
@@ -1482,82 +1444,50 @@ footer p{
     padding:12px;
   }
 
-  .testimonials{
-    grid-template-columns:1fr;
-  }
-
-  .packages{
-    grid-template-columns:1fr;
-  }
-
-  .wide-course-grid{
-    grid-template-columns:1fr;
-  }
-
-  .wide-courses-title h2{
-    font-size:30px;
-  }
-
-  .get-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
-
-@media(max-width:600px){
-
-  #why-choose{
-    padding:65px 5%;
-  }
-
-  .why-content h2{
-    font-size:30px;
-  }
-
-  #why-choose .subtitle{
-    font-size:15px;
-  }
-
-  .why-points{
-    grid-template-columns:1fr;
-    gap:22px;
-  }
-
-  .why-choose-card{
-    padding:20px;
-  }
-
-  .why-image-frame img{
-    height:350px;
-    border-radius:20px;
-  }
-
-  .why-image-frame::after{
-    top:10px;
-    left:10px;
-    border-radius:20px;
-  }
-
 }
 
 @media(max-width:500px){
 
-  .get-grid{
+  .get-grid,
+  .courses,
+  .teachers,
+  .payments,
+  .testimonials,
+  .packages,
+  .wide-course-grid{
     grid-template-columns:1fr;
+  }
+
+  .card{
+    padding:20px 16px;
+  }
+
+  .hero-text h2{
+    font-size:37px;
+  }
+
+  .quran-scene{
+    min-height:290px;
+  }
+
+  .moon{
+    font-size:95px;
+  }
+
+  .quran-icon{
+    font-size:65px;
+  }
+
+  .why-image-frame img{
+    height:320px;
   }
 
 }
 
 </style>
-
 </head>
 
 <body>
-
-
-<!-- =========================================
-     HEADER
-========================================= -->
 
 <header>
 
@@ -1566,36 +1496,25 @@ footer p{
 <div class="brand">
 
 <div class="logo">
-
-<img
-src="g.png"
-alt="Iqra Quran Academy Logo"
->
-
+<img src="g.png" alt="Iqra Quran Academy Logo">
 </div>
 
 <div>
-
 <h1>Iqra Quran Academy</h1>
-
 <small>Online Quran Learning</small>
-
 </div>
 
 </div>
 
 <nav>
-
 <a href="#start">Start</a>
 <a href="#courses">Courses</a>
 <a href="#teachers">Teachers</a>
 <a href="#login">Login</a>
 <a href="#chat">Chat</a>
-
 </nav>
 
 </div>
-
 
 <div class="hero">
 
@@ -1613,10 +1532,7 @@ Start your Quran learning journey
 with qualified teachers from home.
 </p>
 
-<a
-class="green-button hero-green-button"
-href="#start"
->
+<a class="green-button hero-green-button" href="#start">
 📝 Start Registration
 </a>
 
@@ -1626,31 +1542,20 @@ Join hundreds of students upgrading their knowledge every day.
 
 </div>
 
-
 <div class="quran-scene">
 
 <div class="moon">☾</div>
-
 <div class="quran-icon">📖</div>
 
-<h3>
-Quran • Knowledge • Guidance
-</h3>
+<h3>Quran • Knowledge • Guidance</h3>
 
-<p>
-Iqra Quran Academy
-</p>
+<p>Iqra Quran Academy</p>
 
 </div>
 
 </div>
-
 </header>
 
-
-<!-- =========================================
-     WHAT YOU GET
-========================================= -->
 
 <section class="what-you-get">
 
@@ -1683,13 +1588,8 @@ Iqra Quran Academy
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     ACADEMY INFORMATION
-========================================= -->
 
 <section id="academy-info">
 
@@ -1716,13 +1616,8 @@ attentive teachers and flexible scheduling options.
 </p>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     REGISTRATION
-========================================= -->
 
 <section id="start">
 
@@ -1738,88 +1633,39 @@ Create your student profile.
 
 <label>
 Student Name
-
-<input
-id="studentName"
-type="text"
-placeholder="Student name"
-required
-autocomplete="name"
-maxlength="80"
->
-
+<input id="studentName" type="text" placeholder="Student name"
+required autocomplete="name" maxlength="80">
 </label>
-
 
 <label>
 Father Name
-
-<input
-id="fatherName"
-type="text"
-placeholder="Father name"
-required
-maxlength="80"
->
-
+<input id="fatherName" type="text" placeholder="Father name"
+required maxlength="80">
 </label>
-
 
 <label>
 Years Old
-
-<input
-id="studentAge"
-type="number"
-placeholder="Age"
-min="1"
-max="120"
-required
->
-
+<input id="studentAge" type="number" placeholder="Age"
+min="1" max="120" required>
 </label>
-
 
 <label>
 School Name
-
-<input
-id="schoolName"
-type="text"
-placeholder="School name"
-maxlength="120"
->
-
+<input id="schoolName" type="text" placeholder="School name"
+maxlength="120">
 </label>
-
 
 <label>
 Address
-
-<input
-id="studentAddress"
-type="text"
-placeholder="Address"
-maxlength="200"
->
-
+<input id="studentAddress" type="text" placeholder="Address"
+maxlength="200">
 </label>
-
 
 <label>
 Phone Number
-
-<input
-id="studentPhone"
-type="tel"
-placeholder="+92..."
-required
-maxlength="25"
-autocomplete="tel"
->
-
+<input id="studentPhone" type="tel" placeholder="+92..."
+required maxlength="25" autocomplete="tel">
 </label>
-
 
 <label>
 Select Course
@@ -1829,57 +1675,43 @@ Select Course
 <option value="">Select Course</option>
 
 <optgroup label="🇵🇰 PK — Pakistan — Rs. 6,000 / month">
-
 <option value="PK|Hifz|Rs. 6,000 / month">Hifz</option>
 <option value="PK|Nazra|Rs. 6,000 / month">Nazra</option>
 <option value="PK|Tajweed|Rs. 6,000 / month">Tajweed</option>
-
 </optgroup>
 
 <optgroup label="🇦🇪 AE — UAE — AED 330.75 / month">
-
 <option value="AE|Hifz|AED 330.75 / month">Hifz</option>
 <option value="AE|Nazra|AED 330.75 / month">Nazra</option>
 <option value="AE|Tajweed|AED 330.75 / month">Tajweed</option>
-
 </optgroup>
 
 <optgroup label="🇸🇦 SA — Saudi Arabia — SAR 338.20 / month">
-
 <option value="SA|Hifz|SAR 338.20 / month">Hifz</option>
 <option value="SA|Nazra|SAR 338.20 / month">Nazra</option>
 <option value="SA|Tajweed|SAR 338.20 / month">Tajweed</option>
-
 </optgroup>
 
 <optgroup label="🇺🇸 US — United States — $90 / month">
-
 <option value="US|Hifz|$90 / month">Hifz</option>
 <option value="US|Nazra|$90 / month">Nazra</option>
 <option value="US|Tajweed|$90 / month">Tajweed</option>
-
 </optgroup>
 
 <optgroup label="🇬🇧 GB — United Kingdom — £70 / month">
-
 <option value="GB|Hifz|£70 / month">Hifz</option>
 <option value="GB|Nazra|£70 / month">Nazra</option>
 <option value="GB|Tajweed|£70 / month">Tajweed</option>
-
 </optgroup>
 
 <optgroup label="🇨🇦 CA — Canada — $90 / month">
-
 <option value="CA|Hifz|$90 / month">Hifz</option>
 <option value="CA|Nazra|$90 / month">Nazra</option>
 <option value="CA|Tajweed|$90 / month">Tajweed</option>
-
 </optgroup>
 
 </select>
-
 </label>
-
 
 <label>
 Teacher
@@ -1887,40 +1719,24 @@ Teacher
 <select id="studentTeacher" required>
 
 <option value="">Select Teacher</option>
-
 <option value="Abdullah Shahzad">Abdullah Shahzad</option>
 <option value="Zain Ilyas">Zain Ilyas</option>
 <option value="Hafiz Musa">Hafiz Musa</option>
 
 </select>
-
 </label>
 
-
-<button
-type="button"
-class="green-button full"
-id="registerButton"
->
+<button type="button" class="green-button full" id="registerButton">
 📱 Send Registration
 </button>
 
 </form>
 
-
-<div
-id="studentCreated"
-class="notice"
-></div>
+<div id="studentCreated" class="notice"></div>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     COURSES
-========================================= -->
 
 <section id="courses">
 
@@ -1954,13 +1770,8 @@ Choose your Quran learning program.
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     WIDE COURSES
-========================================= -->
 
 <section id="wide-courses">
 
@@ -1978,7 +1789,6 @@ courses designed for students of different ages and levels.
 </p>
 
 </div>
-
 
 <div class="wide-course-grid">
 
@@ -1999,7 +1809,6 @@ Learn More
 
 </div>
 
-
 <div class="wide-course-card">
 
 <div class="wide-course-icon">📗</div>
@@ -2016,7 +1825,6 @@ Learn More
 </a>
 
 </div>
-
 
 <div class="wide-course-card">
 
@@ -2036,13 +1844,8 @@ Learn More
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     WHY CHOOSE
-========================================= -->
 
 <section id="why-choose">
 
@@ -2050,9 +1853,7 @@ Learn More
 
 <div class="why-content">
 
-<span class="why-tag">
-WHY CHOOSE US
-</span>
+<span class="why-tag">WHY CHOOSE US</span>
 
 <h2>
 Why Choose Iqra Quran Academy?
@@ -2062,7 +1863,6 @@ Why Choose Iqra Quran Academy?
 Learn Quran with a comfortable, supportive and structured
 online learning experience.
 </p>
-
 
 <div class="why-points">
 
@@ -2077,7 +1877,6 @@ correct Quran reading and Tajweed.
 </div>
 </div>
 
-
 <div class="why-point">
 <div class="why-icon">✓</div>
 <div>
@@ -2089,7 +1888,6 @@ receives individual attention.
 </div>
 </div>
 
-
 <div class="why-point">
 <div class="why-icon">✓</div>
 <div>
@@ -2100,7 +1898,6 @@ and make Quran learning convenient.
 </p>
 </div>
 </div>
-
 
 <div class="why-point">
 <div class="why-icon">✓</div>
@@ -2115,16 +1912,11 @@ home through our online classes.
 
 </div>
 
-
 <div class="why-choose-card">
 
-<div class="why-choose-icon">
-📖
-</div>
+<div class="why-choose-icon">📖</div>
 
-<h3>
-About Our Quran Learning
-</h3>
+<h3>About Our Quran Learning</h3>
 
 <p class="why-short">
 We are dedicated to providing accessible and meaningful
@@ -2132,18 +1924,11 @@ Quranic education for students of different ages and
 learning levels.
 </p>
 
-<button
-class="why-learn"
-onclick="toggleWhyChoose()"
->
+<button class="why-learn" onclick="toggleWhyChoose()">
 Learn More ...
 </button>
 
-
-<div
-id="whyChooseFull"
-class="why-full"
->
+<div id="whyChooseFull" class="why-full">
 
 <p>
 At Iqra Quran Academy, we are dedicated to enlightening
@@ -2177,11 +1962,8 @@ homes.
 </p>
 
 </div>
-
 </div>
-
 </div>
-
 
 <div class="why-image">
 
@@ -2197,13 +1979,8 @@ alt="Student learning Quran online"
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =========================================
-     PACKAGES
-========================================= -->
 
 <section class="package-section">
 
@@ -2219,18 +1996,12 @@ Select a package that suits your learning needs.
 
 </div>
 
-
 <div class="packages">
 
 <div class="package">
-
 <div class="package-icon">🇵🇰</div>
-
 <h3>Pakistan Quran Classes</h3>
-
-<div class="package-price">
-Rs. 6,000 / month
-</div>
+<div class="package-price">Rs. 6,000 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2239,28 +2010,17 @@ Rs. 6,000 / month
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
-
 
 <div class="package">
-
 <div class="package-icon">🇦🇪</div>
-
 <h3>UAE Quran Classes</h3>
-
-<div class="package-price">
-AED 330.75 / month
-</div>
+<div class="package-price">AED 330.75 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2269,28 +2029,17 @@ AED 330.75 / month
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
-
 
 <div class="package">
-
 <div class="package-icon">🇸🇦</div>
-
 <h3>Saudi Arabia Quran Classes</h3>
-
-<div class="package-price">
-SAR 338.20 / month
-</div>
+<div class="package-price">SAR 338.20 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2299,28 +2048,17 @@ SAR 338.20 / month
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
-
 
 <div class="package">
-
 <div class="package-icon">🇺🇸</div>
-
 <h3>USA Quran Classes</h3>
-
-<div class="package-price">
-$90 / month
-</div>
+<div class="package-price">$90 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2329,28 +2067,17 @@ $90 / month
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
-
 
 <div class="package">
-
 <div class="package-icon">🇬🇧</div>
-
 <h3>UK Quran Classes</h3>
-
-<div class="package-price">
-£70 / month
-</div>
+<div class="package-price">£70 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2359,28 +2086,17 @@ Enroll Now
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
-
 
 <div class="package">
-
 <div class="package-icon">🇨🇦</div>
-
 <h3>Canada Quran Classes</h3>
-
-<div class="package-price">
-$90 / month
-</div>
+<div class="package-price">$90 / month</div>
 
 <ul>
 <li>16-25 Minutes / Day</li>
@@ -2389,32 +2105,20 @@ $90 / month
 </ul>
 
 <div class="package-subjects">
-
 <div>Nazra • Hifz • Tajweed</div>
 <div>Quran Reading • Proper Recitation</div>
-
 </div>
 
-<a href="#start" class="package-button">
-Enroll Now
-</a>
-
+<a href="#start" class="package-button">Enroll Now</a>
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     TEACHERS
-========================================= -->
-
 <section id="teachers">
 
-<h2>
-Our Teachers
-</h2>
+<h2>Our Teachers</h2>
 
 <p class="subtitle">
 Choose your Quran teacher.
@@ -2422,17 +2126,9 @@ Choose your Quran teacher.
 
 <div class="teachers">
 
-
-<!-- IMPORTANT:
-     Personal/private teacher information has been removed
-     from the public website.
--->
-
 <div class="teacher">
 
-<h3>
-Hafiz Abdullah Shahzad
-</h3>
+<h3>Hafiz Abdullah Shahzad</h3>
 
 <div class="info">
 Qualified Quran Teacher
@@ -2452,15 +2148,12 @@ onclick="openTeacherChat('Abdullah Shahzad')"
 </button>
 
 </div>
-
 </div>
 
 
 <div class="teacher">
 
-<h3>
-Hafiz Zain Ilyas
-</h3>
+<h3>Hafiz Zain Ilyas</h3>
 
 <div class="info">
 Qualified Quran Teacher
@@ -2480,15 +2173,12 @@ onclick="openTeacherChat('Zain Ilyas')"
 </button>
 
 </div>
-
 </div>
 
 
 <div class="teacher">
 
-<h3>
-Hafiz Musa
-</h3>
+<h3>Hafiz Musa</h3>
 
 <div class="info">
 Quran Teacher
@@ -2508,25 +2198,17 @@ onclick="openTeacherChat('Hafiz Musa')"
 </button>
 
 </div>
-
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     LOGIN
-========================================= -->
-
 <section id="login">
 
-<h2>
-Teacher Login
-</h2>
+<h2>Teacher Login</h2>
 
-<p style="margin:10px 0 15px; font-size:14px; line-height:1.5; color:#666;">
+<p style="margin:10px 0 15px;font-size:14px;line-height:1.5;color:#666;">
 
 <strong>For Teachers Only:</strong><br>
 
@@ -2549,9 +2231,7 @@ Teacher
 
 <select id="loginTeacher" required>
 
-<option value="">
-Select Teacher
-</option>
+<option value="">Select Teacher</option>
 
 <option value="Abdullah Shahzad">
 Abdullah Shahzad
@@ -2566,9 +2246,7 @@ Hafiz Musa
 </option>
 
 </select>
-
 </label>
-
 
 <label>
 Password
@@ -2584,21 +2262,13 @@ maxlength="100"
 
 </label>
 
-
-<button
-class="button full"
-type="submit"
->
+<button class="button full" type="submit">
 Login
 </button>
 
 </form>
 
-
-<div
-id="loginMessage"
-class="notice"
-></div>
+<div id="loginMessage" class="notice"></div>
 
 <div class="security-notice">
 
@@ -2609,48 +2279,24 @@ and do not share your teacher password with anyone.
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     DASHBOARD
-========================================= -->
+<section id="dashboard" style="display:none;">
 
-<section
-id="dashboard"
-style="display:none;"
->
+<h2>Teacher Dashboard</h2>
 
-<h2>
-Teacher Dashboard
-</h2>
-
-<p class="subtitle">
-Your students.
-</p>
+<p class="subtitle">Your students.</p>
 
 <div class="card">
 
-<h3 id="dashboardTeacherName">
-Teacher
-</h3>
+<h3 id="dashboardTeacherName">Teacher</h3>
 
-<div
-id="dashboardTeacherInfo"
-class="info"
->
-</div>
+<div id="dashboardTeacherInfo" class="info"></div>
 
-<h3 style="margin-top:25px;">
-My Students
-</h3>
+<h3 style="margin-top:25px;">My Students</h3>
 
-<div
-id="teacherStudents"
-class="students"
->
-</div>
+<div id="teacherStudents" class="students"></div>
 
 <button
 id="logoutButton"
@@ -2661,22 +2307,12 @@ type="button"
 </button>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     STUDENT PROFILE
-========================================= -->
+<section id="studentProfile" style="display:none;">
 
-<section
-id="studentProfile"
-style="display:none;"
->
-
-<h2>
-Student Profile
-</h2>
+<h2>Student Profile</h2>
 
 <div class="card">
 
@@ -2726,7 +2362,6 @@ Student Profile
 
 </div>
 
-
 <div class="teacher-buttons">
 
 <button
@@ -2747,19 +2382,12 @@ href="#"
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     CHAT
-========================================= -->
-
 <section id="chat">
 
-<h2>
-Chat
-</h2>
+<h2>Chat</h2>
 
 <p class="subtitle">
 Teacher and student chat interface.
@@ -2767,17 +2395,11 @@ Teacher and student chat interface.
 
 <div class="chat-box">
 
-<div
-id="chatheader"
-class="chat-header"
->
+<div id="chatheader" class="chat-header">
 Select a teacher or student
 </div>
 
-<div
-id="chatMessages"
-class="chat-messages"
->
+<div id="chatMessages" class="chat-messages">
 
 <div class="message">
 Assalam-o-Alaikum! Please select a teacher or student.
@@ -2785,11 +2407,7 @@ Assalam-o-Alaikum! Please select a teacher or student.
 
 </div>
 
-
-<form
-id="chatForm"
-class="chat-form"
->
+<form id="chatForm" class="chat-form">
 
 <input
 id="chatInput"
@@ -2799,26 +2417,17 @@ required
 maxlength="500"
 >
 
-<button type="submit">
-Send
-</button>
+<button type="submit">Send</button>
 
 </form>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     FEES
-========================================= -->
-
 <section id="fees">
 
-<h2>
-Payment Methods
-</h2>
+<h2>Payment Methods</h2>
 
 <p class="subtitle">
 Academy fee payment options.
@@ -2828,9 +2437,7 @@ Academy fee payment options.
 
 <div class="payment">
 
-<h3>
-EasyPaisa
-</h3>
+<h3>EasyPaisa</h3>
 
 <p>
 Send your academy fee through EasyPaisa.
@@ -2850,9 +2457,7 @@ Payment Details
 
 <div class="payment">
 
-<h3>
-UBL
-</h3>
+<h3>UBL</h3>
 
 <p>
 Bank transfer payment option.
@@ -2872,9 +2477,7 @@ Payment Details
 
 <div class="payment">
 
-<h3>
-Bank Transfer
-</h3>
+<h3>Bank Transfer</h3>
 
 <p>
 Contact academy for payment details.
@@ -2893,24 +2496,14 @@ Payment Details
 
 </div>
 
-
-<div
-id="paymentNotice"
-class="notice"
-></div>
+<div id="paymentNotice" class="notice"></div>
 
 </section>
 
 
-<!-- =========================================
-     ABOUT US
-========================================= -->
-
 <section id="about">
 
-<h2>
-About Us
-</h2>
+<h2>About Us</h2>
 
 <p class="about-text">
 Our mission is to provide accessible, high-quality Quranic
@@ -2928,15 +2521,9 @@ learn with knowledge, confidence, and good values.
 </section>
 
 
-<!-- =========================================
-     FOLLOW US
-========================================= -->
-
 <section class="follow-us">
 
-<h2>
-Follow Us
-</h2>
+<h2>Follow Us</h2>
 
 <p>
 Stay connected with Iqra Quran Academy
@@ -2945,52 +2532,18 @@ and follow us for updates and learning.
 
 <div class="social-links">
 
-<a
-class="social-link"
-href="#"
-aria-label="Facebook"
->
-📘
-</a>
-
-<a
-class="social-link"
-href="#"
-aria-label="Instagram"
->
-📷
-</a>
-
-<a
-class="social-link"
-href="#"
-aria-label="YouTube"
->
-▶️
-</a>
-
-<a
-class="social-link"
-href="#"
-aria-label="WhatsApp"
->
-💬
-</a>
+<a class="social-link" href="#" aria-label="Facebook">📘</a>
+<a class="social-link" href="#" aria-label="Instagram">📷</a>
+<a class="social-link" href="#" aria-label="YouTube">▶️</a>
+<a class="social-link" href="#" aria-label="WhatsApp">💬</a>
 
 </div>
-
 </section>
 
 
-<!-- =========================================
-     TESTIMONIALS
-========================================= -->
-
 <section id="learners">
 
-<h2>
-What Our Learners Say
-</h2>
+<h2>What Our Learners Say</h2>
 
 <p class="subtitle">
 Hear from our students about their learning experience.
@@ -3000,9 +2553,7 @@ Hear from our students about their learning experience.
 
 <div class="testimonial">
 
-<div class="testimonial-icon">
-📖
-</div>
+<div class="testimonial-icon">📖</div>
 
 <p>
 The lessons have helped me improve my Quran reading
@@ -3010,50 +2561,39 @@ and Tajweed. The learning experience is simple and
 easy to understand.
 </p>
 
-<h3>
-— Quran Student
-</h3>
+<h3>— Quran Student</h3>
 
 </div>
 
 
 <div class="testimonial">
 
-<div class="testimonial-icon">
-🌟
-</div>
+<div class="testimonial-icon">🌟</div>
 
 <p>
 I enjoy learning with my teacher. The classes are
 friendly and help me learn step by step.
 </p>
 
-<h3>
-— Academy Learner
-</h3>
+<h3>— Academy Learner</h3>
 
 </div>
 
 
 <div class="testimonial">
 
-<div class="testimonial-icon">
-💚
-</div>
+<div class="testimonial-icon">💚</div>
 
 <p>
 Iqra Quran Academy provides a comfortable environment
 to learn the Quran from home.
 </p>
 
-<h3>
-— Student
-</h3>
+<h3>— Student</h3>
 
 </div>
 
 </div>
-
 
 <div class="testimonial-dots">
 ● ○ ○
@@ -3062,15 +2602,9 @@ to learn the Quran from home.
 </section>
 
 
-<!-- =========================================
-     FOOTER
-========================================= -->
-
 <footer>
 
-<h3>
-Iqra Quran Academy
-</h3>
+<h3>Iqra Quran Academy</h3>
 
 <p>
 Quran Learning • Hifz • Nazra • Tajweed • Online Classes
@@ -3091,31 +2625,26 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
    STUDENT STORAGE
 ========================================= */
 
-let students = [];
+let students=[];
 
-try {
+try{
 
-  const savedStudents =
-    localStorage.getItem("iqraStudents");
+const savedStudents=localStorage.getItem("iqraStudents");
 
-  if(savedStudents){
+if(savedStudents){
 
-    const parsed =
-      JSON.parse(savedStudents);
+const parsed=JSON.parse(savedStudents);
 
-    if(Array.isArray(parsed)){
-      students = parsed;
-    }
+if(Array.isArray(parsed)){
+students=parsed;
+}
 
-  }
+}
 
-} catch(error) {
+}catch(error){
 
-  console.error(
-    "Student storage could not be read."
-  );
-
-  students = [];
+console.error("Student storage could not be read.");
+students=[];
 
 }
 
@@ -3124,60 +2653,34 @@ try {
    SESSION VARIABLES
 ========================================= */
 
-let currentStudent = null;
-let currentChatPerson = null;
-let currentLoggedInTeacher = null;
+let currentStudent=null;
+let currentChatPerson=null;
+let currentLoggedInTeacher=null;
+let sessionTimer=null;
 
-let sessionTimer = null;
-
-const SESSION_TIME =
-  30 * 60 * 1000;
+const SESSION_TIME=30*60*1000;
 
 
 /* =========================================
    TEACHERS
 ========================================= */
 
-/*
-  Public/private teacher personal information has
-  deliberately been reduced.
+const teachers={
 
-  Do NOT put private home address, school, age,
-  personal phone numbers or other sensitive details
-  in public frontend code.
-*/
+"Abdullah Shahzad":{
+displayName:"Hafiz Abdullah Shahzad",
+information:"Quran Teacher | Hifz, Nazra & Tajweed"
+},
 
-const teachers = {
+"Zain Ilyas":{
+displayName:"Hafiz Zain Ilyas",
+information:"Quran Teacher | Hifz, Nazra & Tajweed"
+},
 
-  "Abdullah Shahzad": {
-
-    displayName:
-      "Hafiz Abdullah Shahzad",
-
-    information:
-      "Quran Teacher | Hifz, Nazra & Tajweed"
-
-  },
-
-  "Zain Ilyas": {
-
-    displayName:
-      "Hafiz Zain Ilyas",
-
-    information:
-      "Quran Teacher | Hifz, Nazra & Tajweed"
-
-  },
-
-  "Hafiz Musa": {
-
-    displayName:
-      "Hafiz Musa",
-
-    information:
-      "Quran Teacher | Quran Learning Programs"
-
-  }
+"Hafiz Musa":{
+displayName:"Hafiz Musa",
+information:"Quran Teacher | Quran Learning Programs"
+}
 
 };
 
@@ -3186,190 +2689,120 @@ const teachers = {
    DEMO PASSWORDS
 ========================================= */
 
-/*
-  WARNING:
+const teacherPasswords={
 
-  These passwords are still frontend-only because
-  this website is running from one static HTML file.
-
-  They are NOT real secure authentication.
-
-  For real security, move authentication to a
-  backend/database service.
-*/
-
-const teacherPasswords = {
-
-  "Abdullah Shahzad":
-    "qwerty12345",
-
-  "Zain Ilyas":
-    "ssd42",
-
-  "Hafiz Musa":
-    "musa123"
+"Abdullah Shahzad":"qwerty12345",
+"Zain Ilyas":"ssd42",
+"Hafiz Musa":"musa123"
 
 };
 
 
 /* =========================================
-   SESSION SECURITY
+   SESSION
 ========================================= */
 
-function startTeacherSession(
-  teacherName
-){
+function startTeacherSession(teacherName){
 
-  currentLoggedInTeacher =
-    teacherName;
+currentLoggedInTeacher=teacherName;
 
-  try {
+try{
 
-    sessionStorage.setItem(
-      "iqraTeacherSession",
-      teacherName
-    );
+sessionStorage.setItem("iqraTeacherSession",teacherName);
+sessionStorage.setItem("iqraTeacherLoginTime",String(Date.now()));
 
-    sessionStorage.setItem(
-      "iqraTeacherLoginTime",
-      String(Date.now())
-    );
+}catch(error){
 
-  } catch(error) {
+console.warn("Session storage unavailable.");
 
-    console.warn(
-      "Session storage unavailable."
-    );
+}
 
-  }
-
-  resetSessionTimer();
+resetSessionTimer();
 
 }
 
 
 function restoreTeacherSession(){
 
-  try {
+try{
 
-    const teacher =
-      sessionStorage.getItem(
-        "iqraTeacherSession"
-      );
+const teacher=sessionStorage.getItem("iqraTeacherSession");
 
-    const loginTime =
-      Number(
-        sessionStorage.getItem(
-          "iqraTeacherLoginTime"
-        )
-      );
+const loginTime=Number(
+sessionStorage.getItem("iqraTeacherLoginTime")
+);
 
-    if(
-      teacher &&
-      teachers[teacher] &&
-      loginTime &&
-      Date.now() - loginTime < SESSION_TIME
-    ){
+if(
+teacher &&
+teachers[teacher] &&
+loginTime &&
+Date.now()-loginTime<SESSION_TIME
+){
 
-      currentLoggedInTeacher =
-        teacher;
+currentLoggedInTeacher=teacher;
 
-      showTeacherDashboard(
-        teacher,
-        false
-      );
+showTeacherDashboard(teacher,false);
 
-    }
+}else{
 
-    else{
+clearTeacherSession();
 
-      clearTeacherSession();
+}
 
-    }
+}catch(error){
 
-  } catch(error) {
+clearTeacherSession();
 
-    clearTeacherSession();
-
-  }
+}
 
 }
 
 
 function resetSessionTimer(){
 
-  clearTimeout(
-    sessionTimer
-  );
+clearTimeout(sessionTimer);
 
-  sessionTimer =
-    setTimeout(
-      function(){
+sessionTimer=setTimeout(function(){
 
-        alert(
-          "Your teacher session has expired. Please login again."
-        );
+alert(
+"Your teacher session has expired. Please login again."
+);
 
-        logoutTeacher();
+logoutTeacher();
 
-      },
-      SESSION_TIME
-    );
+},SESSION_TIME);
 
 }
 
 
 function clearTeacherSession(){
 
-  currentLoggedInTeacher =
-    null;
+currentLoggedInTeacher=null;
+currentStudent=null;
 
-  currentStudent =
-    null;
+try{
 
-  try {
+sessionStorage.removeItem("iqraTeacherSession");
+sessionStorage.removeItem("iqraTeacherLoginTime");
 
-    sessionStorage.removeItem(
-      "iqraTeacherSession"
-    );
+}catch(error){}
 
-    sessionStorage.removeItem(
-      "iqraTeacherLoginTime"
-    );
-
-  } catch(error) {}
-
-  clearTimeout(
-    sessionTimer
-  );
+clearTimeout(sessionTimer);
 
 }
 
 
 function logoutTeacher(){
 
-  clearTeacherSession();
+clearTeacherSession();
 
-  document
-    .getElementById("dashboard")
-    .style.display =
-      "none";
+document.getElementById("dashboard").style.display="none";
+document.getElementById("studentProfile").style.display="none";
+document.getElementById("loginPassword").value="";
 
-  document
-    .getElementById("studentProfile")
-    .style.display =
-      "none";
-
-  document
-    .getElementById("loginPassword")
-    .value =
-      "";
-
-  document
-    .getElementById("login")
-    .scrollIntoView({
-      behavior:"smooth"
-    });
+document.getElementById("login").scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
@@ -3380,251 +2813,135 @@ function logoutTeacher(){
 
 function registerAndSendStudent(){
 
-  const form =
-    document.getElementById(
-      "studentForm"
-    );
+const form=document.getElementById("studentForm");
 
-  if(!form.checkValidity()){
+if(!form.checkValidity()){
 
-    form.reportValidity();
+form.reportValidity();
+return;
 
-    return;
+}
 
-  }
+const name=document.getElementById("studentName").value.trim();
+const father=document.getElementById("fatherName").value.trim();
+const age=document.getElementById("studentAge").value.trim();
+const school=document.getElementById("schoolName").value.trim();
+const address=document.getElementById("studentAddress").value.trim();
+const phone=document.getElementById("studentPhone").value.trim();
 
+const courseValue=
+document.getElementById("studentCourse").value;
 
-  const name =
-    document
-      .getElementById("studentName")
-      .value
-      .trim();
+const teacher=
+document.getElementById("studentTeacher").value;
 
-  const father =
-    document
-      .getElementById("fatherName")
-      .value
-      .trim();
+if(!courseValue || !teacher){
 
-  const age =
-    document
-      .getElementById("studentAge")
-      .value
-      .trim();
+alert("Please select course and teacher first.");
+return;
 
-  const school =
-    document
-      .getElementById("schoolName")
-      .value
-      .trim();
+}
 
-  const address =
-    document
-      .getElementById("studentAddress")
-      .value
-      .trim();
+const courseData=courseValue.split("|");
 
-  const phone =
-    document
-      .getElementById("studentPhone")
-      .value
-      .trim();
+if(courseData.length!==3){
 
-  const courseValue =
-    document
-      .getElementById("studentCourse")
-      .value;
+alert(
+"Invalid course selection. Please select the course again."
+);
 
-  const teacher =
-    document
-      .getElementById("studentTeacher")
-      .value;
+return;
 
+}
 
-  if(!courseValue || !teacher){
+const country=courseData[0];
+const course=courseData[1];
+const price=courseData[2];
 
-    alert(
-      "Please select course and teacher first."
-    );
+const duplicate=students.some(
+student=>
+String(student.name).toLowerCase()===name.toLowerCase() &&
+String(student.phone)===phone
+);
 
-    return;
+if(duplicate){
 
-  }
+alert(
+"A student with this name and phone number is already registered."
+);
 
+return;
 
-  const courseData =
-    courseValue.split("|");
+}
 
+const student={
 
-  if(courseData.length !== 3){
+id:
+Date.now().toString()+
+Math.random().toString(36).slice(2,8),
 
-    alert(
-      "Invalid course selection. Please select the course again."
-    );
+name:name,
+father:father,
+age:age,
+school:school,
+country:country,
+address:address,
+phone:phone,
+course:course,
+price:price,
+teacher:teacher,
+createdAt:new Date().toISOString()
 
-    return;
+};
 
-  }
+students.push(student);
 
+try{
 
-  const country =
-    courseData[0];
+localStorage.setItem(
+"iqraStudents",
+JSON.stringify(students)
+);
 
-  const course =
-    courseData[1];
+}catch(error){
 
-  const price =
-    courseData[2];
+console.error(error);
 
+alert(
+"The browser could not save the student profile."
+);
 
-  /*
-    Basic duplicate protection.
-    This prevents accidental double submissions
-    with the same student name + phone.
-  */
+return;
 
-  const duplicate =
-    students.some(
-      student =>
-        String(student.name).toLowerCase() ===
-          name.toLowerCase() &&
-        String(student.phone) === phone
-    );
+}
 
+const notice=document.getElementById("studentCreated");
 
-  if(duplicate){
+notice.style.display="block";
 
-    alert(
-      "A student with this name and phone number is already registered."
-    );
+notice.innerText=
+"Registration successful! Sending your profile to "+
+teacher+"...";
 
-    return;
+if(currentLoggedInTeacher===teacher){
 
-  }
+updateDashboard(teacher);
 
+}
 
-  const student = {
+sendStudentToTeacher(student);
 
-    id:
-      Date.now().toString() +
-      Math.random()
-        .toString(36)
-        .slice(2,8),
-
-    name:
-      name,
-
-    father:
-      father,
-
-    age:
-      age,
-
-    school:
-      school,
-
-    country:
-      country,
-
-    address:
-      address,
-
-    phone:
-      phone,
-
-    course:
-      course,
-
-    price:
-      price,
-
-    teacher:
-      teacher,
-
-    createdAt:
-      new Date().toISOString()
-
-  };
-
-
-  students.push(
-    student
-  );
-
-
-  try {
-
-    localStorage.setItem(
-      "iqraStudents",
-      JSON.stringify(students)
-    );
-
-  } catch(error) {
-
-    console.error(error);
-
-    alert(
-      "The browser could not save the student profile."
-    );
-
-    return;
-
-  }
-
-
-  const notice =
-    document.getElementById(
-      "studentCreated"
-    );
-
-
-  notice.style.display =
-    "block";
-
-
-  notice.innerText =
-    "Registration successful! Sending your profile to " +
-    teacher +
-    "...";
-
-
-  /*
-    If teacher is already logged in on this browser,
-    refresh only that teacher's dashboard.
-  */
-
-  if(
-    currentLoggedInTeacher ===
-    teacher
-  ){
-
-    updateDashboard(
-      teacher
-    );
-
-  }
-
-
-  sendStudentToTeacher(
-    student
-  );
-
-
-  form.reset();
+form.reset();
 
 }
 
 
-/* =========================================
-   REGISTRATION BUTTON
-========================================= */
-
 document
-  .getElementById("registerButton")
-  .addEventListener(
-    "click",
-    registerAndSendStudent
-  );
+.getElementById("registerButton")
+.addEventListener(
+"click",
+registerAndSendStudent
+);
 
 
 /* =========================================
@@ -3633,40 +2950,22 @@ document
 
 function toggleWhyChoose(){
 
-  const info =
-    document.getElementById(
-      "whyChooseFull"
-    );
+const info=document.getElementById("whyChooseFull");
+const button=document.querySelector(".why-learn");
 
-  const button =
-    document.querySelector(
-      ".why-learn"
-    );
+if(!info || !button)return;
 
+if(info.style.display==="block"){
 
-  if(!info || !button)
-    return;
+info.style.display="none";
+button.innerText="Learn More ...";
 
+}else{
 
-  if(info.style.display === "block"){
+info.style.display="block";
+button.innerText="Show Less ...";
 
-    info.style.display =
-      "none";
-
-    button.innerText =
-      "Learn More ...";
-
-  }
-
-  else{
-
-    info.style.display =
-      "block";
-
-    button.innerText =
-      "Show Less ...";
-
-  }
+}
 
 }
 
@@ -3676,104 +2975,65 @@ function toggleWhyChoose(){
 ========================================= */
 
 document
-  .getElementById("loginForm")
-  .addEventListener(
-    "submit",
-    function(event){
+.getElementById("loginForm")
+.addEventListener(
+"submit",
+function(event){
 
-      event.preventDefault();
+event.preventDefault();
 
+const teacher=
+document.getElementById("loginTeacher").value;
 
-      const teacher =
-        document
-          .getElementById("loginTeacher")
-          .value;
+const password=
+document.getElementById("loginPassword").value;
 
+const message=
+document.getElementById("loginMessage");
 
-      const password =
-        document
-          .getElementById("loginPassword")
-          .value;
+if(!teachers[teacher]){
 
+message.style.display="block";
 
-      const message =
-        document.getElementById(
-          "loginMessage"
-        );
+message.innerText=
+"Please select an authorized teacher.";
 
+return;
 
-      if(
-        !teachers[teacher]
-      ){
+}
 
-        message.style.display =
-          "block";
+if(
+teacherPasswords[teacher] &&
+teacherPasswords[teacher]===password
+){
 
-        message.innerText =
-          "Please select an authorized teacher.";
+startTeacherSession(teacher);
 
-        return;
+message.style.display="block";
 
-      }
+message.innerText=
+"Login successful. Teacher dashboard opened.";
 
+document.getElementById("loginPassword").value="";
 
-      if(
-        teacherPasswords[teacher] &&
-        teacherPasswords[teacher] === password
-      ){
+showTeacherDashboard(teacher);
 
-        startTeacherSession(
-          teacher
-        );
+}else{
 
+currentLoggedInTeacher=null;
 
-        message.style.display =
-          "block";
+message.style.display="block";
 
-        message.innerText =
-          "Login successful. Teacher dashboard opened.";
+message.innerText=
+"Incorrect password. Teacher profile cannot be opened.";
 
+document.getElementById("dashboard").style.display="none";
+document.getElementById("studentProfile").style.display="none";
 
-        document
-          .getElementById("loginPassword")
-          .value =
-            "";
+}
 
-
-        showTeacherDashboard(
-          teacher
-        );
-
-      }
-
-      else{
-
-        currentLoggedInTeacher =
-          null;
-
-
-        message.style.display =
-          "block";
-
-        message.innerText =
-          "Incorrect password. Teacher profile cannot be opened.";
-
-
-        document
-          .getElementById("dashboard")
-          .style.display =
-            "none";
-
-
-        document
-          .getElementById("studentProfile")
-          .style.display =
-            "none";
-
-      }
-
-    }
-  );
+}
+);
 
 
 /* =========================================
@@ -3781,11 +3041,11 @@ document
 ========================================= */
 
 document
-  .getElementById("logoutButton")
-  .addEventListener(
-    "click",
-    logoutTeacher
-  );
+.getElementById("logoutButton")
+.addEventListener(
+"click",
+logoutTeacher
+);
 
 
 /* =========================================
@@ -3793,66 +3053,46 @@ document
 ========================================= */
 
 function showTeacherDashboard(
-  teacherName,
-  shouldScroll = true
+teacherName,
+shouldScroll=true
 ){
 
-  if(
-    !currentLoggedInTeacher ||
-    currentLoggedInTeacher !== teacherName ||
-    !teachers[teacherName]
-  ){
+if(
+!currentLoggedInTeacher ||
+currentLoggedInTeacher!==teacherName ||
+!teachers[teacherName]
+){
 
-    return;
+return;
 
-  }
+}
 
+const dashboard=
+document.getElementById("dashboard");
 
-  const dashboard =
-    document.getElementById(
-      "dashboard"
-    );
+dashboard.style.display="block";
 
+document.getElementById(
+"dashboardTeacherName"
+).innerText=
+teachers[teacherName].displayName;
 
-  dashboard.style.display =
-    "block";
+document.getElementById(
+"dashboardTeacherInfo"
+).innerText=
+teachers[teacherName].information;
 
+updateDashboard(teacherName);
 
-  document
-    .getElementById(
-      "dashboardTeacherName"
-    )
-    .innerText =
-      teachers[
-        teacherName
-      ].displayName;
+resetSessionTimer();
 
+if(shouldScroll){
 
-  document
-    .getElementById(
-      "dashboardTeacherInfo"
-    )
-    .innerText =
-      teachers[
-        teacherName
-      ].information;
+dashboard.scrollIntoView({
+behavior:"smooth"
+});
 
-
-  updateDashboard(
-    teacherName
-  );
-
-
-  resetSessionTimer();
-
-
-  if(shouldScroll){
-
-    dashboard.scrollIntoView({
-      behavior:"smooth"
-    });
-
-  }
+}
 
 }
 
@@ -3861,252 +3101,106 @@ function showTeacherDashboard(
    UPDATE DASHBOARD
 ========================================= */
 
-function updateDashboard(
-  teacherName
+function updateDashboard(teacherName){
+
+if(
+!currentLoggedInTeacher ||
+currentLoggedInTeacher!==teacherName
 ){
 
-  /*
-    SECURITY CHECK:
-    Dashboard data is only rendered when
-    the currently logged-in teacher matches.
-  */
+return;
 
-  if(
-    !currentLoggedInTeacher ||
-    currentLoggedInTeacher !== teacherName
-  ){
+}
 
-    return;
+const list=
+document.getElementById("teacherStudents");
 
-  }
+if(!list)return;
 
+list.innerHTML="";
 
-  const list =
-    document.getElementById(
-      "teacherStudents"
-    );
+const myStudents=students.filter(
+student=>student.teacher===teacherName
+);
 
+if(myStudents.length===0){
 
-  if(!list)
-    return;
+const emptyCard=document.createElement("div");
+emptyCard.className="student-card";
 
+const heading=document.createElement("h3");
+heading.innerText="No students yet";
 
-  list.innerHTML =
-    "";
+const paragraph=document.createElement("p");
+paragraph.innerText=
+"Students who select this teacher will appear here.";
 
+emptyCard.appendChild(heading);
+emptyCard.appendChild(paragraph);
 
-  const myStudents =
-    students.filter(
-      student =>
-        student.teacher ===
-        teacherName
-    );
+list.appendChild(emptyCard);
 
+return;
 
-  if(
-    myStudents.length === 0
-  ){
+}
 
-    const emptyCard =
-      document.createElement(
-        "div"
-      );
+myStudents.forEach(student=>{
 
+const card=document.createElement("div");
+card.className="student-card";
 
-    emptyCard.className =
-      "student-card";
+const heading=document.createElement("h3");
+heading.innerText=student.name;
 
+const course=document.createElement("p");
+const courseLabel=document.createElement("b");
+courseLabel.innerText="Course: ";
+course.appendChild(courseLabel);
+course.appendChild(
+document.createTextNode(student.course||"")
+);
 
-    const heading =
-      document.createElement(
-        "h3"
-      );
+const age=document.createElement("p");
+const ageLabel=document.createElement("b");
+ageLabel.innerText="Age: ";
+age.appendChild(ageLabel);
+age.appendChild(
+document.createTextNode(student.age||"")
+);
 
-    heading.innerText =
-      "No students yet";
+const country=document.createElement("p");
+const countryLabel=document.createElement("b");
+countryLabel.innerText="Country: ";
+country.appendChild(countryLabel);
+country.appendChild(
+document.createTextNode(student.country||"")
+);
 
+const button=document.createElement("button");
 
-    const paragraph =
-      document.createElement(
-        "p"
-      );
+button.type="button";
+button.className="green-button";
+button.innerText="View Profile";
 
-    paragraph.innerText =
-      "Students who select this teacher will appear here.";
+button.addEventListener(
+"click",
+function(){
 
+viewStudent(student.id);
 
-    emptyCard.appendChild(
-      heading
-    );
+}
+);
 
-    emptyCard.appendChild(
-      paragraph
-    );
+card.appendChild(heading);
+card.appendChild(course);
+card.appendChild(age);
+card.appendChild(country);
+card.appendChild(document.createElement("br"));
+card.appendChild(button);
 
+list.appendChild(card);
 
-    list.appendChild(
-      emptyCard
-    );
-
-
-    return;
-
-  }
-
-
-  myStudents.forEach(
-    student => {
-
-      const card =
-        document.createElement(
-          "div"
-        );
-
-
-      card.className =
-        "student-card";
-
-
-      const heading =
-        document.createElement(
-          "h3"
-        );
-
-      heading.innerText =
-        student.name;
-
-
-      const course =
-        document.createElement(
-          "p"
-        );
-
-      const courseLabel =
-        document.createElement(
-          "b"
-        );
-
-      courseLabel.innerText =
-        "Course: ";
-
-      course.appendChild(
-        courseLabel
-      );
-
-      course.appendChild(
-        document.createTextNode(
-          student.course || ""
-        )
-      );
-
-
-      const age =
-        document.createElement(
-          "p"
-        );
-
-      const ageLabel =
-        document.createElement(
-          "b"
-        );
-
-      ageLabel.innerText =
-        "Age: ";
-
-      age.appendChild(
-        ageLabel
-      );
-
-      age.appendChild(
-        document.createTextNode(
-          student.age || ""
-        )
-      );
-
-
-      const country =
-        document.createElement(
-          "p"
-        );
-
-      const countryLabel =
-        document.createElement(
-          "b"
-        );
-
-      countryLabel.innerText =
-        "Country: ";
-
-      country.appendChild(
-        countryLabel
-      );
-
-      country.appendChild(
-        document.createTextNode(
-          student.country || ""
-        )
-      );
-
-
-      const button =
-        document.createElement(
-          "button"
-        );
-
-
-      button.type =
-        "button";
-
-      button.className =
-        "green-button";
-
-      button.innerText =
-        "View Profile";
-
-
-      button.addEventListener(
-        "click",
-        function(){
-
-          viewStudent(
-            student.id
-          );
-
-        }
-      );
-
-
-      card.appendChild(
-        heading
-      );
-
-      card.appendChild(
-        course
-      );
-
-      card.appendChild(
-        age
-      );
-
-      card.appendChild(
-        country
-      );
-
-      card.appendChild(
-        document.createElement("br")
-      );
-
-      card.appendChild(
-        button
-      );
-
-
-      list.appendChild(
-        card
-      );
-
-    }
-  );
+});
 
 }
 
@@ -4115,166 +3209,99 @@ function updateDashboard(
    VIEW STUDENT
 ========================================= */
 
-function viewStudent(
-  id
+function viewStudent(id){
+
+if(!currentLoggedInTeacher){
+
+alert("Please login as a teacher first.");
+return;
+
+}
+
+const foundStudent=students.find(
+student=>String(student.id)===String(id)
+);
+
+if(!foundStudent){
+
+alert("Student profile could not be found.");
+return;
+
+}
+
+if(
+foundStudent.teacher!==currentLoggedInTeacher
 ){
 
-  /*
-    Student profiles are protected by
-    teacher session + teacher assignment.
-  */
+alert(
+"This student is not assigned to your teacher account."
+);
 
-  if(!currentLoggedInTeacher){
+return;
 
-    alert(
-      "Please login as a teacher first."
-    );
+}
 
-    return;
+currentStudent=foundStudent;
 
-  }
+resetSessionTimer();
 
+document.getElementById(
+"studentProfile"
+).style.display="block";
 
-  const foundStudent =
-    students.find(
-      student =>
-        String(student.id) ===
-        String(id)
-    );
+document.getElementById(
+"profileName"
+).innerText=currentStudent.name||"";
 
+document.getElementById(
+"profileFather"
+).innerText=currentStudent.father||"";
 
-  if(!foundStudent){
+document.getElementById(
+"profileAge"
+).innerText=currentStudent.age||"";
 
-    alert(
-      "Student profile could not be found."
-    );
+document.getElementById(
+"profileSchool"
+).innerText=currentStudent.school||"";
 
-    return;
+document.getElementById(
+"profileCountry"
+).innerText=currentStudent.country||"";
 
-  }
+document.getElementById(
+"profileAddress"
+).innerText=currentStudent.address||"";
 
+document.getElementById(
+"profilePhone"
+).innerText=currentStudent.phone||"";
 
-  if(
-    foundStudent.teacher !==
-    currentLoggedInTeacher
-  ){
+document.getElementById(
+"profileCourse"
+).innerText=
+(currentStudent.course||"")+
+" — "+
+(currentStudent.price||"");
 
-    alert(
-      "This student is not assigned to your teacher account."
-    );
+document.getElementById(
+"profileTeacher"
+).innerText=
+currentStudent.teacher||"";
 
-    return;
+document.getElementById(
+"studentCall"
+).href=
+"tel:"+
+encodeURIComponent(
+currentStudent.phone||""
+);
 
-  }
-
-
-  currentStudent =
-    foundStudent;
-
-
-  resetSessionTimer();
-
-
-  document
-    .getElementById(
-      "studentProfile"
-    )
-    .style.display =
-      "block";
-
-
-  document
-    .getElementById(
-      "profileName"
-    )
-    .innerText =
-      currentStudent.name || "";
-
-
-  document
-    .getElementById(
-      "profileFather"
-    )
-    .innerText =
-      currentStudent.father || "";
-
-
-  document
-    .getElementById(
-      "profileAge"
-    )
-    .innerText =
-      currentStudent.age || "";
-
-
-  document
-    .getElementById(
-      "profileSchool"
-    )
-    .innerText =
-      currentStudent.school || "";
-
-
-  document
-    .getElementById(
-      "profileCountry"
-    )
-    .innerText =
-      currentStudent.country || "";
-
-
-  document
-    .getElementById(
-      "profileAddress"
-    )
-    .innerText =
-      currentStudent.address || "";
-
-
-  document
-    .getElementById(
-      "profilePhone"
-    )
-    .innerText =
-      currentStudent.phone || "";
-
-
-  document
-    .getElementById(
-      "profileCourse"
-    )
-    .innerText =
-      (currentStudent.course || "") +
-      " — " +
-      (currentStudent.price || "");
-
-
-  document
-    .getElementById(
-      "profileTeacher"
-    )
-    .innerText =
-      currentStudent.teacher || "";
-
-
-  document
-    .getElementById(
-      "studentCall"
-    )
-    .href =
-      "tel:" +
-      encodeURIComponent(
-        currentStudent.phone || ""
-      );
-
-
-  document
-    .getElementById(
-      "studentProfile"
-    )
-    .scrollIntoView({
-      behavior:"smooth"
-    });
+document.getElementById(
+"studentProfile"
+).scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
@@ -4285,57 +3312,45 @@ function viewStudent(
 
 function openStudentChat(){
 
-  if(
-    !currentLoggedInTeacher ||
-    !currentStudent
-  ){
+if(
+!currentLoggedInTeacher ||
+!currentStudent
+){
 
-    alert(
-      "Please login and open a student profile first."
-    );
+alert(
+"Please login and open a student profile first."
+);
 
-    return;
+return;
 
-  }
+}
 
+if(
+currentStudent.teacher!==currentLoggedInTeacher
+){
 
-  if(
-    currentStudent.teacher !==
-    currentLoggedInTeacher
-  ){
+alert(
+"You are not authorized to open this student's chat."
+);
 
-    alert(
-      "You are not authorized to open this student's chat."
-    );
+return;
 
-    return;
+}
 
-  }
+resetSessionTimer();
 
+currentChatPerson=currentStudent.name;
 
-  resetSessionTimer();
+document.getElementById(
+"chatheader"
+).innerText=
+"Chat with "+currentStudent.name;
 
-
-  currentChatPerson =
-    currentStudent.name;
-
-
-  document
-    .getElementById(
-      "chatheader"
-    )
-    .innerText =
-      "Chat with " +
-      currentStudent.name;
-
-
-  document
-    .getElementById(
-      "chat"
-    )
-    .scrollIntoView({
-      behavior:"smooth"
-    });
+document.getElementById(
+"chat"
+).scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
@@ -4344,128 +3359,79 @@ function openStudentChat(){
    TEACHER CHAT
 ========================================= */
 
-function openTeacherChat(
-  teacher
-){
+function openTeacherChat(teacher){
 
-  /*
-    Public teacher chat button does not expose
-    private teacher information.
-  */
+currentChatPerson=teacher;
 
-  currentChatPerson =
-    teacher;
+document.getElementById(
+"chatheader"
+).innerText=
+"Chat with "+teacher;
 
-
-  document
-    .getElementById(
-      "chatheader"
-    )
-    .innerText =
-      "Chat with " +
-      teacher;
-
-
-  document
-    .getElementById(
-      "chat"
-    )
-    .scrollIntoView({
-      behavior:"smooth"
-    });
+document.getElementById(
+"chat"
+).scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
 
 /* =========================================
-   SEND CHAT MESSAGE
+   CHAT MESSAGE
 ========================================= */
 
 document
-  .getElementById("chatForm")
-  .addEventListener(
-    "submit",
-    function(event){
+.getElementById("chatForm")
+.addEventListener(
+"submit",
+function(event){
 
-      event.preventDefault();
+event.preventDefault();
 
+if(!currentChatPerson){
 
-      if(!currentChatPerson){
+alert(
+"Please select a teacher or student first."
+);
 
-        alert(
-          "Please select a teacher or student first."
-        );
+return;
 
-        return;
+}
 
-      }
+if(currentLoggedInTeacher){
 
+resetSessionTimer();
 
-      /*
-        If chatting from a teacher dashboard,
-        keep the teacher session alive.
-      */
+}
 
-      if(currentLoggedInTeacher){
+const input=
+document.getElementById("chatInput");
 
-        resetSessionTimer();
+const text=input.value.trim();
 
-      }
+if(!text)return;
 
+const message=
+document.createElement("div");
 
-      const input =
-        document.getElementById(
-          "chatInput"
-        );
+message.className="message my-message";
 
+message.textContent=text;
 
-      const text =
-        input.value.trim();
+document.getElementById(
+"chatMessages"
+).appendChild(message);
 
+input.value="";
 
-      if(!text)
-        return;
+message.scrollIntoView({
+behavior:"smooth",
+block:"nearest"
+});
 
-
-      const message =
-        document.createElement(
-          "div"
-        );
-
-
-      message.className =
-        "message my-message";
-
-
-      /*
-        textContent is intentionally used instead
-        of innerHTML to prevent HTML injection.
-      */
-
-      message.textContent =
-        text;
-
-
-      document
-        .getElementById(
-          "chatMessages"
-        )
-        .appendChild(
-          message
-        );
-
-
-      input.value =
-        "";
-
-
-      message.scrollIntoView({
-        behavior:"smooth",
-        block:"nearest"
-      });
-
-    }
-  );
+}
+);
 
 
 /* =========================================
@@ -4474,74 +3440,44 @@ document
 
 function showPaymentMessage(){
 
-  const notice =
-    document.getElementById(
-      "paymentNotice"
-    );
+const notice=
+document.getElementById("paymentNotice");
 
+notice.style.display="block";
 
-  notice.style.display =
-    "block";
-
-
-  notice.innerText =
-    "Please contact the academy for current payment details.";
+notice.innerText=
+"Please contact the academy for current payment details.";
 
 }
 
 
 /* =========================================
-   SEND PROFILE TO TEACHER
-   WHATSAPP
+   WHATSAPP REGISTRATION
 ========================================= */
 
-function sendStudentToTeacher(
-  student
-){
+function sendStudentToTeacher(student){
 
-  if(!student)
-    return;
+if(!student)return;
 
+const teacherNumbers={
 
-  const teacherNumbers = {
+"Abdullah Shahzad":"923054330064",
+"Zain Ilyas":"923440950974",
+"Hafiz Musa":"923219423013"
 
-    "Abdullah Shahzad":
-      "923054330064",
+};
 
-    "Zain Ilyas":
-      "923440950974",
+const teacherNumber=
+teacherNumbers[student.teacher];
 
-    "Hafiz Musa":
-      "923219423013"
+if(!teacherNumber){
 
-  };
+alert("Teacher WhatsApp number not found.");
+return;
 
+}
 
-  const teacherNumber =
-    teacherNumbers[
-      student.teacher
-    ];
-
-
-  if(!teacherNumber){
-
-    alert(
-      "Teacher WhatsApp number not found."
-    );
-
-    return;
-
-  }
-
-
-  /*
-    NOTE:
-    WhatsApp receives the student information.
-    Only send information that the academy is
-    comfortable sharing through WhatsApp.
-  */
-
-  const message =
+const message=
 `Assalam-o-Alaikum,
 
 New Student Registration
@@ -4559,21 +3495,17 @@ Teacher: ${student.teacher}
 
 Iqra Quran Academy`;
 
+const whatsappURL=
+"https://wa.me/"+
+teacherNumber+
+"?text="+
+encodeURIComponent(message);
 
-  const whatsappURL =
-    "https://wa.me/" +
-    teacherNumber +
-    "?text=" +
-    encodeURIComponent(
-      message
-    );
-
-
-  window.open(
-    whatsappURL,
-    "_blank",
-    "noopener,noreferrer"
-  );
+window.open(
+whatsappURL,
+"_blank",
+"noopener,noreferrer"
+);
 
 }
 
@@ -4584,118 +3516,87 @@ Iqra Quran Academy`;
 
 function toggleHowToUse(){
 
-  const info =
-    document.getElementById(
-      "fullHowToUse"
-    );
+const info=
+document.getElementById("fullHowToUse");
 
-  const button =
-    document.querySelector(
-      ".learn-more"
-    );
+const button=
+document.querySelector(".learn-more");
 
+if(!info || !button)return;
 
-  if(!info || !button)
-    return;
+if(info.style.display==="block"){
 
+info.style.display="none";
+button.innerText="Learn More ...";
 
-  if(info.style.display === "block"){
+}else{
 
-    info.style.display =
-      "none";
+info.style.display="block";
+button.innerText="Show Less ...";
 
-    button.innerText =
-      "Learn More ...";
-
-  }
-
-  else{
-
-    info.style.display =
-      "block";
-
-    button.innerText =
-      "Show Less ...";
-
-  }
+}
 
 }
 
 
 function toggleAcademyInfo(){
 
-  const info =
-    document.getElementById(
-      "academyInfo"
-    );
+const info=
+document.getElementById("academyInfo");
 
-  const button =
-    document.querySelector(
-      ".info-learn"
-    );
+const button=
+document.querySelector(".info-learn");
 
+if(!info || !button)return;
 
-  if(!info || !button)
-    return;
+if(info.style.display==="block"){
 
+info.style.display="none";
+button.innerText="Learn More ...";
 
-  if(info.style.display === "block"){
+}else{
 
-    info.style.display =
-      "none";
+info.style.display="block";
+button.innerText="Show Less ...";
 
-    button.innerText =
-      "Learn More ...";
-
-  }
-
-  else{
-
-    info.style.display =
-      "block";
-
-    button.innerText =
-      "Show Less ...";
-
-  }
+}
 
 }
 
 
 /* =========================================
-   RESTORE SESSION ON PAGE LOAD
+   RESTORE SESSION
 ========================================= */
 
 restoreTeacherSession();
 
 
 /* =========================================
-   BASIC SESSION ACTIVITY PROTECTION
+   SESSION ACTIVITY
 ========================================= */
 
 [
-  "click",
-  "keydown",
-  "touchstart"
+"click",
+"keydown",
+"touchstart"
 ].forEach(
-  function(eventName){
+function(eventName){
 
-    document.addEventListener(
-      eventName,
-      function(){
+document.addEventListener(
+eventName,
+function(){
 
-        if(currentLoggedInTeacher){
+if(currentLoggedInTeacher){
 
-          resetSessionTimer();
+resetSessionTimer();
 
-        }
+}
 
-      },
-      {passive:true}
-    );
-
-  }
+},
+{passive:true}
 );
+
+});
 
 </script>
 
