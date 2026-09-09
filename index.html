@@ -3,7 +3,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Iqra Quran Academy | Online Quran Learning</title>
@@ -91,11 +90,6 @@
   color: #68756f;
 }
 
-
-/* =========================================
-   WHY POINTS
-========================================= */
-
 .why-points {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -138,11 +132,6 @@
   line-height: 1.6;
   color: #6c7772;
 }
-
-
-/* =========================================
-   ORIGINAL WHY CARD
-========================================= */
 
 .why-choose-card {
   padding: 25px;
@@ -223,11 +212,6 @@
   margin-bottom: 0;
 }
 
-
-/* =========================================
-   RIGHT IMAGE
-========================================= */
-
 .why-image {
   width: 100%;
   display: flex;
@@ -268,77 +252,6 @@
   border-radius: 25px;
 
   z-index: -1;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-  .why-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .why-content h2 {
-    font-size: 36px;
-  }
-
-  .why-image {
-    order: 2;
-  }
-
-  .why-image-frame {
-    max-width: 650px;
-  }
-
-  .why-image-frame img {
-    height: 450px;
-  }
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 600px) {
-
-  #why-choose {
-    padding: 65px 5%;
-  }
-
-  .why-content h2 {
-    font-size: 30px;
-  }
-
-  #why-choose .subtitle {
-    font-size: 15px;
-  }
-
-  .why-points {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .why-choose-card {
-    padding: 20px;
-  }
-
-  .why-image-frame img {
-    height: 350px;
-    border-radius: 20px;
-  }
-
-  .why-image-frame::after {
-    top: 10px;
-    left: 10px;
-    border-radius: 20px;
-  }
-
 }
 
 
@@ -558,22 +471,6 @@
   line-height:1.6;
 }
 
-@media(max-width:800px){
-
-  .get-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
-
-@media(max-width:500px){
-
-  .get-grid{
-    grid-template-columns:1fr;
-  }
-
-}
-
 
 /* =========================================
    HOW TO USE
@@ -591,76 +488,6 @@
   gap:20px;
 
   box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.how-icon{
-  width:75px;
-  height:75px;
-  flex-shrink:0;
-
-  border-radius:18px;
-  background:#eff8f2;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:42px;
-}
-
-.how-content{
-  flex:1;
-}
-
-.how-content h2{
-  margin:0 0 10px;
-  font-size:30px;
-  color:#075b3d;
-}
-
-.short-info{
-  color:#688174;
-  font-size:16px;
-  margin-bottom:10px;
-}
-
-.learn-more{
-  border:none;
-  background:none;
-  padding:0;
-
-  color:#087b51;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-.learn-more:hover{
-  text-decoration:underline;
-}
-
-.full-info{
-  display:none;
-
-  margin-top:18px;
-  padding-top:15px;
-
-  border-top:1px solid #d7e8dc;
-
-  color:#214936;
-  font-size:16px;
-}
-
-.full-info p{
-  margin-bottom:14px;
-}
-
-@media(max-width:800px){
-
-  .how-to-use{
-    flex-direction:column;
-  }
-
 }
 
 
@@ -1538,8 +1365,70 @@ select:focus{
 
 
 /* =========================================
+   SECURITY
+========================================= */
+
+.security-notice{
+  margin-top:15px;
+  padding:12px 14px;
+  border-radius:10px;
+  background:#fff8df;
+  border:1px solid #ead58b;
+  color:#705c12;
+  font-size:13px;
+  line-height:1.6;
+}
+
+.logout-button{
+  margin-top:20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  text-align:center;
+  background:#075b3d;
+  color:white;
+  padding:40px 20px;
+  margin-top:50px;
+}
+
+footer p{
+  color:#d9eee2;
+}
+
+
+/* =========================================
    MOBILE
 ========================================= */
+
+@media(max-width:900px){
+
+  .why-container{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .why-content h2{
+    font-size:36px;
+  }
+
+  .why-image{
+    order:2;
+  }
+
+  .why-image-frame{
+    max-width:650px;
+  }
+
+  .why-image-frame img{
+    height:450px;
+  }
+
+}
 
 @media(max-width:800px){
 
@@ -1607,6 +1496,54 @@ select:focus{
 
   .wide-courses-title h2{
     font-size:30px;
+  }
+
+  .get-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:600px){
+
+  #why-choose{
+    padding:65px 5%;
+  }
+
+  .why-content h2{
+    font-size:30px;
+  }
+
+  #why-choose .subtitle{
+    font-size:15px;
+  }
+
+  .why-points{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .why-choose-card{
+    padding:20px;
+  }
+
+  .why-image-frame img{
+    height:350px;
+    border-radius:20px;
+  }
+
+  .why-image-frame::after{
+    top:10px;
+    left:10px;
+    border-radius:20px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .get-grid{
+    grid-template-columns:1fr;
   }
 
 }
@@ -1722,66 +1659,27 @@ Iqra Quran Academy
 <div class="get-grid">
 
 <div class="get-card">
-
-<div class="get-icon">
-🎓
-</div>
-
+<div class="get-icon">🎓</div>
 <h3>Live Classes</h3>
-
-<p>
-Real-time learning experiences
-with qualified teachers.
-</p>
-
+<p>Real-time learning experiences with qualified teachers.</p>
 </div>
-
 
 <div class="get-card">
-
-<div class="get-icon">
-🕐
-</div>
-
+<div class="get-icon">🕐</div>
 <h3>Flexible Scheduling</h3>
-
-<p>
-Learn with classes that fit
-your available time.
-</p>
-
+<p>Learn with classes that fit your available time.</p>
 </div>
-
 
 <div class="get-card">
-
-<div class="get-icon">
-👤
-</div>
-
+<div class="get-icon">👤</div>
 <h3>1-on-1 or Group Sessions</h3>
-
-<p>
-Choose personalized or group
-learning sessions.
-</p>
-
+<p>Choose personalized or group learning sessions.</p>
 </div>
-
 
 <div class="get-card">
-
-<div class="get-icon">
-💻
-</div>
-
+<div class="get-icon">💻</div>
 <h3>100% Online Access</h3>
-
-<p>
-Join your classes from anywhere
-on any device.
-</p>
-
+<p>Join your classes from anywhere on any device.</p>
 </div>
 
 </div>
@@ -1797,9 +1695,7 @@ on any device.
 
 <div class="info-card">
 
-<div class="info-icon">
-📖
-</div>
+<div class="info-icon">📖</div>
 
 <h3>
 Learn Quran Correctly from Home with Iqra Quran Academy
@@ -1848,6 +1744,8 @@ id="studentName"
 type="text"
 placeholder="Student name"
 required
+autocomplete="name"
+maxlength="80"
 >
 
 </label>
@@ -1861,6 +1759,7 @@ id="fatherName"
 type="text"
 placeholder="Father name"
 required
+maxlength="80"
 >
 
 </label>
@@ -1888,6 +1787,7 @@ School Name
 id="schoolName"
 type="text"
 placeholder="School name"
+maxlength="120"
 >
 
 </label>
@@ -1900,6 +1800,7 @@ Address
 id="studentAddress"
 type="text"
 placeholder="Address"
+maxlength="200"
 >
 
 </label>
@@ -1913,6 +1814,8 @@ id="studentPhone"
 type="tel"
 placeholder="+92..."
 required
+maxlength="25"
+autocomplete="tel"
 >
 
 </label>
@@ -1921,113 +1824,55 @@ required
 <label>
 Select Course
 
-<select
-id="studentCourse"
-required
->
+<select id="studentCourse" required>
 
-<option value="">
-Select Course
-</option>
+<option value="">Select Course</option>
 
 <optgroup label="🇵🇰 PK — Pakistan — Rs. 6,000 / month">
 
-<option value="PK|Hifz|Rs. 6,000 / month">
-Hifz
-</option>
-
-<option value="PK|Nazra|Rs. 6,000 / month">
-Nazra
-</option>
-
-<option value="PK|Tajweed|Rs. 6,000 / month">
-Tajweed
-</option>
+<option value="PK|Hifz|Rs. 6,000 / month">Hifz</option>
+<option value="PK|Nazra|Rs. 6,000 / month">Nazra</option>
+<option value="PK|Tajweed|Rs. 6,000 / month">Tajweed</option>
 
 </optgroup>
-
 
 <optgroup label="🇦🇪 AE — UAE — AED 330.75 / month">
 
-<option value="AE|Hifz|AED 330.75 / month">
-Hifz
-</option>
-
-<option value="AE|Nazra|AED 330.75 / month">
-Nazra
-</option>
-
-<option value="AE|Tajweed|AED 330.75 / month">
-Tajweed
-</option>
+<option value="AE|Hifz|AED 330.75 / month">Hifz</option>
+<option value="AE|Nazra|AED 330.75 / month">Nazra</option>
+<option value="AE|Tajweed|AED 330.75 / month">Tajweed</option>
 
 </optgroup>
-
 
 <optgroup label="🇸🇦 SA — Saudi Arabia — SAR 338.20 / month">
 
-<option value="SA|Hifz|SAR 338.20 / month">
-Hifz
-</option>
-
-<option value="SA|Nazra|SAR 338.20 / month">
-Nazra
-</option>
-
-<option value="SA|Tajweed|SAR 338.20 / month">
-Tajweed
-</option>
+<option value="SA|Hifz|SAR 338.20 / month">Hifz</option>
+<option value="SA|Nazra|SAR 338.20 / month">Nazra</option>
+<option value="SA|Tajweed|SAR 338.20 / month">Tajweed</option>
 
 </optgroup>
-
 
 <optgroup label="🇺🇸 US — United States — $90 / month">
 
-<option value="US|Hifz|$90 / month">
-Hifz
-</option>
-
-<option value="US|Nazra|$90 / month">
-Nazra
-</option>
-
-<option value="US|Tajweed|$90 / month">
-Tajweed
-</option>
+<option value="US|Hifz|$90 / month">Hifz</option>
+<option value="US|Nazra|$90 / month">Nazra</option>
+<option value="US|Tajweed|$90 / month">Tajweed</option>
 
 </optgroup>
-
 
 <optgroup label="🇬🇧 GB — United Kingdom — £70 / month">
 
-<option value="GB|Hifz|£70 / month">
-Hifz
-</option>
-
-<option value="GB|Nazra|£70 / month">
-Nazra
-</option>
-
-<option value="GB|Tajweed|£70 / month">
-Tajweed
-</option>
+<option value="GB|Hifz|£70 / month">Hifz</option>
+<option value="GB|Nazra|£70 / month">Nazra</option>
+<option value="GB|Tajweed|£70 / month">Tajweed</option>
 
 </optgroup>
 
-
 <optgroup label="🇨🇦 CA — Canada — $90 / month">
 
-<option value="CA|Hifz|$90 / month">
-Hifz
-</option>
-
-<option value="CA|Nazra|$90 / month">
-Nazra
-</option>
-
-<option value="CA|Tajweed|$90 / month">
-Tajweed
-</option>
+<option value="CA|Hifz|$90 / month">Hifz</option>
+<option value="CA|Nazra|$90 / month">Nazra</option>
+<option value="CA|Tajweed|$90 / month">Tajweed</option>
 
 </optgroup>
 
@@ -2039,26 +1884,13 @@ Tajweed
 <label>
 Teacher
 
-<select
-id="studentTeacher"
-required
->
+<select id="studentTeacher" required>
 
-<option value="">
-Select Teacher
-</option>
+<option value="">Select Teacher</option>
 
-<option value="Abdullah Shahzad">
-Abdullah Shahzad
-</option>
-
-<option value="Zain Ilyas">
-Zain Ilyas
-</option>
-
-<option value="Hafiz Musa">
-Hafiz Musa
-</option>
+<option value="Abdullah Shahzad">Abdullah Shahzad</option>
+<option value="Zain Ilyas">Zain Ilyas</option>
+<option value="Hafiz Musa">Hafiz Musa</option>
 
 </select>
 
@@ -2101,53 +1933,24 @@ Choose your Quran learning program.
 <div class="courses">
 
 <div class="course">
-
 <div class="course-icon">📗</div>
-
 <h3>Hifz</h3>
-
-<p>
-Quran memorisation program.
-</p>
-
-<span class="price">
-Rs. 6,000 / month
-</span>
-
+<p>Quran memorisation program.</p>
+<span class="price">Rs. 6,000 / month</span>
 </div>
 
-
 <div class="course">
-
 <div class="course-icon">📖</div>
-
 <h3>Nazra</h3>
-
-<p>
-Quran reading program.
-</p>
-
-<span class="price">
-Rs. 6,000 / month
-</span>
-
+<p>Quran reading program.</p>
+<span class="price">Rs. 6,000 / month</span>
 </div>
 
-
 <div class="course">
-
 <div class="course-icon">✨</div>
-
 <h3>Tajweed</h3>
-
-<p>
-Additional Tajweed option.
-</p>
-
-<span class="price">
-Rs. 6,000 / month
-</span>
-
+<p>Additional Tajweed option.</p>
+<span class="price">Rs. 6,000 / month</span>
 </div>
 
 </div>
@@ -2190,10 +1993,7 @@ Learn the basics of Quran reading from the beginning
 with proper pronunciation and guidance.
 </p>
 
-<a
-href="#start"
-class="wide-course-button"
->
+<a href="#start" class="wide-course-button">
 Learn More
 </a>
 
@@ -2211,10 +2011,7 @@ Improve your Quran reading skills with proper
 pronunciation, fluency and regular practice.
 </p>
 
-<a
-href="#start"
-class="wide-course-button"
->
+<a href="#start" class="wide-course-button">
 Learn More
 </a>
 
@@ -2232,10 +2029,7 @@ Memorize the Holy Quran step by step with a
 structured and supportive learning program.
 </p>
 
-<a
-href="#start"
-class="wide-course-button"
->
+<a href="#start" class="wide-course-button">
 Learn More
 </a>
 
@@ -2253,7 +2047,6 @@ Learn More
 <section id="why-choose">
 
 <div class="why-container">
-
 
 <div class="why-content">
 
@@ -2273,92 +2066,51 @@ online learning experience.
 
 <div class="why-points">
 
-
 <div class="why-point">
-
-<div class="why-icon">
-✓
-</div>
-
+<div class="why-icon">✓</div>
 <div>
-
-<h3>
-Expert Quran Tutors
-</h3>
-
+<h3>Expert Quran Tutors</h3>
 <p>
 Learn from experienced teachers who focus on
 correct Quran reading and Tajweed.
 </p>
-
 </div>
-
 </div>
 
 
 <div class="why-point">
-
-<div class="why-icon">
-✓
-</div>
-
+<div class="why-icon">✓</div>
 <div>
-
-<h3>
-One-on-One Learning
-</h3>
-
+<h3>One-on-One Learning</h3>
 <p>
 Personalized online classes where every student
 receives individual attention.
 </p>
-
 </div>
-
 </div>
 
 
 <div class="why-point">
-
-<div class="why-icon">
-✓
-</div>
-
+<div class="why-icon">✓</div>
 <div>
-
-<h3>
-Flexible Timings
-</h3>
-
+<h3>Flexible Timings</h3>
 <p>
 Choose class timings that fit your daily routine
 and make Quran learning convenient.
 </p>
-
 </div>
-
 </div>
 
 
 <div class="why-point">
-
-<div class="why-icon">
-✓
-</div>
-
+<div class="why-icon">✓</div>
 <div>
-
-<h3>
-Learn From Home
-</h3>
-
+<h3>Learn From Home</h3>
 <p>
 Connect with the Quran from the comfort of your
 home through our online classes.
 </p>
-
 </div>
-
 </div>
 
 </div>
@@ -2450,7 +2202,7 @@ alt="Student learning Quran online"
 
 
 <!-- =========================================
-     ONLINE QURAN PACKAGES
+     PACKAGES
 ========================================= -->
 
 <section class="package-section">
@@ -2470,53 +2222,30 @@ Select a package that suits your learning needs.
 
 <div class="packages">
 
-
 <div class="package">
 
-<div class="package-icon">
-🇵🇰
-</div>
+<div class="package-icon">🇵🇰</div>
 
-<h3>
-Pakistan Quran Classes
-</h3>
+<h3>Pakistan Quran Classes</h3>
 
 <div class="package-price">
 Rs. 6,000 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2525,50 +2254,28 @@ Enroll Now
 
 <div class="package">
 
-<div class="package-icon">
-🇦🇪
-</div>
+<div class="package-icon">🇦🇪</div>
 
-<h3>
-UAE Quran Classes
-</h3>
+<h3>UAE Quran Classes</h3>
 
 <div class="package-price">
 AED 330.75 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2577,50 +2284,28 @@ Enroll Now
 
 <div class="package">
 
-<div class="package-icon">
-🇸🇦
-</div>
+<div class="package-icon">🇸🇦</div>
 
-<h3>
-Saudi Arabia Quran Classes
-</h3>
+<h3>Saudi Arabia Quran Classes</h3>
 
 <div class="package-price">
 SAR 338.20 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2629,50 +2314,28 @@ Enroll Now
 
 <div class="package">
 
-<div class="package-icon">
-🇺🇸
-</div>
+<div class="package-icon">🇺🇸</div>
 
-<h3>
-USA Quran Classes
-</h3>
+<h3>USA Quran Classes</h3>
 
 <div class="package-price">
 $90 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2681,50 +2344,28 @@ Enroll Now
 
 <div class="package">
 
-<div class="package-icon">
-🇬🇧
-</div>
+<div class="package-icon">🇬🇧</div>
 
-<h3>
-UK Quran Classes
-</h3>
+<h3>UK Quran Classes</h3>
 
 <div class="package-price">
 £70 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2733,50 +2374,28 @@ Enroll Now
 
 <div class="package">
 
-<div class="package-icon">
-🇨🇦
-</div>
+<div class="package-icon">🇨🇦</div>
 
-<h3>
-Canada Quran Classes
-</h3>
+<h3>Canada Quran Classes</h3>
 
 <div class="package-price">
 $90 / month
 </div>
 
 <ul>
-
-<li>
-16-25 Minutes / Day
-</li>
-
-<li>
-6 Days / Week
-</li>
-
-<li>
-26 Classes / Month
-</li>
-
+<li>16-25 Minutes / Day</li>
+<li>6 Days / Week</li>
+<li>26 Classes / Month</li>
 </ul>
 
 <div class="package-subjects">
 
-<div>
-Nazra • Hifz • Tajweed
-</div>
-
-<div>
-Quran Reading • Proper Recitation
-</div>
+<div>Nazra • Hifz • Tajweed</div>
+<div>Quran Reading • Proper Recitation</div>
 
 </div>
 
-<a
-href="#start"
-class="package-button"
->
+<a href="#start" class="package-button">
 Enroll Now
 </a>
 
@@ -2804,6 +2423,11 @@ Choose your Quran teacher.
 <div class="teachers">
 
 
+<!-- IMPORTANT:
+     Personal/private teacher information has been removed
+     from the public website.
+-->
+
 <div class="teacher">
 
 <h3>
@@ -2811,29 +2435,14 @@ Hafiz Abdullah Shahzad
 </h3>
 
 <div class="info">
-Father: Shahzad Ahmad
+Qualified Quran Teacher
 </div>
 
 <div class="info">
-Age: 13
-</div>
-
-<div class="info">
-School: Iqra Huffaz
-</div>
-
-<div class="info">
-Address: H Block, Multan Road
+Available for Hifz, Nazra & Tajweed
 </div>
 
 <div class="teacher-buttons">
-
-<a
-class="green-button"
-href="tel:03054330064"
->
-📞 Contact Abdullah
-</a>
 
 <button
 class="green-button"
@@ -2854,29 +2463,14 @@ Hafiz Zain Ilyas
 </h3>
 
 <div class="info">
-Father: Ilyass
+Qualified Quran Teacher
 </div>
 
 <div class="info">
-Age: 13
-</div>
-
-<div class="info">
-School: Iqra Huffaz
-</div>
-
-<div class="info">
-Address: Mansura Bazaar, Lahore
+Available for Hifz, Nazra & Tajweed
 </div>
 
 <div class="teacher-buttons">
-
-<a
-class="green-button"
-href="tel:03440950974"
->
-📞 Contact Zain
-</a>
 
 <button
 class="green-button"
@@ -2897,33 +2491,14 @@ Hafiz Musa
 </h3>
 
 <div class="info">
-Father: sheheryarr mirza
+Quran Teacher
 </div>
 
 <div class="info">
-Age: 13
-</div>
-
-<div class="info">
-School: Iqra Huffaz
-</div>
-
-<div class="info">
-Address: Awan Town Lahore
-</div>
-
-<div class="info">
-Phone: 03219423013
+Available for Quran learning programs
 </div>
 
 <div class="teacher-buttons">
-
-<a
-class="green-button"
-href="tel:03219423013"
->
-📞 Contact Musa
-</a>
 
 <button
 class="green-button"
@@ -2948,13 +2523,19 @@ onclick="openTeacherChat('Hafiz Musa')"
 <section id="login">
 
 <h2>
-Teacher Login</h2>
-  
+Teacher Login
+</h2>
+
 <p style="margin:10px 0 15px; font-size:14px; line-height:1.5; color:#666;">
-  <strong>For Teachers Only:</strong><br>
-  This login area is provided for teachers to view and manage their students.
-  Please do not open or use this section unless you are an authorized teacher.
+
+<strong>For Teachers Only:</strong><br>
+
+This login area is provided for teachers to view and manage
+their students. Please do not open or use this section unless
+you are an authorized teacher.
+
 </p>
+
 <p class="subtitle">
 Enter your teacher name and password.
 </p>
@@ -2966,10 +2547,7 @@ Enter your teacher name and password.
 <label>
 Teacher
 
-<select
-id="loginTeacher"
-required
->
+<select id="loginTeacher" required>
 
 <option value="">
 Select Teacher
@@ -3000,6 +2578,8 @@ id="loginPassword"
 type="password"
 placeholder="Enter password"
 required
+autocomplete="current-password"
+maxlength="100"
 >
 
 </label>
@@ -3019,6 +2599,14 @@ Login
 id="loginMessage"
 class="notice"
 ></div>
+
+<div class="security-notice">
+
+🔐 <strong>Teacher access only.</strong>
+For security, please log out after viewing student information
+and do not share your teacher password with anyone.
+
+</div>
 
 </div>
 
@@ -3064,6 +2652,14 @@ class="students"
 >
 </div>
 
+<button
+id="logoutButton"
+class="green-button logout-button"
+type="button"
+>
+🚪 Logout
+</button>
+
 </div>
 
 </section>
@@ -3088,92 +2684,44 @@ Student Profile
 
 <div class="profile-grid">
 
-
 <div class="profile-item">
-
-<strong>
-Father Name
-</strong>
-
+<strong>Father Name</strong>
 <span id="profileFather"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Age
-</strong>
-
+<strong>Age</strong>
 <span id="profileAge"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-School
-</strong>
-
+<strong>School</strong>
 <span id="profileSchool"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Country
-</strong>
-
+<strong>Country</strong>
 <span id="profileCountry"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Address
-</strong>
-
+<strong>Address</strong>
 <span id="profileAddress"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Phone
-</strong>
-
+<strong>Phone</strong>
 <span id="profilePhone"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Course
-</strong>
-
+<strong>Course</strong>
 <span id="profileCourse"></span>
-
 </div>
 
-
 <div class="profile-item">
-
-<strong>
-Teacher
-</strong>
-
+<strong>Teacher</strong>
 <span id="profileTeacher"></span>
-
 </div>
 
 </div>
@@ -3248,6 +2796,7 @@ id="chatInput"
 type="text"
 placeholder="Write your message..."
 required
+maxlength="500"
 >
 
 <button type="submit">
@@ -3276,7 +2825,6 @@ Academy fee payment options.
 </p>
 
 <div class="payments">
-
 
 <div class="payment">
 
@@ -3450,7 +2998,6 @@ Hear from our students about their learning experience.
 
 <div class="testimonials">
 
-
 <div class="testimonial">
 
 <div class="testimonial-icon">
@@ -3547,22 +3094,58 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
 let students = [];
 
 try {
-  students =
-    JSON.parse(
-      localStorage.getItem("iqraStudents")
-    ) || [];
+
+  const savedStudents =
+    localStorage.getItem("iqraStudents");
+
+  if(savedStudents){
+
+    const parsed =
+      JSON.parse(savedStudents);
+
+    if(Array.isArray(parsed)){
+      students = parsed;
+    }
+
+  }
+
 } catch(error) {
+
+  console.error(
+    "Student storage could not be read."
+  );
+
   students = [];
+
 }
+
+
+/* =========================================
+   SESSION VARIABLES
+========================================= */
 
 let currentStudent = null;
 let currentChatPerson = null;
 let currentLoggedInTeacher = null;
 
+let sessionTimer = null;
+
+const SESSION_TIME =
+  30 * 60 * 1000;
+
 
 /* =========================================
    TEACHERS
 ========================================= */
+
+/*
+  Public/private teacher personal information has
+  deliberately been reduced.
+
+  Do NOT put private home address, school, age,
+  personal phone numbers or other sensitive details
+  in public frontend code.
+*/
 
 const teachers = {
 
@@ -3572,10 +3155,7 @@ const teachers = {
       "Hafiz Abdullah Shahzad",
 
     information:
-      "Father: Shahzad Ahmad | Age: 13 | School: Iqra Huffaz | Address: H Block, Multan Road",
-
-    phone:
-      "03054330064"
+      "Quran Teacher | Hifz, Nazra & Tajweed"
 
   },
 
@@ -3585,10 +3165,7 @@ const teachers = {
       "Hafiz Zain Ilyas",
 
     information:
-      "Father: Ilyass | Age: 13 | School: Iqra Huffaz | Address: Mansura Bazaar, Lahore",
-
-    phone:
-      "03440950974"
+      "Quran Teacher | Hifz, Nazra & Tajweed"
 
   },
 
@@ -3598,10 +3175,7 @@ const teachers = {
       "Hafiz Musa",
 
     information:
-      "Father: sheheryarr mirza | Age: 13 | School: Iqra Huffaz | Address: Awan Town Lahore",
-
-    phone:
-      "03219423013"
+      "Quran Teacher | Quran Learning Programs"
 
   }
 
@@ -3609,14 +3183,19 @@ const teachers = {
 
 
 /* =========================================
-   DEMO TEACHER PASSWORDS
+   DEMO PASSWORDS
 ========================================= */
 
 /*
-  IMPORTANT:
-  These passwords are visible in the frontend source code.
-  This is only suitable for a demo/static website.
-  A real secure login requires a backend/authentication system.
+  WARNING:
+
+  These passwords are still frontend-only because
+  this website is running from one static HTML file.
+
+  They are NOT real secure authentication.
+
+  For real security, move authentication to a
+  backend/database service.
 */
 
 const teacherPasswords = {
@@ -3634,13 +3213,177 @@ const teacherPasswords = {
 
 
 /* =========================================
-   REGISTER + SEND STUDENT
+   SESSION SECURITY
+========================================= */
+
+function startTeacherSession(
+  teacherName
+){
+
+  currentLoggedInTeacher =
+    teacherName;
+
+  try {
+
+    sessionStorage.setItem(
+      "iqraTeacherSession",
+      teacherName
+    );
+
+    sessionStorage.setItem(
+      "iqraTeacherLoginTime",
+      String(Date.now())
+    );
+
+  } catch(error) {
+
+    console.warn(
+      "Session storage unavailable."
+    );
+
+  }
+
+  resetSessionTimer();
+
+}
+
+
+function restoreTeacherSession(){
+
+  try {
+
+    const teacher =
+      sessionStorage.getItem(
+        "iqraTeacherSession"
+      );
+
+    const loginTime =
+      Number(
+        sessionStorage.getItem(
+          "iqraTeacherLoginTime"
+        )
+      );
+
+    if(
+      teacher &&
+      teachers[teacher] &&
+      loginTime &&
+      Date.now() - loginTime < SESSION_TIME
+    ){
+
+      currentLoggedInTeacher =
+        teacher;
+
+      showTeacherDashboard(
+        teacher,
+        false
+      );
+
+    }
+
+    else{
+
+      clearTeacherSession();
+
+    }
+
+  } catch(error) {
+
+    clearTeacherSession();
+
+  }
+
+}
+
+
+function resetSessionTimer(){
+
+  clearTimeout(
+    sessionTimer
+  );
+
+  sessionTimer =
+    setTimeout(
+      function(){
+
+        alert(
+          "Your teacher session has expired. Please login again."
+        );
+
+        logoutTeacher();
+
+      },
+      SESSION_TIME
+    );
+
+}
+
+
+function clearTeacherSession(){
+
+  currentLoggedInTeacher =
+    null;
+
+  currentStudent =
+    null;
+
+  try {
+
+    sessionStorage.removeItem(
+      "iqraTeacherSession"
+    );
+
+    sessionStorage.removeItem(
+      "iqraTeacherLoginTime"
+    );
+
+  } catch(error) {}
+
+  clearTimeout(
+    sessionTimer
+  );
+
+}
+
+
+function logoutTeacher(){
+
+  clearTeacherSession();
+
+  document
+    .getElementById("dashboard")
+    .style.display =
+      "none";
+
+  document
+    .getElementById("studentProfile")
+    .style.display =
+      "none";
+
+  document
+    .getElementById("loginPassword")
+    .value =
+      "";
+
+  document
+    .getElementById("login")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
+
+}
+
+
+/* =========================================
+   REGISTER STUDENT
 ========================================= */
 
 function registerAndSendStudent(){
 
   const form =
-    document.getElementById("studentForm");
+    document.getElementById(
+      "studentForm"
+    );
 
   if(!form.checkValidity()){
 
@@ -3713,7 +3456,7 @@ function registerAndSendStudent(){
     courseValue.split("|");
 
 
-  if(courseData.length < 3){
+  if(courseData.length !== 3){
 
     alert(
       "Invalid course selection. Please select the course again."
@@ -3734,10 +3477,39 @@ function registerAndSendStudent(){
     courseData[2];
 
 
+  /*
+    Basic duplicate protection.
+    This prevents accidental double submissions
+    with the same student name + phone.
+  */
+
+  const duplicate =
+    students.some(
+      student =>
+        String(student.name).toLowerCase() ===
+          name.toLowerCase() &&
+        String(student.phone) === phone
+    );
+
+
+  if(duplicate){
+
+    alert(
+      "A student with this name and phone number is already registered."
+    );
+
+    return;
+
+  }
+
+
   const student = {
 
     id:
-      Date.now(),
+      Date.now().toString() +
+      Math.random()
+        .toString(36)
+        .slice(2,8),
 
     name:
       name,
@@ -3767,12 +3539,17 @@ function registerAndSendStudent(){
       price,
 
     teacher:
-      teacher
+      teacher,
+
+    createdAt:
+      new Date().toISOString()
 
   };
 
 
-  students.push(student);
+  students.push(
+    student
+  );
 
 
   try {
@@ -3784,14 +3561,13 @@ function registerAndSendStudent(){
 
   } catch(error) {
 
-    console.error(
-      "Could not save student:",
-      error
-    );
+    console.error(error);
 
     alert(
-      "Student was created, but local storage could not save the profile."
+      "The browser could not save the student profile."
     );
+
+    return;
 
   }
 
@@ -3812,9 +3588,21 @@ function registerAndSendStudent(){
     "...";
 
 
-  updateDashboard(
+  /*
+    If teacher is already logged in on this browser,
+    refresh only that teacher's dashboard.
+  */
+
+  if(
+    currentLoggedInTeacher ===
     teacher
-  );
+  ){
+
+    updateDashboard(
+      teacher
+    );
+
+  }
 
 
   sendStudentToTeacher(
@@ -3898,17 +3686,13 @@ document
 
       const teacher =
         document
-          .getElementById(
-            "loginTeacher"
-          )
+          .getElementById("loginTeacher")
           .value;
 
 
       const password =
         document
-          .getElementById(
-            "loginPassword"
-          )
+          .getElementById("loginPassword")
           .value;
 
 
@@ -3919,19 +3703,41 @@ document
 
 
       if(
+        !teachers[teacher]
+      ){
+
+        message.style.display =
+          "block";
+
+        message.innerText =
+          "Please select an authorized teacher.";
+
+        return;
+
+      }
+
+
+      if(
         teacherPasswords[teacher] &&
         teacherPasswords[teacher] === password
       ){
 
-        currentLoggedInTeacher =
-          teacher;
+        startTeacherSession(
+          teacher
+        );
 
 
         message.style.display =
           "block";
 
         message.innerText =
-          "Login successful.";
+          "Login successful. Teacher dashboard opened.";
+
+
+        document
+          .getElementById("loginPassword")
+          .value =
+            "";
 
 
         showTeacherDashboard(
@@ -3950,7 +3756,7 @@ document
           "block";
 
         message.innerText =
-          "Incorrect password. Profile cannot be opened.";
+          "Incorrect password. Teacher profile cannot be opened.";
 
 
         document
@@ -3971,15 +3777,35 @@ document
 
 
 /* =========================================
+   LOGOUT
+========================================= */
+
+document
+  .getElementById("logoutButton")
+  .addEventListener(
+    "click",
+    logoutTeacher
+  );
+
+
+/* =========================================
    TEACHER DASHBOARD
 ========================================= */
 
 function showTeacherDashboard(
-  teacherName
+  teacherName,
+  shouldScroll = true
 ){
 
-  if(!teachers[teacherName])
+  if(
+    !currentLoggedInTeacher ||
+    currentLoggedInTeacher !== teacherName ||
+    !teachers[teacherName]
+  ){
+
     return;
+
+  }
 
 
   const dashboard =
@@ -4017,9 +3843,16 @@ function showTeacherDashboard(
   );
 
 
-  dashboard.scrollIntoView({
-    behavior:"smooth"
-  });
+  resetSessionTimer();
+
+
+  if(shouldScroll){
+
+    dashboard.scrollIntoView({
+      behavior:"smooth"
+    });
+
+  }
 
 }
 
@@ -4031,6 +3864,22 @@ function showTeacherDashboard(
 function updateDashboard(
   teacherName
 ){
+
+  /*
+    SECURITY CHECK:
+    Dashboard data is only rendered when
+    the currently logged-in teacher matches.
+  */
+
+  if(
+    !currentLoggedInTeacher ||
+    currentLoggedInTeacher !== teacherName
+  ){
+
+    return;
+
+  }
+
 
   const list =
     document.getElementById(
@@ -4132,11 +3981,23 @@ function updateDashboard(
           "p"
         );
 
-      course.innerHTML =
-        "<b>Course:</b> " +
-        escapeHTML(
-          student.course
+      const courseLabel =
+        document.createElement(
+          "b"
         );
+
+      courseLabel.innerText =
+        "Course: ";
+
+      course.appendChild(
+        courseLabel
+      );
+
+      course.appendChild(
+        document.createTextNode(
+          student.course || ""
+        )
+      );
 
 
       const age =
@@ -4144,11 +4005,23 @@ function updateDashboard(
           "p"
         );
 
-      age.innerHTML =
-        "<b>Age:</b> " +
-        escapeHTML(
-          student.age
+      const ageLabel =
+        document.createElement(
+          "b"
         );
+
+      ageLabel.innerText =
+        "Age: ";
+
+      age.appendChild(
+        ageLabel
+      );
+
+      age.appendChild(
+        document.createTextNode(
+          student.age || ""
+        )
+      );
 
 
       const country =
@@ -4156,17 +4029,23 @@ function updateDashboard(
           "p"
         );
 
-      country.innerHTML =
-        "<b>Country:</b> " +
-        escapeHTML(
-          student.country
-        );
-
-
-      const breakLine =
+      const countryLabel =
         document.createElement(
-          "br"
+          "b"
         );
+
+      countryLabel.innerText =
+        "Country: ";
+
+      country.appendChild(
+        countryLabel
+      );
+
+      country.appendChild(
+        document.createTextNode(
+          student.country || ""
+        )
+      );
 
 
       const button =
@@ -4174,6 +4053,9 @@ function updateDashboard(
           "button"
         );
 
+
+      button.type =
+        "button";
 
       button.className =
         "green-button";
@@ -4211,7 +4093,7 @@ function updateDashboard(
       );
 
       card.appendChild(
-        breakLine
+        document.createElement("br")
       );
 
       card.appendChild(
@@ -4237,6 +4119,11 @@ function viewStudent(
   id
 ){
 
+  /*
+    Student profiles are protected by
+    teacher session + teacher assignment.
+  */
+
   if(!currentLoggedInTeacher){
 
     alert(
@@ -4248,19 +4135,27 @@ function viewStudent(
   }
 
 
-  currentStudent =
+  const foundStudent =
     students.find(
       student =>
-        student.id === id
+        String(student.id) ===
+        String(id)
     );
 
 
-  if(!currentStudent)
+  if(!foundStudent){
+
+    alert(
+      "Student profile could not be found."
+    );
+
     return;
+
+  }
 
 
   if(
-    currentStudent.teacher !==
+    foundStudent.teacher !==
     currentLoggedInTeacher
   ){
 
@@ -4271,6 +4166,13 @@ function viewStudent(
     return;
 
   }
+
+
+  currentStudent =
+    foundStudent;
+
+
+  resetSessionTimer();
 
 
   document
@@ -4286,7 +4188,7 @@ function viewStudent(
       "profileName"
     )
     .innerText =
-      currentStudent.name;
+      currentStudent.name || "";
 
 
   document
@@ -4294,7 +4196,7 @@ function viewStudent(
       "profileFather"
     )
     .innerText =
-      currentStudent.father;
+      currentStudent.father || "";
 
 
   document
@@ -4302,7 +4204,7 @@ function viewStudent(
       "profileAge"
     )
     .innerText =
-      currentStudent.age;
+      currentStudent.age || "";
 
 
   document
@@ -4310,7 +4212,7 @@ function viewStudent(
       "profileSchool"
     )
     .innerText =
-      currentStudent.school;
+      currentStudent.school || "";
 
 
   document
@@ -4318,7 +4220,7 @@ function viewStudent(
       "profileCountry"
     )
     .innerText =
-      currentStudent.country;
+      currentStudent.country || "";
 
 
   document
@@ -4326,7 +4228,7 @@ function viewStudent(
       "profileAddress"
     )
     .innerText =
-      currentStudent.address;
+      currentStudent.address || "";
 
 
   document
@@ -4334,7 +4236,7 @@ function viewStudent(
       "profilePhone"
     )
     .innerText =
-      currentStudent.phone;
+      currentStudent.phone || "";
 
 
   document
@@ -4342,7 +4244,7 @@ function viewStudent(
       "profileCourse"
     )
     .innerText =
-      currentStudent.course +
+      (currentStudent.course || "") +
       " — " +
       (currentStudent.price || "");
 
@@ -4352,7 +4254,7 @@ function viewStudent(
       "profileTeacher"
     )
     .innerText =
-      currentStudent.teacher;
+      currentStudent.teacher || "";
 
 
   document
@@ -4362,7 +4264,7 @@ function viewStudent(
     .href =
       "tel:" +
       encodeURIComponent(
-        currentStudent.phone
+        currentStudent.phone || ""
       );
 
 
@@ -4383,8 +4285,35 @@ function viewStudent(
 
 function openStudentChat(){
 
-  if(!currentStudent)
+  if(
+    !currentLoggedInTeacher ||
+    !currentStudent
+  ){
+
+    alert(
+      "Please login and open a student profile first."
+    );
+
     return;
+
+  }
+
+
+  if(
+    currentStudent.teacher !==
+    currentLoggedInTeacher
+  ){
+
+    alert(
+      "You are not authorized to open this student's chat."
+    );
+
+    return;
+
+  }
+
+
+  resetSessionTimer();
 
 
   currentChatPerson =
@@ -4418,6 +4347,11 @@ function openStudentChat(){
 function openTeacherChat(
   teacher
 ){
+
+  /*
+    Public teacher chat button does not expose
+    private teacher information.
+  */
 
   currentChatPerson =
     teacher;
@@ -4467,6 +4401,18 @@ document
       }
 
 
+      /*
+        If chatting from a teacher dashboard,
+        keep the teacher session alive.
+      */
+
+      if(currentLoggedInTeacher){
+
+        resetSessionTimer();
+
+      }
+
+
       const input =
         document.getElementById(
           "chatInput"
@@ -4491,7 +4437,12 @@ document
         "message my-message";
 
 
-      message.innerText =
+      /*
+        textContent is intentionally used instead
+        of innerHTML to prevent HTML injection.
+      */
+
+      message.textContent =
         text;
 
 
@@ -4583,6 +4534,13 @@ function sendStudentToTeacher(
   }
 
 
+  /*
+    NOTE:
+    WhatsApp receives the student information.
+    Only send information that the academy is
+    comfortable sharing through WhatsApp.
+  */
+
   const message =
 `Assalam-o-Alaikum,
 
@@ -4613,55 +4571,16 @@ Iqra Quran Academy`;
 
   window.open(
     whatsappURL,
-    "_blank"
+    "_blank",
+    "noopener,noreferrer"
   );
 
 }
 
 
 /* =========================================
-   HTML SAFETY
+   OLD FUNCTIONS
 ========================================= */
-
-function escapeHTML(
-  value
-){
-
-  return String(
-    value ?? ""
-  )
-  .replace(
-    /&/g,
-    "&amp;"
-  )
-  .replace(
-    /</g,
-    "&lt;"
-  )
-  .replace(
-    />/g,
-    "&gt;"
-  )
-  .replace(
-    /"/g,
-    "&quot;"
-  )
-  .replace(
-    /'/g,
-    "&#039;"
-  );
-
-}
-
-
-/* =========================================
-   OLD FUNCTIONS KEPT SAFE
-========================================= */
-
-/*
-  These functions are kept so that old inline
-  references won't cause errors if they are used later.
-*/
 
 function toggleHowToUse(){
 
@@ -4741,6 +4660,42 @@ function toggleAcademyInfo(){
   }
 
 }
+
+
+/* =========================================
+   RESTORE SESSION ON PAGE LOAD
+========================================= */
+
+restoreTeacherSession();
+
+
+/* =========================================
+   BASIC SESSION ACTIVITY PROTECTION
+========================================= */
+
+[
+  "click",
+  "keydown",
+  "touchstart"
+].forEach(
+  function(eventName){
+
+    document.addEventListener(
+      eventName,
+      function(){
+
+        if(currentLoggedInTeacher){
+
+          resetSessionTimer();
+
+        }
+
+      },
+      {passive:true}
+    );
+
+  }
+);
 
 </script>
 
