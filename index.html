@@ -2621,6 +2621,34 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
 
 <script>
 
+/*
+=========================================================
+CURRENT FRONTEND SCRIPT
+=========================================================
+
+NOTE:
+
+Ye current version browser localStorage use karta hai.
+
+Next step mein isi <script> ko backend/API version
+se replace karenge.
+
+Backend version mein:
+
+1. Student localStorage mein save nahi hoga.
+2. Student database mein save hoga.
+3. Teacher passwords frontend mein nahi honge.
+4. Teacher login backend verify karega.
+5. Dashboard database se students load karega.
+6. Student profiles database se aayengi.
+7. Chat messages database mein save honge.
+8. Teacher sirf apne assigned students dekh sakega.
+9. Server-side authentication use hogi.
+
+=========================================================
+*/
+
+
 /* =========================================
    STUDENT STORAGE
 ========================================= */
@@ -2689,11 +2717,21 @@ information:"Quran Teacher | Quran Learning Programs"
    DEMO PASSWORDS
 ========================================= */
 
+/*
+WARNING:
+
+Current passwords are only for the old demo system.
+
+When backend is connected, REMOVE this object completely.
+
+Passwords should be stored as secure hashes on the server/database.
+*/
+
 const teacherPasswords={
 
-"Abdullah Shahzad":"qwerty12345",
-"Zain Ilyas":"ssd42",
-"Hafiz Musa":"musa123"
+"Abdullah Shahzad":"CHANGE_ME_ON_BACKEND",
+"Zain Ilyas":"CHANGE_ME_ON_BACKEND",
+"Hafiz Musa":"CHANGE_ME_ON_BACKEND"
 
 };
 
@@ -2709,7 +2747,10 @@ currentLoggedInTeacher=teacherName;
 try{
 
 sessionStorage.setItem("iqraTeacherSession",teacherName);
-sessionStorage.setItem("iqraTeacherLoginTime",String(Date.now()));
+sessionStorage.setItem(
+"iqraTeacherLoginTime",
+String(Date.now())
+);
 
 }catch(error){
 
@@ -2726,10 +2767,14 @@ function restoreTeacherSession(){
 
 try{
 
-const teacher=sessionStorage.getItem("iqraTeacherSession");
+const teacher=sessionStorage.getItem(
+"iqraTeacherSession"
+);
 
 const loginTime=Number(
-sessionStorage.getItem("iqraTeacherLoginTime")
+sessionStorage.getItem(
+"iqraTeacherLoginTime"
+)
 );
 
 if(
@@ -2741,7 +2786,10 @@ Date.now()-loginTime<SESSION_TIME
 
 currentLoggedInTeacher=teacher;
 
-showTeacherDashboard(teacher,false);
+showTeacherDashboard(
+teacher,
+false
+);
 
 }else{
 
@@ -2762,7 +2810,8 @@ function resetSessionTimer(){
 
 clearTimeout(sessionTimer);
 
-sessionTimer=setTimeout(function(){
+sessionTimer=setTimeout(
+function(){
 
 alert(
 "Your teacher session has expired. Please login again."
@@ -2770,7 +2819,9 @@ alert(
 
 logoutTeacher();
 
-},SESSION_TIME);
+},
+SESSION_TIME
+);
 
 }
 
@@ -2782,8 +2833,13 @@ currentStudent=null;
 
 try{
 
-sessionStorage.removeItem("iqraTeacherSession");
-sessionStorage.removeItem("iqraTeacherLoginTime");
+sessionStorage.removeItem(
+"iqraTeacherSession"
+);
+
+sessionStorage.removeItem(
+"iqraTeacherLoginTime"
+);
 
 }catch(error){}
 
@@ -2796,11 +2852,21 @@ function logoutTeacher(){
 
 clearTeacherSession();
 
-document.getElementById("dashboard").style.display="none";
-document.getElementById("studentProfile").style.display="none";
-document.getElementById("loginPassword").value="";
+document.getElementById(
+"dashboard"
+).style.display="none";
 
-document.getElementById("login").scrollIntoView({
+document.getElementById(
+"studentProfile"
+).style.display="none";
+
+document.getElementById(
+"loginPassword"
+).value="";
+
+document.getElementById(
+"login"
+).scrollIntoView({
 behavior:"smooth"
 });
 
@@ -2813,36 +2879,73 @@ behavior:"smooth"
 
 function registerAndSendStudent(){
 
-const form=document.getElementById("studentForm");
+const form=document.getElementById(
+"studentForm"
+);
 
 if(!form.checkValidity()){
 
 form.reportValidity();
+
 return;
 
 }
 
-const name=document.getElementById("studentName").value.trim();
-const father=document.getElementById("fatherName").value.trim();
-const age=document.getElementById("studentAge").value.trim();
-const school=document.getElementById("schoolName").value.trim();
-const address=document.getElementById("studentAddress").value.trim();
-const phone=document.getElementById("studentPhone").value.trim();
+const name=
+document.getElementById(
+"studentName"
+).value.trim();
+
+const father=
+document.getElementById(
+"fatherName"
+).value.trim();
+
+const age=
+document.getElementById(
+"studentAge"
+).value.trim();
+
+const school=
+document.getElementById(
+"schoolName"
+).value.trim();
+
+const address=
+document.getElementById(
+"studentAddress"
+).value.trim();
+
+const phone=
+document.getElementById(
+"studentPhone"
+).value.trim();
 
 const courseValue=
-document.getElementById("studentCourse").value;
+document.getElementById(
+"studentCourse"
+).value;
 
 const teacher=
-document.getElementById("studentTeacher").value;
+document.getElementById(
+"studentTeacher"
+).value;
 
-if(!courseValue || !teacher){
+if(
+!courseValue ||
+!teacher
+){
 
-alert("Please select course and teacher first.");
+alert(
+"Please select course and teacher first."
+);
+
 return;
 
 }
 
-const courseData=courseValue.split("|");
+const courseData=
+courseValue.split("|");
 
 if(courseData.length!==3){
 
@@ -2858,9 +2961,11 @@ const country=courseData[0];
 const course=courseData[1];
 const price=courseData[2];
 
-const duplicate=students.some(
+const duplicate=
+students.some(
 student=>
-String(student.name).toLowerCase()===name.toLowerCase() &&
+String(student.name).toLowerCase()===
+name.toLowerCase() &&
 String(student.phone)===phone
 );
 
@@ -2915,7 +3020,10 @@ return;
 
 }
 
-const notice=document.getElementById("studentCreated");
+const notice=
+document.getElementById(
+"studentCreated"
+);
 
 notice.style.display="block";
 
@@ -2923,7 +3031,9 @@ notice.innerText=
 "Registration successful! Sending your profile to "+
 teacher+"...";
 
-if(currentLoggedInTeacher===teacher){
+if(
+currentLoggedInTeacher===teacher
+){
 
 updateDashboard(teacher);
 
@@ -2950,20 +3060,33 @@ registerAndSendStudent
 
 function toggleWhyChoose(){
 
-const info=document.getElementById("whyChooseFull");
-const button=document.querySelector(".why-learn");
+const info=
+document.getElementById(
+"whyChooseFull"
+);
+
+const button=
+document.querySelector(
+".why-learn"
+);
 
 if(!info || !button)return;
 
-if(info.style.display==="block"){
+if(
+info.style.display==="block"
+){
 
 info.style.display="none";
-button.innerText="Learn More ...";
+
+button.innerText=
+"Learn More ...";
 
 }else{
 
 info.style.display="block";
-button.innerText="Show Less ...";
+
+button.innerText=
+"Show Less ...";
 
 }
 
@@ -2983,13 +3106,19 @@ function(event){
 event.preventDefault();
 
 const teacher=
-document.getElementById("loginTeacher").value;
+document.getElementById(
+"loginTeacher"
+).value;
 
 const password=
-document.getElementById("loginPassword").value;
+document.getElementById(
+"loginPassword"
+).value;
 
 const message=
-document.getElementById("loginMessage");
+document.getElementById(
+"loginMessage"
+);
 
 if(!teachers[teacher]){
 
@@ -3014,9 +3143,13 @@ message.style.display="block";
 message.innerText=
 "Login successful. Teacher dashboard opened.";
 
-document.getElementById("loginPassword").value="";
+document.getElementById(
+"loginPassword"
+).value="";
 
-showTeacherDashboard(teacher);
+showTeacherDashboard(
+teacher
+);
 
 }else{
 
@@ -3027,8 +3160,13 @@ message.style.display="block";
 message.innerText=
 "Incorrect password. Teacher profile cannot be opened.";
 
-document.getElementById("dashboard").style.display="none";
-document.getElementById("studentProfile").style.display="none";
+document.getElementById(
+"dashboard"
+).style.display="none";
+
+document.getElementById(
+"studentProfile"
+).style.display="none";
 
 }
 
@@ -3068,7 +3206,9 @@ return;
 }
 
 const dashboard=
-document.getElementById("dashboard");
+document.getElementById(
+"dashboard"
+);
 
 dashboard.style.display="block";
 
@@ -3082,7 +3222,9 @@ document.getElementById(
 ).innerText=
 teachers[teacherName].information;
 
-updateDashboard(teacherName);
+updateDashboard(
+teacherName
+);
 
 resetSessionTimer();
 
@@ -3101,7 +3243,9 @@ behavior:"smooth"
    UPDATE DASHBOARD
 ========================================= */
 
-function updateDashboard(teacherName){
+function updateDashboard(
+teacherName
+){
 
 if(
 !currentLoggedInTeacher ||
@@ -3113,94 +3257,180 @@ return;
 }
 
 const list=
-document.getElementById("teacherStudents");
+document.getElementById(
+"teacherStudents"
+);
 
 if(!list)return;
 
 list.innerHTML="";
 
-const myStudents=students.filter(
-student=>student.teacher===teacherName
+const myStudents=
+students.filter(
+student=>
+student.teacher===teacherName
 );
 
 if(myStudents.length===0){
 
-const emptyCard=document.createElement("div");
-emptyCard.className="student-card";
+const emptyCard=
+document.createElement("div");
 
-const heading=document.createElement("h3");
-heading.innerText="No students yet";
+emptyCard.className=
+"student-card";
 
-const paragraph=document.createElement("p");
+const heading=
+document.createElement("h3");
+
+heading.innerText=
+"No students yet";
+
+const paragraph=
+document.createElement("p");
+
 paragraph.innerText=
 "Students who select this teacher will appear here.";
 
-emptyCard.appendChild(heading);
-emptyCard.appendChild(paragraph);
+emptyCard.appendChild(
+heading
+);
 
-list.appendChild(emptyCard);
+emptyCard.appendChild(
+paragraph
+);
+
+list.appendChild(
+emptyCard
+);
 
 return;
 
 }
 
-myStudents.forEach(student=>{
+myStudents.forEach(
+student=>{
 
-const card=document.createElement("div");
-card.className="student-card";
+const card=
+document.createElement("div");
 
-const heading=document.createElement("h3");
-heading.innerText=student.name;
+card.className=
+"student-card";
 
-const course=document.createElement("p");
-const courseLabel=document.createElement("b");
-courseLabel.innerText="Course: ";
-course.appendChild(courseLabel);
+const heading=
+document.createElement("h3");
+
+heading.innerText=
+student.name;
+
+const course=
+document.createElement("p");
+
+const courseLabel=
+document.createElement("b");
+
+courseLabel.innerText=
+"Course: ";
+
 course.appendChild(
-document.createTextNode(student.course||"")
+courseLabel
 );
 
-const age=document.createElement("p");
-const ageLabel=document.createElement("b");
-ageLabel.innerText="Age: ";
-age.appendChild(ageLabel);
+course.appendChild(
+document.createTextNode(
+student.course||""
+)
+);
+
+const age=
+document.createElement("p");
+
+const ageLabel=
+document.createElement("b");
+
+ageLabel.innerText=
+"Age: ";
+
 age.appendChild(
-document.createTextNode(student.age||"")
+ageLabel
 );
 
-const country=document.createElement("p");
-const countryLabel=document.createElement("b");
-countryLabel.innerText="Country: ";
-country.appendChild(countryLabel);
+age.appendChild(
+document.createTextNode(
+student.age||""
+)
+);
+
+const country=
+document.createElement("p");
+
+const countryLabel=
+document.createElement("b");
+
+countryLabel.innerText=
+"Country: ";
+
 country.appendChild(
-document.createTextNode(student.country||"")
+countryLabel
 );
 
-const button=document.createElement("button");
+country.appendChild(
+document.createTextNode(
+student.country||""
+)
+);
+
+const button=
+document.createElement("button");
 
 button.type="button";
-button.className="green-button";
-button.innerText="View Profile";
+
+button.className=
+"green-button";
+
+button.innerText=
+"View Profile";
 
 button.addEventListener(
 "click",
 function(){
 
-viewStudent(student.id);
+viewStudent(
+student.id
+);
 
 }
 );
 
-card.appendChild(heading);
-card.appendChild(course);
-card.appendChild(age);
-card.appendChild(country);
-card.appendChild(document.createElement("br"));
-card.appendChild(button);
+card.appendChild(
+heading
+);
 
-list.appendChild(card);
+card.appendChild(
+course
+);
 
-});
+card.appendChild(
+age
+);
+
+card.appendChild(
+country
+);
+
+card.appendChild(
+document.createElement("br")
+);
+
+card.appendChild(
+button
+);
+
+list.appendChild(
+card
+);
+
+}
+);
 
 }
 
@@ -3209,28 +3439,40 @@ list.appendChild(card);
    VIEW STUDENT
 ========================================= */
 
-function viewStudent(id){
+function viewStudent(
+id
+){
 
 if(!currentLoggedInTeacher){
 
-alert("Please login as a teacher first.");
+alert(
+"Please login as a teacher first."
+);
+
 return;
 
 }
 
-const foundStudent=students.find(
-student=>String(student.id)===String(id)
+const foundStudent=
+students.find(
+student=>
+String(student.id)===
+String(id)
 );
 
 if(!foundStudent){
 
-alert("Student profile could not be found.");
+alert(
+"Student profile could not be found."
+);
+
 return;
 
 }
 
 if(
-foundStudent.teacher!==currentLoggedInTeacher
+foundStudent.teacher!==
+currentLoggedInTeacher
 ){
 
 alert(
@@ -3241,7 +3483,8 @@ return;
 
 }
 
-currentStudent=foundStudent;
+currentStudent=
+foundStudent;
 
 resetSessionTimer();
 
@@ -3251,31 +3494,38 @@ document.getElementById(
 
 document.getElementById(
 "profileName"
-).innerText=currentStudent.name||"";
+).innerText=
+currentStudent.name||"";
 
 document.getElementById(
 "profileFather"
-).innerText=currentStudent.father||"";
+).innerText=
+currentStudent.father||"";
 
 document.getElementById(
 "profileAge"
-).innerText=currentStudent.age||"";
+).innerText=
+currentStudent.age||"";
 
 document.getElementById(
 "profileSchool"
-).innerText=currentStudent.school||"";
+).innerText=
+currentStudent.school||"";
 
 document.getElementById(
 "profileCountry"
-).innerText=currentStudent.country||"";
+).innerText=
+currentStudent.country||"";
 
 document.getElementById(
 "profileAddress"
-).innerText=currentStudent.address||"";
+).innerText=
+currentStudent.address||"";
 
 document.getElementById(
 "profilePhone"
-).innerText=currentStudent.phone||"";
+).innerText=
+currentStudent.phone||"";
 
 document.getElementById(
 "profileCourse"
@@ -3326,7 +3576,8 @@ return;
 }
 
 if(
-currentStudent.teacher!==currentLoggedInTeacher
+currentStudent.teacher!==
+currentLoggedInTeacher
 ){
 
 alert(
@@ -3339,12 +3590,14 @@ return;
 
 resetSessionTimer();
 
-currentChatPerson=currentStudent.name;
+currentChatPerson=
+currentStudent.name;
 
 document.getElementById(
 "chatheader"
 ).innerText=
-"Chat with "+currentStudent.name;
+"Chat with "+
+currentStudent.name;
 
 document.getElementById(
 "chat"
@@ -3359,14 +3612,18 @@ behavior:"smooth"
    TEACHER CHAT
 ========================================= */
 
-function openTeacherChat(teacher){
+function openTeacherChat(
+teacher
+){
 
-currentChatPerson=teacher;
+currentChatPerson=
+teacher;
 
 document.getElementById(
 "chatheader"
 ).innerText=
-"Chat with "+teacher;
+"Chat with "+
+teacher;
 
 document.getElementById(
 "chat"
@@ -3406,22 +3663,29 @@ resetSessionTimer();
 }
 
 const input=
-document.getElementById("chatInput");
+document.getElementById(
+"chatInput"
+);
 
-const text=input.value.trim();
+const text=
+input.value.trim();
 
 if(!text)return;
 
 const message=
 document.createElement("div");
 
-message.className="message my-message";
+message.className=
+"message my-message";
 
-message.textContent=text;
+message.textContent=
+text;
 
 document.getElementById(
 "chatMessages"
-).appendChild(message);
+).appendChild(
+message
+);
 
 input.value="";
 
@@ -3441,7 +3705,9 @@ block:"nearest"
 function showPaymentMessage(){
 
 const notice=
-document.getElementById("paymentNotice");
+document.getElementById(
+"paymentNotice"
+);
 
 notice.style.display="block";
 
@@ -3455,24 +3721,31 @@ notice.innerText=
    WHATSAPP REGISTRATION
 ========================================= */
 
-function sendStudentToTeacher(student){
+function sendStudentToTeacher(
+student
+){
 
 if(!student)return;
 
 const teacherNumbers={
 
-"Abdullah Shahzad":"923054330064",
-"Zain Ilyas":"923440950974",
-"Hafiz Musa":"923219423013"
+"Abdullah Shahzad":"YOUR_TEACHER_WHATSAPP_NUMBER",
+"Zain Ilyas":"YOUR_TEACHER_WHATSAPP_NUMBER",
+"Hafiz Musa":"YOUR_TEACHER_WHATSAPP_NUMBER"
 
 };
 
 const teacherNumber=
-teacherNumbers[student.teacher];
+teacherNumbers[
+student.teacher
+];
 
 if(!teacherNumber){
 
-alert("Teacher WhatsApp number not found.");
+alert(
+"Teacher WhatsApp number not found."
+);
+
 return;
 
 }
@@ -3496,10 +3769,10 @@ Teacher: ${student.teacher}
 Iqra Quran Academy`;
 
 const whatsappURL=
-"https://wa.me/"+
-teacherNumber+
-"?text="+
-encodeURIComponent(message);
+"WHATSAPP_LINK_HERE?text="+
+encodeURIComponent(
+message
+);
 
 window.open(
 whatsappURL,
@@ -3517,22 +3790,32 @@ whatsappURL,
 function toggleHowToUse(){
 
 const info=
-document.getElementById("fullHowToUse");
+document.getElementById(
+"fullHowToUse"
+);
 
 const button=
-document.querySelector(".learn-more");
+document.querySelector(
+".learn-more"
+);
 
 if(!info || !button)return;
 
-if(info.style.display==="block"){
+if(
+info.style.display==="block"
+){
 
 info.style.display="none";
-button.innerText="Learn More ...";
+
+button.innerText=
+"Learn More ...";
 
 }else{
 
 info.style.display="block";
-button.innerText="Show Less ...";
+
+button.innerText=
+"Show Less ...";
 
 }
 
@@ -3542,22 +3825,32 @@ button.innerText="Show Less ...";
 function toggleAcademyInfo(){
 
 const info=
-document.getElementById("academyInfo");
+document.getElementById(
+"academyInfo"
+);
 
 const button=
-document.querySelector(".info-learn");
+document.querySelector(
+".info-learn"
+);
 
 if(!info || !button)return;
 
-if(info.style.display==="block"){
+if(
+info.style.display==="block"
+){
 
 info.style.display="none";
-button.innerText="Learn More ...";
+
+button.innerText=
+"Learn More ...";
 
 }else{
 
 info.style.display="block";
-button.innerText="Show Less ...";
+
+button.innerText=
+"Show Less ...";
 
 }
 
