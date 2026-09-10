@@ -13,10 +13,6 @@ content="Iqra Quran Academy - Online Quran learning, Hifz, Nazra and Tajweed cla
 
 <style>
 
-/* =====================================================
-   IQRA QURAN ACADEMY — MODERN ISLAMIC DESIGN
-===================================================== */
-
 :root{
   --green:#087b51;
   --green-dark:#075b3d;
@@ -66,10 +62,6 @@ select{
 button{
   cursor:pointer;
 }
-
-/* =====================================================
-   HEADER
-===================================================== */
 
 header{
   min-height:700px;
@@ -180,10 +172,6 @@ nav a:hover{
   color:white;
   background:rgba(255,255,255,.11);
 }
-
-/* =====================================================
-   HERO
-===================================================== */
 
 .hero{
   max-width:1180px;
@@ -310,10 +298,6 @@ nav a:hover{
   50%{transform:translateY(-5px)}
 }
 
-/* =====================================================
-   SECTIONS
-===================================================== */
-
 section{
   max-width:1100px;
   margin:auto;
@@ -341,10 +325,6 @@ section h2:after{
   color:var(--muted);
   margin-bottom:25px;
 }
-
-/* =====================================================
-   GENERAL CARDS
-===================================================== */
 
 .card,
 .course,
@@ -380,10 +360,6 @@ section h2:after{
   box-shadow:var(--shadow-hover);
   border-color:#bcd9ca;
 }
-
-/* =====================================================
-   WHAT YOU GET
-===================================================== */
 
 .what-you-get{
   max-width:1100px;
@@ -435,10 +411,6 @@ section h2:after{
   font-size:14px;
 }
 
-/* =====================================================
-   ACADEMY INFO
-===================================================== */
-
 .info-card{
   padding:30px;
   margin-top:20px;
@@ -488,10 +460,6 @@ section h2:after{
   cursor:pointer;
 }
 
-/* =====================================================
-   FORMS
-===================================================== */
-
 .card{
   padding:30px;
 }
@@ -535,10 +503,6 @@ select:focus{
   grid-column:1/-1;
 }
 
-/* =====================================================
-   BUTTONS
-===================================================== */
-
 .button,
 .green-button{
   display:inline-flex;
@@ -567,10 +531,6 @@ select:focus{
   box-shadow:0 11px 24px rgba(8,123,81,.22);
 }
 
-/* =====================================================
-   NOTICE
-===================================================== */
-
 .notice{
   display:none;
   margin-top:18px;
@@ -597,10 +557,6 @@ select:focus{
 
   font-size:13px;
 }
-
-/* =====================================================
-   COURSES
-===================================================== */
 
 .courses{
   display:grid;
@@ -644,10 +600,6 @@ select:focus{
   font-weight:900;
   margin-top:12px;
 }
-
-/* =====================================================
-   WIDE COURSES
-===================================================== */
 
 #wide-courses{
   max-width:1100px;
@@ -727,10 +679,6 @@ select:focus{
   text-decoration:none;
   font-weight:bold;
 }
-
-/* =====================================================
-   WHY CHOOSE
-===================================================== */
 
 #why-choose{
   max-width:none;
@@ -892,10 +840,6 @@ select:focus{
   z-index:-1;
 }
 
-/* =====================================================
-   PACKAGES
-===================================================== */
-
 .package-section{
   margin-top:30px;
 }
@@ -989,10 +933,6 @@ select:focus{
   font-weight:bold;
 }
 
-/* =====================================================
-   TEACHERS
-===================================================== */
-
 .teachers{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -1026,10 +966,6 @@ select:focus{
   gap:10px;
 }
 
-/* =====================================================
-   DASHBOARD
-===================================================== */
-
 .students{
   margin-top:20px;
   display:grid;
@@ -1053,10 +989,6 @@ select:focus{
   margin-top:20px;
 }
 
-/* =====================================================
-   PROFILE
-===================================================== */
-
 .profile-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -1076,10 +1008,6 @@ select:focus{
   color:var(--green-dark);
   margin-bottom:3px;
 }
-
-/* =====================================================
-   CHAT
-===================================================== */
 
 .chat-box{
   background:white;
@@ -1140,10 +1068,6 @@ select:focus{
   font-weight:bold;
 }
 
-/* =====================================================
-   PAYMENTS
-===================================================== */
-
 .payments{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -1165,10 +1089,6 @@ select:focus{
   font-size:14px;
 }
 
-/* =====================================================
-   ABOUT
-===================================================== */
-
 .about-text{
   color:var(--muted);
   font-size:16px;
@@ -1176,10 +1096,6 @@ select:focus{
   margin-bottom:18px;
   line-height:1.85;
 }
-
-/* =====================================================
-   FOLLOW US
-===================================================== */
 
 .follow-us{
   max-width:1100px;
@@ -1229,10 +1145,6 @@ select:focus{
   background:var(--green-light);
 }
 
-/* =====================================================
-   TESTIMONIALS
-===================================================== */
-
 .testimonials{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -1267,10 +1179,6 @@ select:focus{
   letter-spacing:7px;
 }
 
-/* =====================================================
-   FOOTER
-===================================================== */
-
 footer{
   text-align:center;
   background:
@@ -1293,10 +1201,6 @@ footer p{
   color:#cfe6da;
   font-size:14px;
 }
-
-/* =====================================================
-   MOBILE
-===================================================== */
 
 @media(max-width:900px){
 
@@ -2621,437 +2525,171 @@ Quran Learning • Hifz • Nazra • Tajweed • Online Classes
 
 <script>
 
+/* =====================================================
+   IQRA QURAN ACADEMY
+   BACKEND CONNECTED FRONTEND
+===================================================== */
+
+
 /*
 =========================================================
-CURRENT FRONTEND SCRIPT
+BACKEND URL
 =========================================================
 
-NOTE:
+IMPORTANT:
 
-Ye current version browser localStorage use karta hai.
+Jab backend online deploy ho jaye to:
 
-Next step mein isi <script> ko backend/API version
-se replace karenge.
+const API_BASE_URL = "https://your-backend-url.com";
 
-Backend version mein:
+karna hai.
 
-1. Student localStorage mein save nahi hoga.
-2. Student database mein save hoga.
-3. Teacher passwords frontend mein nahi honge.
-4. Teacher login backend verify karega.
-5. Dashboard database se students load karega.
-6. Student profiles database se aayengi.
-7. Chat messages database mein save honge.
-8. Teacher sirf apne assigned students dekh sakega.
-9. Server-side authentication use hogi.
+Abhi testing ke liye localhost use kar sakte ho:
 
-=========================================================
+http://localhost:5000
+
+GitHub Pages par localhost kaam nahi karega.
+Final deployment ke baad actual backend URL dalna hoga.
 */
 
-
-/* =========================================
-   STUDENT STORAGE
-========================================= */
-
-let students=[];
-
-try{
-
-const savedStudents=localStorage.getItem("iqraStudents");
-
-if(savedStudents){
-
-const parsed=JSON.parse(savedStudents);
-
-if(Array.isArray(parsed)){
-students=parsed;
-}
-
-}
-
-}catch(error){
-
-console.error("Student storage could not be read.");
-students=[];
-
-}
+const API_BASE_URL =
+  "http://localhost:5000";
 
 
 /* =========================================
-   SESSION VARIABLES
+   FRONTEND STATE
 ========================================= */
 
-let currentStudent=null;
-let currentChatPerson=null;
-let currentLoggedInTeacher=null;
-let sessionTimer=null;
+let currentStudent = null;
+let currentChatPerson = null;
+let currentChatStudentId = null;
+let currentLoggedInTeacher = null;
+let sessionTimer = null;
 
-const SESSION_TIME=30*60*1000;
+const SESSION_TIME = 30 * 60 * 1000;
 
 
 /* =========================================
    TEACHERS
 ========================================= */
 
-const teachers={
+const teachers = {
 
-"Abdullah Shahzad":{
-displayName:"Hafiz Abdullah Shahzad",
-information:"Quran Teacher | Hifz, Nazra & Tajweed"
-},
+  "Abdullah Shahzad": {
+    displayName: "Hafiz Abdullah Shahzad",
+    information:
+      "Quran Teacher | Hifz, Nazra & Tajweed"
+  },
 
-"Zain Ilyas":{
-displayName:"Hafiz Zain Ilyas",
-information:"Quran Teacher | Hifz, Nazra & Tajweed"
-},
+  "Zain Ilyas": {
+    displayName: "Hafiz Zain Ilyas",
+    information:
+      "Quran Teacher | Hifz, Nazra & Tajweed"
+  },
 
-"Hafiz Musa":{
-displayName:"Hafiz Musa",
-information:"Quran Teacher | Quran Learning Programs"
-}
-
-};
-
-
-/* =========================================
-   DEMO PASSWORDS
-========================================= */
-
-/*
-WARNING:
-
-Current passwords are only for the old demo system.
-
-When backend is connected, REMOVE this object completely.
-
-Passwords should be stored as secure hashes on the server/database.
-*/
-
-const teacherPasswords={
-
-"Abdullah Shahzad":"CHANGE_ME_ON_BACKEND",
-"Zain Ilyas":"CHANGE_ME_ON_BACKEND",
-"Hafiz Musa":"CHANGE_ME_ON_BACKEND"
+  "Hafiz Musa": {
+    displayName: "Hafiz Musa",
+    information:
+      "Quran Teacher | Quran Learning Programs"
+  }
 
 };
 
 
 /* =========================================
-   SESSION
+   API HELPER
 ========================================= */
 
-function startTeacherSession(teacherName){
-
-currentLoggedInTeacher=teacherName;
-
-try{
-
-sessionStorage.setItem("iqraTeacherSession",teacherName);
-sessionStorage.setItem(
-"iqraTeacherLoginTime",
-String(Date.now())
-);
-
-}catch(error){
-
-console.warn("Session storage unavailable.");
-
-}
-
-resetSessionTimer();
-
-}
-
-
-function restoreTeacherSession(){
-
-try{
-
-const teacher=sessionStorage.getItem(
-"iqraTeacherSession"
-);
-
-const loginTime=Number(
-sessionStorage.getItem(
-"iqraTeacherLoginTime"
-)
-);
-
-if(
-teacher &&
-teachers[teacher] &&
-loginTime &&
-Date.now()-loginTime<SESSION_TIME
+async function apiRequest(
+  endpoint,
+  options = {}
 ){
 
-currentLoggedInTeacher=teacher;
+  const headers = {
+    "Content-Type":"application/json",
+    ...(options.headers || {})
+  };
 
-showTeacherDashboard(
-teacher,
-false
-);
+  const token =
+    sessionStorage.getItem(
+      "iqraTeacherToken"
+    );
 
-}else{
+  if(token){
 
-clearTeacherSession();
+    headers.Authorization =
+      "Bearer " + token;
 
-}
+  }
 
-}catch(error){
+  const response =
+    await fetch(
+      API_BASE_URL + endpoint,
+      {
+        ...options,
+        headers
+      }
+    );
 
-clearTeacherSession();
+  let data = {};
 
-}
+  try{
 
-}
+    data = await response.json();
 
+  }catch(error){
 
-function resetSessionTimer(){
+    data = {};
 
-clearTimeout(sessionTimer);
+  }
 
-sessionTimer=setTimeout(
-function(){
+  if(!response.ok){
 
-alert(
-"Your teacher session has expired. Please login again."
-);
+    throw new Error(
+      data.message ||
+      "Server request failed."
+    );
 
-logoutTeacher();
+  }
 
-},
-SESSION_TIME
-);
-
-}
-
-
-function clearTeacherSession(){
-
-currentLoggedInTeacher=null;
-currentStudent=null;
-
-try{
-
-sessionStorage.removeItem(
-"iqraTeacherSession"
-);
-
-sessionStorage.removeItem(
-"iqraTeacherLoginTime"
-);
-
-}catch(error){}
-
-clearTimeout(sessionTimer);
-
-}
-
-
-function logoutTeacher(){
-
-clearTeacherSession();
-
-document.getElementById(
-"dashboard"
-).style.display="none";
-
-document.getElementById(
-"studentProfile"
-).style.display="none";
-
-document.getElementById(
-"loginPassword"
-).value="";
-
-document.getElementById(
-"login"
-).scrollIntoView({
-behavior:"smooth"
-});
+  return data;
 
 }
 
 
 /* =========================================
-   REGISTER STUDENT
+   SHOW NOTICE
 ========================================= */
 
-function registerAndSendStudent(){
-
-const form=document.getElementById(
-"studentForm"
-);
-
-if(!form.checkValidity()){
-
-form.reportValidity();
-
-return;
-
-}
-
-const name=
-document.getElementById(
-"studentName"
-).value.trim();
-
-const father=
-document.getElementById(
-"fatherName"
-).value.trim();
-
-const age=
-document.getElementById(
-"studentAge"
-).value.trim();
-
-const school=
-document.getElementById(
-"schoolName"
-).value.trim();
-
-const address=
-document.getElementById(
-"studentAddress"
-).value.trim();
-
-const phone=
-document.getElementById(
-"studentPhone"
-).value.trim();
-
-const courseValue=
-document.getElementById(
-"studentCourse"
-).value;
-
-const teacher=
-document.getElementById(
-"studentTeacher"
-).value;
-
-if(
-!courseValue ||
-!teacher
+function showNotice(
+  elementId,
+  message,
+  type = "success"
 ){
 
-alert(
-"Please select course and teacher first."
-);
+  const element =
+    document.getElementById(elementId);
 
-return;
+  if(!element)return;
 
-}
+  element.style.display = "block";
+  element.innerText = message;
 
-const courseData=
-courseValue.split("|");
+  if(type === "error"){
 
-if(courseData.length!==3){
+    element.style.background = "#ffeaea";
+    element.style.color = "#8a1f1f";
+    element.style.borderColor = "#efbcbc";
 
-alert(
-"Invalid course selection. Please select the course again."
-);
+  }else{
 
-return;
+    element.style.background = "#e5f6eb";
+    element.style.color = "#145536";
+    element.style.borderColor = "#c8e8d2";
 
-}
-
-const country=courseData[0];
-const course=courseData[1];
-const price=courseData[2];
-
-const duplicate=
-students.some(
-student=>
-String(student.name).toLowerCase()===
-name.toLowerCase() &&
-String(student.phone)===phone
-);
-
-if(duplicate){
-
-alert(
-"A student with this name and phone number is already registered."
-);
-
-return;
+  }
 
 }
-
-const student={
-
-id:
-Date.now().toString()+
-Math.random().toString(36).slice(2,8),
-
-name:name,
-father:father,
-age:age,
-school:school,
-country:country,
-address:address,
-phone:phone,
-course:course,
-price:price,
-teacher:teacher,
-createdAt:new Date().toISOString()
-
-};
-
-students.push(student);
-
-try{
-
-localStorage.setItem(
-"iqraStudents",
-JSON.stringify(students)
-);
-
-}catch(error){
-
-console.error(error);
-
-alert(
-"The browser could not save the student profile."
-);
-
-return;
-
-}
-
-const notice=
-document.getElementById(
-"studentCreated"
-);
-
-notice.style.display="block";
-
-notice.innerText=
-"Registration successful! Sending your profile to "+
-teacher+"...";
-
-if(
-currentLoggedInTeacher===teacher
-){
-
-updateDashboard(teacher);
-
-}
-
-sendStudentToTeacher(student);
-
-form.reset();
-
-}
-
-
-document
-.getElementById("registerButton")
-.addEventListener(
-"click",
-registerAndSendStudent
-);
 
 
 /* =========================================
@@ -3060,37 +2698,248 @@ registerAndSendStudent
 
 function toggleWhyChoose(){
 
-const info=
-document.getElementById(
-"whyChooseFull"
-);
+  const info =
+    document.getElementById(
+      "whyChooseFull"
+    );
 
-const button=
-document.querySelector(
-".why-learn"
-);
+  const button =
+    document.querySelector(
+      ".why-learn"
+    );
 
-if(!info || !button)return;
+  if(!info || !button)return;
 
-if(
-info.style.display==="block"
-){
+  if(
+    info.style.display === "block"
+  ){
 
-info.style.display="none";
+    info.style.display = "none";
 
-button.innerText=
-"Learn More ...";
+    button.innerText =
+      "Learn More ...";
 
-}else{
+  }else{
 
-info.style.display="block";
+    info.style.display = "block";
 
-button.innerText=
-"Show Less ...";
+    button.innerText =
+      "Show Less ...";
+
+  }
 
 }
 
+
+/* =========================================
+   REGISTER STUDENT
+========================================= */
+
+async function registerAndSendStudent(){
+
+  const form =
+    document.getElementById(
+      "studentForm"
+    );
+
+  if(!form.checkValidity()){
+
+    form.reportValidity();
+
+    return;
+
+  }
+
+  const name =
+    document
+      .getElementById("studentName")
+      .value
+      .trim();
+
+  const father =
+    document
+      .getElementById("fatherName")
+      .value
+      .trim();
+
+  const age =
+    document
+      .getElementById("studentAge")
+      .value
+      .trim();
+
+  const school =
+    document
+      .getElementById("schoolName")
+      .value
+      .trim();
+
+  const address =
+    document
+      .getElementById("studentAddress")
+      .value
+      .trim();
+
+  const phone =
+    document
+      .getElementById("studentPhone")
+      .value
+      .trim();
+
+  const courseValue =
+    document
+      .getElementById("studentCourse")
+      .value;
+
+  const teacher =
+    document
+      .getElementById("studentTeacher")
+      .value;
+
+  if(!courseValue || !teacher){
+
+    alert(
+      "Please select course and teacher first."
+    );
+
+    return;
+
+  }
+
+  const courseData =
+    courseValue.split("|");
+
+  if(courseData.length !== 3){
+
+    alert(
+      "Invalid course selection. Please select the course again."
+    );
+
+    return;
+
+  }
+
+  const country = courseData[0];
+  const course = courseData[1];
+  const price = courseData[2];
+
+
+  const button =
+    document.getElementById(
+      "registerButton"
+    );
+
+  button.disabled = true;
+  button.innerText =
+    "⏳ Saving Registration...";
+
+
+  try{
+
+    /*
+    =========================================
+    SEND STUDENT TO BACKEND
+    =========================================
+    */
+
+    const result =
+      await apiRequest(
+        "/api/students",
+        {
+          method:"POST",
+
+          body:JSON.stringify({
+
+            name,
+            father,
+            age,
+            school,
+            country,
+            address,
+            phone,
+            course,
+            price,
+            teacher
+
+          })
+
+        }
+      );
+
+
+    const student =
+      result.student;
+
+
+    showNotice(
+      "studentCreated",
+      "Registration successful! Student profile has been saved."
+    );
+
+
+    /*
+    =========================================
+    WHATSAPP
+    =========================================
+    */
+
+    sendStudentToTeacher(student);
+
+
+    /*
+    =========================================
+    REFRESH TEACHER DASHBOARD
+    =========================================
+    */
+
+    if(
+      currentLoggedInTeacher === teacher
+    ){
+
+      await updateDashboard(
+        teacher
+      );
+
+    }
+
+
+    form.reset();
+
+
+  }catch(error){
+
+    console.error(
+      "Registration error:",
+      error
+    );
+
+    showNotice(
+      "studentCreated",
+      error.message ||
+      "Registration failed. Please try again.",
+      "error"
+    );
+
+  }finally{
+
+    button.disabled = false;
+
+    button.innerText =
+      "📱 Send Registration";
+
+  }
+
 }
+
+
+document
+  .getElementById(
+    "registerButton"
+  )
+  .addEventListener(
+    "click",
+    registerAndSendStudent
+  );
 
 
 /* =========================================
@@ -3098,339 +2947,673 @@ button.innerText=
 ========================================= */
 
 document
-.getElementById("loginForm")
-.addEventListener(
-"submit",
-function(event){
+  .getElementById(
+    "loginForm"
+  )
+  .addEventListener(
+    "submit",
+    async function(event){
 
-event.preventDefault();
+      event.preventDefault();
 
-const teacher=
-document.getElementById(
-"loginTeacher"
-).value;
+      const teacher =
+        document
+          .getElementById(
+            "loginTeacher"
+          )
+          .value;
 
-const password=
-document.getElementById(
-"loginPassword"
-).value;
+      const password =
+        document
+          .getElementById(
+            "loginPassword"
+          )
+          .value;
 
-const message=
-document.getElementById(
-"loginMessage"
-);
+      if(!teacher){
 
-if(!teachers[teacher]){
+        showNotice(
+          "loginMessage",
+          "Please select an authorized teacher.",
+          "error"
+        );
 
-message.style.display="block";
+        return;
 
-message.innerText=
-"Please select an authorized teacher.";
+      }
 
-return;
+
+      const loginButton =
+        document.querySelector(
+          "#loginForm button[type='submit']"
+        );
+
+      loginButton.disabled = true;
+      loginButton.innerText =
+        "⏳ Logging in...";
+
+
+      try{
+
+        /*
+        =========================================
+        LOGIN THROUGH BACKEND
+        =========================================
+        */
+
+        const result =
+          await apiRequest(
+            "/api/login",
+            {
+              method:"POST",
+
+              body:JSON.stringify({
+
+                teacher,
+                password
+
+              })
+
+            }
+          );
+
+
+        /*
+        =========================================
+        SAVE TOKEN
+        =========================================
+        */
+
+        sessionStorage.setItem(
+          "iqraTeacherToken",
+          result.token
+        );
+
+        sessionStorage.setItem(
+          "iqraTeacherSession",
+          teacher
+        );
+
+        sessionStorage.setItem(
+          "iqraTeacherLoginTime",
+          String(Date.now())
+        );
+
+
+        currentLoggedInTeacher =
+          teacher;
+
+
+        showNotice(
+          "loginMessage",
+          "Login successful. Teacher dashboard opened."
+        );
+
+
+        document
+          .getElementById(
+            "loginPassword"
+          )
+          .value = "";
+
+
+        await showTeacherDashboard(
+          teacher,
+          true
+        );
+
+
+        startSessionTimer();
+
+
+      }catch(error){
+
+        console.error(
+          "Login error:",
+          error
+        );
+
+        sessionStorage.removeItem(
+          "iqraTeacherToken"
+        );
+
+        sessionStorage.removeItem(
+          "iqraTeacherSession"
+        );
+
+        sessionStorage.removeItem(
+          "iqraTeacherLoginTime"
+        );
+
+        currentLoggedInTeacher = null;
+
+
+        showNotice(
+          "loginMessage",
+          error.message ||
+          "Incorrect password or server error.",
+          "error"
+        );
+
+
+        document
+          .getElementById(
+            "dashboard"
+          )
+          .style.display = "none";
+
+        document
+          .getElementById(
+            "studentProfile"
+          )
+          .style.display = "none";
+
+      }finally{
+
+        loginButton.disabled = false;
+
+        loginButton.innerText =
+          "Login";
+
+      }
+
+    }
+  );
+
+
+/* =========================================
+   START SESSION TIMER
+========================================= */
+
+function startSessionTimer(){
+
+  clearTimeout(sessionTimer);
+
+  sessionTimer =
+    setTimeout(
+      function(){
+
+        alert(
+          "Your teacher session has expired. Please login again."
+        );
+
+        logoutTeacher();
+
+      },
+      SESSION_TIME
+    );
 
 }
 
-if(
-teacherPasswords[teacher] &&
-teacherPasswords[teacher]===password
-){
 
-startTeacherSession(teacher);
+/* =========================================
+   RESTORE TEACHER SESSION
+========================================= */
 
-message.style.display="block";
+async function restoreTeacherSession(){
 
-message.innerText=
-"Login successful. Teacher dashboard opened.";
+  const token =
+    sessionStorage.getItem(
+      "iqraTeacherToken"
+    );
 
-document.getElementById(
-"loginPassword"
-).value="";
+  const teacher =
+    sessionStorage.getItem(
+      "iqraTeacherSession"
+    );
 
-showTeacherDashboard(
-teacher
-);
+  const loginTime =
+    Number(
+      sessionStorage.getItem(
+        "iqraTeacherLoginTime"
+      )
+    );
 
-}else{
 
-currentLoggedInTeacher=null;
+  if(
+    !token ||
+    !teacher ||
+    !teachers[teacher] ||
+    !loginTime
+  ){
 
-message.style.display="block";
+    clearTeacherSession();
 
-message.innerText=
-"Incorrect password. Teacher profile cannot be opened.";
+    return;
 
-document.getElementById(
-"dashboard"
-).style.display="none";
+  }
 
-document.getElementById(
-"studentProfile"
-).style.display="none";
+
+  if(
+    Date.now() - loginTime >=
+    SESSION_TIME
+  ){
+
+    clearTeacherSession();
+
+    return;
+
+  }
+
+
+  currentLoggedInTeacher =
+    teacher;
+
+
+  try{
+
+    await showTeacherDashboard(
+      teacher,
+      false
+    );
+
+    startSessionTimer();
+
+  }catch(error){
+
+    console.error(
+      "Session restore error:",
+      error
+    );
+
+    clearTeacherSession();
+
+  }
 
 }
 
+
+/* =========================================
+   CLEAR TEACHER SESSION
+========================================= */
+
+function clearTeacherSession(){
+
+  currentLoggedInTeacher = null;
+  currentStudent = null;
+  currentChatStudentId = null;
+
+  sessionStorage.removeItem(
+    "iqraTeacherToken"
+  );
+
+  sessionStorage.removeItem(
+    "iqraTeacherSession"
+  );
+
+  sessionStorage.removeItem(
+    "iqraTeacherLoginTime"
+  );
+
+  clearTimeout(
+    sessionTimer
+  );
+
 }
-);
 
 
 /* =========================================
    LOGOUT
 ========================================= */
 
+function logoutTeacher(){
+
+  clearTeacherSession();
+
+  document
+    .getElementById(
+      "dashboard"
+    )
+    .style.display = "none";
+
+  document
+    .getElementById(
+      "studentProfile"
+    )
+    .style.display = "none";
+
+  document
+    .getElementById(
+      "loginPassword"
+    )
+    .value = "";
+
+  document
+    .getElementById(
+      "chatMessages"
+    )
+    .innerHTML = `
+      <div class="message">
+        Assalam-o-Alaikum! Please select a teacher or student.
+      </div>
+    `;
+
+  document
+    .getElementById(
+      "chatheader"
+    )
+    .innerText =
+      "Select a teacher or student";
+
+  document
+    .getElementById(
+      "login"
+    )
+    .scrollIntoView({
+      behavior:"smooth"
+    });
+
+}
+
+
+/* =========================================
+   LOGOUT BUTTON
+========================================= */
+
 document
-.getElementById("logoutButton")
-.addEventListener(
-"click",
-logoutTeacher
-);
+  .getElementById(
+    "logoutButton"
+  )
+  .addEventListener(
+    "click",
+    logoutTeacher
+  );
 
 
 /* =========================================
    TEACHER DASHBOARD
 ========================================= */
 
-function showTeacherDashboard(
-teacherName,
-shouldScroll=true
+async function showTeacherDashboard(
+  teacherName,
+  shouldScroll = true
 ){
 
-if(
-!currentLoggedInTeacher ||
-currentLoggedInTeacher!==teacherName ||
-!teachers[teacherName]
-){
+  if(
+    !currentLoggedInTeacher ||
+    currentLoggedInTeacher !== teacherName ||
+    !teachers[teacherName]
+  ){
 
-return;
+    return;
 
-}
+  }
 
-const dashboard=
-document.getElementById(
-"dashboard"
-);
 
-dashboard.style.display="block";
+  const dashboard =
+    document.getElementById(
+      "dashboard"
+    );
 
-document.getElementById(
-"dashboardTeacherName"
-).innerText=
-teachers[teacherName].displayName;
 
-document.getElementById(
-"dashboardTeacherInfo"
-).innerText=
-teachers[teacherName].information;
+  dashboard.style.display =
+    "block";
 
-updateDashboard(
-teacherName
-);
 
-resetSessionTimer();
+  document.getElementById(
+    "dashboardTeacherName"
+  ).innerText =
+    teachers[
+      teacherName
+    ].displayName;
 
-if(shouldScroll){
 
-dashboard.scrollIntoView({
-behavior:"smooth"
-});
+  document.getElementById(
+    "dashboardTeacherInfo"
+  ).innerText =
+    teachers[
+      teacherName
+    ].information;
 
-}
+
+  await updateDashboard(
+    teacherName
+  );
+
+
+  if(shouldScroll){
+
+    dashboard.scrollIntoView({
+      behavior:"smooth"
+    });
+
+  }
 
 }
 
 
 /* =========================================
-   UPDATE DASHBOARD
+   UPDATE DASHBOARD FROM BACKEND
 ========================================= */
 
-function updateDashboard(
-teacherName
+async function updateDashboard(
+  teacherName
 ){
 
-if(
-!currentLoggedInTeacher ||
-currentLoggedInTeacher!==teacherName
-){
+  if(
+    !currentLoggedInTeacher ||
+    currentLoggedInTeacher !== teacherName
+  ){
 
-return;
+    return;
 
-}
+  }
 
-const list=
-document.getElementById(
-"teacherStudents"
-);
 
-if(!list)return;
+  const list =
+    document.getElementById(
+      "teacherStudents"
+    );
 
-list.innerHTML="";
 
-const myStudents=
-students.filter(
-student=>
-student.teacher===teacherName
-);
+  if(!list)return;
 
-if(myStudents.length===0){
 
-const emptyCard=
-document.createElement("div");
+  list.innerHTML =
+    `<div class="student-card">
+       Loading students...
+     </div>`;
 
-emptyCard.className=
-"student-card";
 
-const heading=
-document.createElement("h3");
+  try{
 
-heading.innerText=
-"No students yet";
+    const result =
+      await apiRequest(
+        "/api/teacher/students"
+      );
 
-const paragraph=
-document.createElement("p");
 
-paragraph.innerText=
-"Students who select this teacher will appear here.";
+    const myStudents =
+      result.students || [];
 
-emptyCard.appendChild(
-heading
-);
 
-emptyCard.appendChild(
-paragraph
-);
+    list.innerHTML = "";
 
-list.appendChild(
-emptyCard
-);
 
-return;
+    if(myStudents.length === 0){
 
-}
+      const emptyCard =
+        document.createElement(
+          "div"
+        );
 
-myStudents.forEach(
-student=>{
+      emptyCard.className =
+        "student-card";
 
-const card=
-document.createElement("div");
 
-card.className=
-"student-card";
+      const heading =
+        document.createElement(
+          "h3"
+        );
 
-const heading=
-document.createElement("h3");
+      heading.innerText =
+        "No students yet";
 
-heading.innerText=
-student.name;
 
-const course=
-document.createElement("p");
+      const paragraph =
+        document.createElement(
+          "p"
+        );
 
-const courseLabel=
-document.createElement("b");
+      paragraph.innerText =
+        "Students who select this teacher will appear here.";
 
-courseLabel.innerText=
-"Course: ";
 
-course.appendChild(
-courseLabel
-);
+      emptyCard.appendChild(
+        heading
+      );
 
-course.appendChild(
-document.createTextNode(
-student.course||""
-)
-);
+      emptyCard.appendChild(
+        paragraph
+      );
 
-const age=
-document.createElement("p");
 
-const ageLabel=
-document.createElement("b");
+      list.appendChild(
+        emptyCard
+      );
 
-ageLabel.innerText=
-"Age: ";
+      return;
 
-age.appendChild(
-ageLabel
-);
+    }
 
-age.appendChild(
-document.createTextNode(
-student.age||""
-)
-);
 
-const country=
-document.createElement("p");
+    myStudents.forEach(
+      student => {
 
-const countryLabel=
-document.createElement("b");
+        const card =
+          document.createElement(
+            "div"
+          );
 
-countryLabel.innerText=
-"Country: ";
+        card.className =
+          "student-card";
 
-country.appendChild(
-countryLabel
-);
 
-country.appendChild(
-document.createTextNode(
-student.country||""
-)
-);
+        const heading =
+          document.createElement(
+            "h3"
+          );
 
-const button=
-document.createElement("button");
+        heading.innerText =
+          student.name;
 
-button.type="button";
 
-button.className=
-"green-button";
+        const course =
+          document.createElement(
+            "p"
+          );
 
-button.innerText=
-"View Profile";
+        course.innerHTML =
+          "<b>Course:</b> " +
+          escapeHtml(
+            student.course || ""
+          );
 
-button.addEventListener(
-"click",
-function(){
 
-viewStudent(
-student.id
-);
+        const age =
+          document.createElement(
+            "p"
+          );
 
-}
-);
+        age.innerHTML =
+          "<b>Age:</b> " +
+          escapeHtml(
+            student.age || ""
+          );
 
-card.appendChild(
-heading
-);
 
-card.appendChild(
-course
-);
+        const country =
+          document.createElement(
+            "p"
+          );
 
-card.appendChild(
-age
-);
+        country.innerHTML =
+          "<b>Country:</b> " +
+          escapeHtml(
+            student.country || ""
+          );
 
-card.appendChild(
-country
-);
 
-card.appendChild(
-document.createElement("br")
-);
+        const button =
+          document.createElement(
+            "button"
+          );
 
-card.appendChild(
-button
-);
+        button.type =
+          "button";
 
-list.appendChild(
-card
-);
+        button.className =
+          "green-button";
 
-}
-);
+        button.innerText =
+          "View Profile";
+
+
+        button.addEventListener(
+          "click",
+          function(){
+
+            viewStudent(
+              student.id
+            );
+
+          }
+        );
+
+
+        card.appendChild(
+          heading
+        );
+
+        card.appendChild(
+          course
+        );
+
+        card.appendChild(
+          age
+        );
+
+        card.appendChild(
+          country
+        );
+
+        card.appendChild(
+          document.createElement(
+            "br"
+          )
+        );
+
+        card.appendChild(
+          button
+        );
+
+
+        list.appendChild(
+          card
+        );
+
+      }
+    );
+
+
+  }catch(error){
+
+    console.error(
+      "Dashboard error:",
+      error
+    );
+
+
+    list.innerHTML =
+      `<div class="student-card">
+        <h3>Could not load students</h3>
+        <p>${escapeHtml(
+          error.message ||
+          "Server error."
+        )}</p>
+      </div>`;
+
+  }
 
 }
 
@@ -3439,263 +3622,512 @@ card
    VIEW STUDENT
 ========================================= */
 
-function viewStudent(
-id
+async function viewStudent(
+  id
 ){
 
-if(!currentLoggedInTeacher){
+  if(!currentLoggedInTeacher){
 
-alert(
-"Please login as a teacher first."
-);
+    alert(
+      "Please login as a teacher first."
+    );
 
-return;
+    return;
 
-}
+  }
 
-const foundStudent=
-students.find(
-student=>
-String(student.id)===
-String(id)
-);
 
-if(!foundStudent){
+  try{
 
-alert(
-"Student profile could not be found."
-);
+    const result =
+      await apiRequest(
+        "/api/students/" +
+        encodeURIComponent(id)
+      );
 
-return;
 
-}
+    const student =
+      result.student;
 
-if(
-foundStudent.teacher!==
-currentLoggedInTeacher
-){
 
-alert(
-"This student is not assigned to your teacher account."
-);
+    if(!student){
 
-return;
+      alert(
+        "Student profile could not be found."
+      );
 
-}
+      return;
 
-currentStudent=
-foundStudent;
+    }
 
-resetSessionTimer();
 
-document.getElementById(
-"studentProfile"
-).style.display="block";
+    currentStudent =
+      student;
 
-document.getElementById(
-"profileName"
-).innerText=
-currentStudent.name||"";
 
-document.getElementById(
-"profileFather"
-).innerText=
-currentStudent.father||"";
+    document.getElementById(
+      "studentProfile"
+    ).style.display =
+      "block";
 
-document.getElementById(
-"profileAge"
-).innerText=
-currentStudent.age||"";
 
-document.getElementById(
-"profileSchool"
-).innerText=
-currentStudent.school||"";
+    document.getElementById(
+      "profileName"
+    ).innerText =
+      student.name || "";
 
-document.getElementById(
-"profileCountry"
-).innerText=
-currentStudent.country||"";
 
-document.getElementById(
-"profileAddress"
-).innerText=
-currentStudent.address||"";
+    document.getElementById(
+      "profileFather"
+    ).innerText =
+      student.father || "";
 
-document.getElementById(
-"profilePhone"
-).innerText=
-currentStudent.phone||"";
 
-document.getElementById(
-"profileCourse"
-).innerText=
-(currentStudent.course||"")+
-" — "+
-(currentStudent.price||"");
+    document.getElementById(
+      "profileAge"
+    ).innerText =
+      student.age || "";
 
-document.getElementById(
-"profileTeacher"
-).innerText=
-currentStudent.teacher||"";
 
-document.getElementById(
-"studentCall"
-).href=
-"tel:"+
-encodeURIComponent(
-currentStudent.phone||""
-);
+    document.getElementById(
+      "profileSchool"
+    ).innerText =
+      student.school || "";
 
-document.getElementById(
-"studentProfile"
-).scrollIntoView({
-behavior:"smooth"
-});
+
+    document.getElementById(
+      "profileCountry"
+    ).innerText =
+      student.country || "";
+
+
+    document.getElementById(
+      "profileAddress"
+    ).innerText =
+      student.address || "";
+
+
+    document.getElementById(
+      "profilePhone"
+    ).innerText =
+      student.phone || "";
+
+
+    document.getElementById(
+      "profileCourse"
+    ).innerText =
+      (student.course || "") +
+      " — " +
+      (student.price || "");
+
+
+    document.getElementById(
+      "profileTeacher"
+    ).innerText =
+      student.teacher || "";
+
+
+    document.getElementById(
+      "studentCall"
+    ).href =
+      "tel:" +
+      encodeURIComponent(
+        student.phone || ""
+      );
+
+
+    document.getElementById(
+      "studentProfile"
+    ).scrollIntoView({
+      behavior:"smooth"
+    });
+
+
+  }catch(error){
+
+    console.error(
+      "Student profile error:",
+      error
+    );
+
+
+    alert(
+      error.message ||
+      "Could not load student profile."
+    );
+
+  }
 
 }
 
 
 /* =========================================
-   STUDENT CHAT
+   OPEN STUDENT CHAT
 ========================================= */
 
-function openStudentChat(){
+async function openStudentChat(){
 
-if(
-!currentLoggedInTeacher ||
-!currentStudent
-){
+  if(
+    !currentLoggedInTeacher ||
+    !currentStudent
+  ){
 
-alert(
-"Please login and open a student profile first."
-);
+    alert(
+      "Please login and open a student profile first."
+    );
 
-return;
+    return;
 
-}
+  }
 
-if(
-currentStudent.teacher!==
-currentLoggedInTeacher
-){
 
-alert(
-"You are not authorized to open this student's chat."
-);
+  if(
+    currentStudent.teacher !==
+    currentLoggedInTeacher
+  ){
 
-return;
+    alert(
+      "You are not authorized to open this student's chat."
+    );
 
-}
+    return;
 
-resetSessionTimer();
+  }
 
-currentChatPerson=
-currentStudent.name;
 
-document.getElementById(
-"chatheader"
-).innerText=
-"Chat with "+
-currentStudent.name;
+  currentChatPerson =
+    currentStudent.name;
 
-document.getElementById(
-"chat"
-).scrollIntoView({
-behavior:"smooth"
-});
+  currentChatStudentId =
+    currentStudent.id;
+
+
+  document.getElementById(
+    "chatheader"
+  ).innerText =
+    "Chat with " +
+    currentStudent.name;
+
+
+  await loadChatMessages();
+
+
+  document.getElementById(
+    "chat"
+  ).scrollIntoView({
+    behavior:"smooth"
+  });
 
 }
 
 
 /* =========================================
-   TEACHER CHAT
+   OPEN TEACHER CHAT
 ========================================= */
 
 function openTeacherChat(
-teacher
+  teacher
 ){
 
-currentChatPerson=
-teacher;
+  if(!currentLoggedInTeacher){
 
-document.getElementById(
-"chatheader"
-).innerText=
-"Chat with "+
-teacher;
+    alert(
+      "Teacher chat is available after teacher login."
+    );
 
-document.getElementById(
-"chat"
-).scrollIntoView({
-behavior:"smooth"
-});
+    document
+      .getElementById(
+        "login"
+      )
+      .scrollIntoView({
+        behavior:"smooth"
+      });
+
+    return;
+
+  }
+
+
+  currentChatPerson =
+    teacher;
+
+
+  document.getElementById(
+    "chatheader"
+  ).innerText =
+    "Teacher: " +
+    teacher;
+
+
+  document.getElementById(
+    "chatMessages"
+  ).innerHTML =
+    `
+    <div class="message">
+      Teacher chat selected. Please open a student profile to use student messaging.
+    </div>
+    `;
+
+
+  document.getElementById(
+    "chat"
+  ).scrollIntoView({
+    behavior:"smooth"
+  });
 
 }
 
 
 /* =========================================
-   CHAT MESSAGE
+   LOAD CHAT MESSAGES
+========================================= */
+
+async function loadChatMessages(){
+
+  if(
+    !currentLoggedInTeacher ||
+    !currentChatStudentId
+  ){
+
+    return;
+
+  }
+
+
+  const messagesBox =
+    document.getElementById(
+      "chatMessages"
+    );
+
+
+  messagesBox.innerHTML =
+    `
+    <div class="message">
+      Loading messages...
+    </div>
+    `;
+
+
+  try{
+
+    const result =
+      await apiRequest(
+        "/api/messages/" +
+        encodeURIComponent(
+          currentChatStudentId
+        )
+      );
+
+
+    const messages =
+      result.messages || [];
+
+
+    messagesBox.innerHTML = "";
+
+
+    if(messages.length === 0){
+
+      messagesBox.innerHTML =
+        `
+        <div class="message">
+          No messages yet.
+        </div>
+        `;
+
+      return;
+
+    }
+
+
+    messages.forEach(
+      message => {
+
+        const element =
+          document.createElement(
+            "div"
+          );
+
+
+        element.className =
+          "message my-message";
+
+
+        element.textContent =
+          message.text || "";
+
+
+        messagesBox.appendChild(
+          element
+        );
+
+      }
+    );
+
+
+    messagesBox.scrollTop =
+      messagesBox.scrollHeight;
+
+
+  }catch(error){
+
+    console.error(
+      "Chat loading error:",
+      error
+    );
+
+
+    messagesBox.innerHTML =
+      `
+      <div class="message">
+        Could not load messages.
+      </div>
+      `;
+
+  }
+
+}
+
+
+/* =========================================
+   SEND CHAT MESSAGE
 ========================================= */
 
 document
-.getElementById("chatForm")
-.addEventListener(
-"submit",
-function(event){
+  .getElementById(
+    "chatForm"
+  )
+  .addEventListener(
+    "submit",
+    async function(event){
 
-event.preventDefault();
+      event.preventDefault();
 
-if(!currentChatPerson){
 
-alert(
-"Please select a teacher or student first."
-);
+      if(!currentLoggedInTeacher){
 
-return;
+        alert(
+          "Please login as a teacher first."
+        );
 
-}
+        return;
 
-if(currentLoggedInTeacher){
+      }
 
-resetSessionTimer();
 
-}
+      if(!currentChatStudentId){
 
-const input=
-document.getElementById(
-"chatInput"
-);
+        alert(
+          "Please open a student profile first."
+        );
 
-const text=
-input.value.trim();
+        return;
 
-if(!text)return;
+      }
 
-const message=
-document.createElement("div");
 
-message.className=
-"message my-message";
+      const input =
+        document.getElementById(
+          "chatInput"
+        );
 
-message.textContent=
-text;
 
-document.getElementById(
-"chatMessages"
-).appendChild(
-message
-);
+      const text =
+        input.value.trim();
 
-input.value="";
 
-message.scrollIntoView({
-behavior:"smooth",
-block:"nearest"
-});
+      if(!text)return;
 
-}
-);
+
+      const sendButton =
+        document.querySelector(
+          "#chatForm button"
+        );
+
+
+      sendButton.disabled =
+        true;
+
+
+      try{
+
+        const result =
+          await apiRequest(
+            "/api/messages",
+            {
+              method:"POST",
+
+              body:JSON.stringify({
+
+                studentId:
+                  currentChatStudentId,
+
+                text
+
+              })
+
+            }
+          );
+
+
+        const message =
+          result.message;
+
+
+        const element =
+          document.createElement(
+            "div"
+          );
+
+
+        element.className =
+          "message my-message";
+
+
+        element.textContent =
+          message.text;
+
+
+        document
+          .getElementById(
+            "chatMessages"
+          )
+          .appendChild(
+            element
+          );
+
+
+        input.value = "";
+
+
+        element.scrollIntoView({
+          behavior:"smooth",
+          block:"nearest"
+        });
+
+
+      }catch(error){
+
+        console.error(
+          "Message error:",
+          error
+        );
+
+
+        alert(
+          error.message ||
+          "Could not send message."
+        );
+
+      }finally{
+
+        sendButton.disabled =
+          false;
+
+      }
+
+    }
+  );
 
 
 /* =========================================
@@ -3704,15 +4136,18 @@ block:"nearest"
 
 function showPaymentMessage(){
 
-const notice=
-document.getElementById(
-"paymentNotice"
-);
+  const notice =
+    document.getElementById(
+      "paymentNotice"
+    );
 
-notice.style.display="block";
 
-notice.innerText=
-"Please contact the academy for current payment details.";
+  notice.style.display =
+    "block";
+
+
+  notice.innerText =
+    "Please contact the academy for current payment details.";
 
 }
 
@@ -3722,35 +4157,62 @@ notice.innerText=
 ========================================= */
 
 function sendStudentToTeacher(
-student
+  student
 ){
 
-if(!student)return;
+  if(!student)return;
 
-const teacherNumbers={
 
-"Abdullah Shahzad":"YOUR_TEACHER_WHATSAPP_NUMBER",
-"Zain Ilyas":"YOUR_TEACHER_WHATSAPP_NUMBER",
-"Hafiz Musa":"YOUR_TEACHER_WHATSAPP_NUMBER"
+  /*
+  IMPORTANT:
 
-};
+  Yahan apne real teacher WhatsApp numbers
+  international format mein add karna hai.
 
-const teacherNumber=
-teacherNumbers[
-student.teacher
-];
+  Example:
+  923001234567
 
-if(!teacherNumber){
+  WITHOUT + sign.
+  */
 
-alert(
-"Teacher WhatsApp number not found."
-);
 
-return;
+  const teacherNumbers = {
 
-}
+    "Abdullah Shahzad":
+      "YOUR_TEACHER_WHATSAPP_NUMBER",
 
-const message=
+    "Zain Ilyas":
+      "YOUR_TEACHER_WHATSAPP_NUMBER",
+
+    "Hafiz Musa":
+      "YOUR_TEACHER_WHATSAPP_NUMBER"
+
+  };
+
+
+  const teacherNumber =
+    teacherNumbers[
+      student.teacher
+    ];
+
+
+  if(
+    !teacherNumber ||
+    teacherNumber.includes(
+      "YOUR_"
+    )
+  ){
+
+    console.warn(
+      "Teacher WhatsApp number is not configured."
+    );
+
+    return;
+
+  }
+
+
+  const message =
 `Assalam-o-Alaikum,
 
 New Student Registration
@@ -3768,17 +4230,56 @@ Teacher: ${student.teacher}
 
 Iqra Quran Academy`;
 
-const whatsappURL=
-"WHATSAPP_LINK_HERE?text="+
-encodeURIComponent(
-message
-);
 
-window.open(
-whatsappURL,
-"_blank",
-"noopener,noreferrer"
-);
+  const whatsappURL =
+    "https://wa.me/" +
+    teacherNumber +
+    "?text=" +
+    encodeURIComponent(
+      message
+    );
+
+
+  window.open(
+    whatsappURL,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+}
+
+
+/* =========================================
+   HTML ESCAPE
+========================================= */
+
+function escapeHtml(
+  value
+){
+
+  return String(
+    value ?? ""
+  )
+  .replace(
+    /&/g,
+    "&amp;"
+  )
+  .replace(
+    /</g,
+    "&lt;"
+  )
+  .replace(
+    />/g,
+    "&gt;"
+  )
+  .replace(
+    /"/g,
+    "&quot;"
+  )
+  .replace(
+    /'/g,
+    "&#039;"
+  );
 
 }
 
@@ -3789,70 +4290,76 @@ whatsappURL,
 
 function toggleHowToUse(){
 
-const info=
-document.getElementById(
-"fullHowToUse"
-);
+  const info =
+    document.getElementById(
+      "fullHowToUse"
+    );
 
-const button=
-document.querySelector(
-".learn-more"
-);
+  const button =
+    document.querySelector(
+      ".learn-more"
+    );
 
-if(!info || !button)return;
+  if(!info || !button)return;
 
-if(
-info.style.display==="block"
-){
 
-info.style.display="none";
+  if(
+    info.style.display === "block"
+  ){
 
-button.innerText=
-"Learn More ...";
+    info.style.display =
+      "none";
 
-}else{
+    button.innerText =
+      "Learn More ...";
 
-info.style.display="block";
+  }else{
 
-button.innerText=
-"Show Less ...";
+    info.style.display =
+      "block";
 
-}
+    button.innerText =
+      "Show Less ...";
+
+  }
 
 }
 
 
 function toggleAcademyInfo(){
 
-const info=
-document.getElementById(
-"academyInfo"
-);
+  const info =
+    document.getElementById(
+      "academyInfo"
+    );
 
-const button=
-document.querySelector(
-".info-learn"
-);
+  const button =
+    document.querySelector(
+      ".info-learn"
+    );
 
-if(!info || !button)return;
+  if(!info || !button)return;
 
-if(
-info.style.display==="block"
-){
 
-info.style.display="none";
+  if(
+    info.style.display === "block"
+  ){
 
-button.innerText=
-"Learn More ...";
+    info.style.display =
+      "none";
 
-}else{
+    button.innerText =
+      "Learn More ...";
 
-info.style.display="block";
+  }else{
 
-button.innerText=
-"Show Less ...";
+    info.style.display =
+      "block";
 
-}
+    button.innerText =
+      "Show Less ...";
+
+  }
 
 }
 
@@ -3869,27 +4376,32 @@ restoreTeacherSession();
 ========================================= */
 
 [
-"click",
-"keydown",
-"touchstart"
+  "click",
+  "keydown",
+  "touchstart"
 ].forEach(
-function(eventName){
+  function(eventName){
 
-document.addEventListener(
-eventName,
-function(){
+    document.addEventListener(
+      eventName,
+      function(){
 
-if(currentLoggedInTeacher){
+        if(
+          currentLoggedInTeacher
+        ){
 
-resetSessionTimer();
+          startSessionTimer();
 
-}
+        }
 
-},
-{passive:true}
+      },
+      {
+        passive:true
+      }
+    );
+
+  }
 );
-
-});
 
 </script>
 
